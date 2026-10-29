@@ -1,2 +1,2 @@
-import {products,articles} from "@/lib/catalog";import {SITE_URL} from "@/lib/site";
+import {products} from "@/lib/catalog";import {allArticles as articles} from "@/lib/articles";import {SITE_URL} from "@/lib/site";
 export function GET(){const paths=["/","/catalog","/about","/documents","/articles","/contacts","/reviews","/privacy",...products.map(p=>`/catalog/${p.id}`),...articles.map(a=>`/articles/${a.slug}`)];return new Response(`<?xml version="1.0" encoding="UTF-8"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">${paths.map(p=>`<url><loc>${SITE_URL}${p}</loc></url>`).join("")}</urlset>`,{headers:{"Content-Type":"application/xml; charset=utf-8"}});}

@@ -84,3 +84,43 @@
 | `dimethyl-sulfoxide` | `isopropanol` |
 | `n-butanol` | `isopropanol` |
 | `deionized-water` | `isopropanol` |
+
+## Единая предметная подача, версия studio-v2
+
+Это актуальное описание отображения после первоначального набора фотографий. Все 20 исходных путей перечислены в `lib/photo-presentation.ts`. Для 16 изображений фон заменен встроенным ImageGen по конкретной реальной фотографии. Это обработанные изображения на основе источников, а не неизмененные оригинальные фотографии. Исходные авторы и лицензии сохранены. Четыре нейтральных оригинала оставлены без растровых правок: ацетон, MgO, FeSO4·7H2O, FeCl3·6H2O. Они вписываются в единый квадратный canvas через CSS contain.
+
+Обработанные варианты имеют размер 1254×1254 px. Химические формы, белый/бесцветный материал, синий цвет сульфата меди и ключевые существующие надписи проверены визуально по источникам. Пиксельное тождество не заявляется: это генеративная замена фона. Новые марки, упаковки HIM STANDART, квалификации и значения концентрации не добавлялись. Изображения остаются иллюстрациями, не доказательствами реальной партии клиента.
+
+Техническая конверсия PNG → WebP quality=85 выполнена установленным Sharp без resize, фильтров, кадрирования или других операций с композицией. PNG-мастеры и два новых исходника хранятся в исключенном из Git `outputs/photo-art-direction-masters-v2/`. Тяжелые созданные в этой итерации PNG/JPEG удалены из public после проверки WebP; первоначальные фотографии не изменены.
+
+Этанол: обрезанный источник с безводным спиртом заменен целым лицензированным фото реальной бутылки с маркировкой 95%. Маркировка не заменена на 96%, подпись сообщает различие. Лимонная кислота: микрофотография заменена обычным фото мелких кристаллов; форма гидрата по фотографии не утверждается.
+
+| Исходный путь | Отображаемый файл | Обработка |
+| --- | --- | --- |
+| `/assets/products/ethanol-96.webp` | `/assets/products/ethanol-96-studio-v2.webp` | Замена фона по исходнику |
+| `/assets/products/sodium-chloride.webp` | `/assets/products/sodium-chloride-studio-v2.webp` | Замена фона по исходнику |
+| `/assets/products/isopropanol.webp` | `/assets/products/isopropanol-studio-v2.webp` | Замена фона по исходнику |
+| `/assets/products/acetone.webp` | `/assets/products/acetone.webp` | Исходное фото, CSS contain |
+| `/assets/products/glycerol.webp` | `/assets/products/glycerol-studio-v2.webp` | Замена фона по исходнику |
+| `/assets/products/sodium-hydroxide.webp` | `/assets/products/sodium-hydroxide-studio-v2.webp` | Замена фона по исходнику |
+| `/assets/products/potassium-hydroxide.webp` | `/assets/products/potassium-hydroxide-studio-v2.webp` | Замена фона по исходнику |
+| `/assets/products/copper-sulfate-pentahydrate.webp` | `/assets/products/copper-sulfate-pentahydrate-studio-v2.webp` | Замена фона по исходнику |
+| `/assets/products/trisodium-citrate-dihydrate.webp` | `/assets/products/trisodium-citrate-dihydrate-studio-v2.webp` | Замена фона по исходнику |
+| `/assets/products/boric-acid.webp` | `/assets/products/boric-acid-studio-v2.webp` | Замена фона по исходнику |
+| `/assets/products/calcium-carbonate.webp` | `/assets/products/calcium-carbonate-studio-v2.webp` | Замена фона по исходнику |
+| `/assets/products/iron-sulfate-heptahydrate.webp` | `/assets/products/iron-sulfate-heptahydrate.webp` | Исходное фото, CSS contain |
+| `/assets/products/iron-chloride-hexahydrate.webp` | `/assets/products/iron-chloride-hexahydrate.webp` | Исходное фото, CSS contain |
+| `/assets/products/zinc-oxide.webp` | `/assets/products/zinc-oxide-studio-v2.webp` | Замена фона по исходнику |
+| `/assets/products/magnesium-oxide.webp` | `/assets/products/magnesium-oxide.webp` | Исходное фото, CSS contain |
+| `/assets/products/urea.webp` | `/assets/products/urea-studio-v2.webp` | Замена фона по исходнику |
+| `/assets/products/glycine.webp` | `/assets/products/glycine-studio-v2.webp` | Замена фона по исходнику |
+| `/assets/products/sucrose.webp` | `/assets/products/sucrose-studio-v2.webp` | Замена фона по исходнику |
+| `/assets/products/citric-acid-anhydrous.webp` | `/assets/products/citric-acid-anhydrous-studio-v2.webp` | Замена фона по исходнику |
+| `/assets/products/sodium-bicarbonate.webp` | `/assets/products/sodium-bicarbonate-studio-v2.webp` | Замена фона по исходнику |
+
+Новые первичные источники:
+
+- Этанол: [File:Ethanol antiseptic.jpg](https://commons.wikimedia.org/wiki/File:Ethanol_antiseptic.jpg), автор VanHelsing.16, [CC BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5). Веб-версия содержит замененный нейтральный фон и сохраняет исходную маркировку 95%.
+- Лимонная кислота: [File:Citronensäure.JPG](https://commons.wikimedia.org/wiki/File:Citronens%C3%A4ure.JPG), автор Renate90, [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0). Скачана официальная 960 px миниатюра; веб-версия содержит замененный фон.
+
+Производные версии CC BY-SA распространяются под соответствующей исходной версией лицензии. Остальные кредиты и ссылки находятся выше и в поле credit manifest. Резервная копия этого документа до обновления: `outputs/IMAGE-SOURCES-before-studio-v2-20261029.md`.

@@ -1,6 +1,6 @@
 "use client";
 
-import { createContext, useCallback, useContext, useEffect, useMemo, useState, type ReactNode } from "react";
+import { createContext, useCallback, useContext, useEffect, useMemo, useRef, useState, type ReactNode } from "react";
 import { X } from "lucide-react";
 import { products } from "@/lib/catalog";
 
@@ -34,44 +34,55 @@ function validItems(value: unknown): CartItem[] {
 export function StoreProvider({ children }: { children: ReactNode }) {
   const [items, setItems] = useState<CartItem[]>([]);
   const [hydrated, setHydrated] = useState(false);
-  const [toast, setToast] = useState("");
+  const [notice, setNotice] = useState({ message: "", sequence: 0 });
+  const toast = notice.message;
+  const itemsRef = useRef<CartItem[]>([]);
+  const updateItems = useCallback((update: (previous: CartItem[]) => CartItem[]) => {
+    const next = update(itemsRef.current);
+    itemsRef.current = next;
+    setItems(next);
+  }, []);
+  const setToast = useCallback((message: string) => setNotice(previous => ({ message, sequence: previous.sequence + 1 })), []);
   useEffect(() => {
-    try { setItems(validItems(JSON.parse(localStorage.getItem(STORAGE_KEY) || "[]"))); } catch { /* A damaged local draft starts empty. */ }
+    try { updateItems(() => validItems(JSON.parse(localStorage.getItem(STORAGE_KEY) || "[]"))); } catch { /* A damaged local draft starts empty. */ }
     setHydrated(true);
     const sync = (event: StorageEvent) => {
       if (event.key !== STORAGE_KEY) return;
-      try { setItems(validItems(JSON.parse(event.newValue || "[]"))); } catch { setItems([]); }
+      try { updateItems(() => validItems(JSON.parse(event.newValue || "[]"))); } catch { updateItems(() => []); }
     };
     window.addEventListener("storage", sync);
     return () => window.removeEventListener("storage", sync);
-  }, []);
+  }, [updateItems]);
   useEffect(() => {
     if (!hydrated) return;
     try { localStorage.setItem(STORAGE_KEY, JSON.stringify(items)); } catch { /* The in-session cart remains available. */ }
   }, [items, hydrated]);
   useEffect(() => {
-    if (!toast) return;
+    if (!notice.message) return;
     const timer = window.setTimeout(() => setToast(""), 4500);
     return () => window.clearTimeout(timer);
-  }, [toast]);
+  }, [notice, setToast]);
   const addItem = useCallback((productId: string, packaging: string, quantity = 1) => {
     const product = products.find(p => p.id === productId);
     if (!product || !product.packages.includes(packaging)) return;
-    setItems(previous => {
+    if (!itemsRef.current.some(item => item.productId === productId && item.packaging === packaging) && itemsRef.current.length >= 30) {
+      setToast("В заявке уже 30 позиций. Дополнительные реактивы можно указать в комментарии.");
+      return;
+    }
+    updateItems(previous => {
       const existing = previous.find(p => p.productId === productId && p.packaging === packaging);
       if (existing) return previous.map(p => p === existing ? { ...p, quantity: bounded(p.quantity + quantity) } : p);
-      if (previous.length >= 30) return previous;
       return [...previous, { productId, packaging, quantity: bounded(quantity) }];
     });
     setToast(`${product.name}: добавлено в заявку`);
-  }, []);
+  }, [setToast, updateItems]);
   const setQuantity = useCallback((productId: string, packaging: string, quantity: number) => {
-    setItems(previous => previous.map(p => p.productId === productId && p.packaging === packaging ? { ...p, quantity: bounded(quantity) } : p));
-  }, []);
+    updateItems(previous => previous.map(p => p.productId === productId && p.packaging === packaging ? { ...p, quantity: bounded(quantity) } : p));
+  }, [updateItems]);
   const removeItem = useCallback((productId: string, packaging: string) => {
-    setItems(previous => previous.filter(p => p.productId !== productId || p.packaging !== packaging));
-  }, []);
-  const clearCart = useCallback(() => setItems([]), []);
+    updateItems(previous => previous.filter(p => p.productId !== productId || p.packaging !== packaging));
+  }, [updateItems]);
+  const clearCart = useCallback(() => updateItems(() => []), [updateItems]);
   const value = useMemo(() => ({ items, hydrated, count: items.reduce((total, item) => total + item.quantity, 0), toast, addItem, setQuantity, removeItem, clearCart }), [items, hydrated, toast, addItem, setQuantity, removeItem, clearCart]);
   return <Context.Provider value={value}>{children}<div className="store-toast-region" aria-live="polite" aria-atomic="true">{toast ? <div className="store-toast"><span>{toast}</span><a href="/cart">К заявке</a><button className="icon-button" type="button" aria-label="Закрыть уведомление" onClick={() => setToast("")}><X size={20} strokeWidth={1.5} /></button></div> : null}</div></Context.Provider>;
 }
