@@ -1,6 +1,6 @@
 # HIM STANDART INDUSTRIES
 
-[Открыть демонстрационный сайт](https://him-standart-industries-demo.lushmorel12.chatgpt.site/) · [Публичный репозиторий](https://github.com/artnov952-spec/him-standart-industries)
+[Открыть демонстрационный сайт](https://him-standart-industries-demo.artnov952.chatgpt.site/) · [Публичный репозиторий](https://github.com/artnov952-spec/him-standart-industries)
 
 Демонстрационный B2B-каталог для организаций Узбекистана. Основа оформления ISOMORPH: нейтральный темный первый экран, светлый каталог, один точечный акцент, системная типографика и Lucide SVG. Без стеклянных эффектов, свечения и онлайн-оплаты.
 

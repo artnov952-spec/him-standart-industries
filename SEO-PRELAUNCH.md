@@ -72,7 +72,7 @@ Root дополнительно проверил фактические откр
 Из корня проекта:
 
 ```sh
-HIM_SITE_URL=https://him-standart-industries-demo.lushmorel12.chatgpt.site node tests/seo-check.mjs
+HIM_SITE_URL=https://him-standart-industries-demo.artnov952.chatgpt.site node tests/seo-check.mjs
 ```
 
 Публичный ограниченный GET-прогон уже выполнен и отражен выше. Скрипт перезаписывает `outputs/seo-runtime.json`; перед повтором сохранять нужную версию отдельно. Локальный и публичный охваты различаются: полный прогон 50 карточек выполнен локально, публично проверена указанная выборка. После следующего релиза повторить публичный прогон и нужные браузерные сценарии.
