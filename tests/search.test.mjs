@@ -46,6 +46,21 @@ test("CAS accepts hyphens, spaces and compact digits without fuzzy numeric match
   assert.deepEqual(ids("64176"), []);
 });
 
+test("labeled CAS combines with names, synonyms and application filters", () => {
+  for (const query of ["этанол CAS 64-17-5", "CAS64-17-5 этанол", "этанол КАС 64 17 5", "этанол cas64175", "CAS: 64-17-5 этиловый спирт"]) {
+    assert.deepEqual(ids(query), ["ethanol-96"], query);
+  }
+  assert.deepEqual(ids("лимонная кислота моногидрат CAS 5949-29-1 для буферных растворов"), ["citric-acid-monohydrate"]);
+  assert.deepEqual(ids("хлорид кальция CAS 10035-04-8 водный"), ["calcium-chloride-dihydrate"]);
+  assert.deepEqual(ids("CAS 64-17-5 этанол", { tagIds: ["buffers"] }), []);
+});
+
+test("mixed CAS stays exact and cannot bypass conflicting names or hydrate forms", () => {
+  for (const query of ["этанол CAS 64-17-6", "этанол CAS 641750", "этанол CAS 6417", "ацетон CAS 64-17-5", "этанол CAS 64-17-5 ацетон", "безводная лимонная кислота CAS 5949-29-1", "лимонная кислота моногидрат CAS 77-92-9", "хлорид кальция 6 водный CAS 10035-04-8"]) {
+    assert.deepEqual(ids(query), [], query);
+  }
+});
+
 test("formulas and hydrate forms preserve identity; SKU is searchable", () => {
   assert.deepEqual(ids("NaOH"), ["sodium-hydroxide"]);
   assert.deepEqual(ids("Na₂CO₃"), ["sodium-carbonate"]);

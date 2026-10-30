@@ -74,6 +74,11 @@ export function parseSearchQuery(query: string): ParsedSearchQuery {
     return { normalized, tokens: [], tagIds: [], cas: identifier.replace(/ /g, "") };
   }
   let remaining = ` ${normalized} `;
+  // Keep a labeled CAS as an exact constraint while the other words still
+  // refine the result. It must not become a fuzzy word or override a name.
+  const labeledCas = remaining.match(/ (?:cas|кас)\s*((?:\d{2,7} +\d{2} +\d)|\d{5,10})(?= |$)/);
+  const cas = labeledCas?.[1].replace(/ /g, "");
+  if (labeledCas) remaining = remaining.replace(labeledCas[0], " ");
   const tagIds: TagId[] = [];
   // Longest phrases first so "реактивы для растений" is consumed as one intent.
   const phrases = tagDefinitions.flatMap((tag) => tag.aliases.map((alias) => ({ id: tag.id, phrase: normalizeSearchText(alias) })))
@@ -87,7 +92,7 @@ export function parseSearchQuery(query: string): ParsedSearchQuery {
   }
   const tokens = [...new Set(tokensOf(remaining).filter((token) => !stopWords.has(token)))];
   return {
-    normalized, tokens, tagIds,
+    normalized, tokens, tagIds, ...(cas ? { cas } : {}),
     ...(tagIds.includes("agrochemistry") ? { notice: "Подбор для анализа почв и питательных элементов. Пригодность для внесения в почву, удобрения или обработки растений не подтверждается." }
       : normalized.includes("медицинск") ? { notice: "Подбор для лабораторных аналитических методик. Медицинский допуск, диагностическое применение и применение к пациенту не подтверждаются." } : {}),
   };
@@ -128,17 +133,15 @@ export function searchProducts<T extends SearchableProduct>(products: readonly T
   const requiredTags = [...new Set([...(options.tagIds ?? []), ...parsed.tagIds])];
   if (requiredTags.some((id) => !tagDefinitions.some((tag) => tag.id === id))) return [];
   const queryCompact = compact(query);
-  const requestedHydrates = hydrationCounts(query);
+  // CAS digits are not hydration counts when followed by a word like "водный".
+  const requestedHydrates = hydrationCounts(parsed.cas ? parsed.tokens.join(" ") : query);
   const ranked: { product: T; score: number; index: number }[] = [];
   products.forEach((product, index) => {
     const metadata = productSearchMetadata[product.id];
     if (requiredTags.some((tag) => !metadata?.tags.some((id) => id === tag))) return;
-    if (parsed.cas) {
-      if (compact(product.cas ?? "") === parsed.cas) ranked.push({ product, score: 1000, index });
-      return;
-    }
+    if (parsed.cas && compact(product.cas ?? "") !== parsed.cas) return;
     if (!parsed.normalized || !parsed.tokens.length) {
-      ranked.push({ product, score: 0, index });
+      ranked.push({ product, score: parsed.cas ? 1000 : 0, index });
       return;
     }
     // Exact chemical identifiers bypass token splitting (hydrates may contain dots).

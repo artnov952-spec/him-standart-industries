@@ -6,6 +6,12 @@ export type DraftProduct = { id: string; sku?: string; name?: string; packages: 
 export type DraftResult = { ok: true; items: CartItem[] } | { ok: false; items: CartItem[]; error: string };
 const lineKey = (item: Pick<CartItem, "productId" | "packaging">) => `${item.productId}\u0000${item.packaging}`;
 const sameRequirements = (one?: LineRequirements, two?: LineRequirements) => JSON.stringify(one || null) === JSON.stringify(two || null);
+// Compare the submitted snapshot, not a stale render, before discarding a draft.
+// Reordering alone is harmless; quantities, packaging and requirements are not.
+export function matchesDraftSnapshot(current: readonly CartItem[], submitted: readonly CartItem[]): boolean {
+  const signature = (items: readonly CartItem[]) => JSON.stringify([...items].sort((a, b) => lineKey(a) < lineKey(b) ? -1 : lineKey(a) > lineKey(b) ? 1 : 0).map(item => [item.productId, item.packaging, item.quantity, item.requirements?.purity || "", item.requirements?.alternatives || "", item.requirements?.neededBy || ""]));
+  return signature(current) === signature(submitted);
+}
 function checkedLine(value: unknown, products: readonly DraftProduct[]): CartItem {
   if (!value || typeof value !== "object" || Array.isArray(value)) throw new Error("Проверьте строку списка.");
   const input = value as Partial<CartItem>;

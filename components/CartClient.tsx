@@ -9,18 +9,20 @@ import { getProductPhoto } from "./ProductImage";
 import CartDraftTools from "./CartDraftTools";
 
 export default function CartClient() {
-  const { items, hydrated, setQuantity, removeItem, clearCart, changePackaging, setRequirements } = useStore();
+  const { items, hydrated, setQuantity, removeItem, clearCart, clearSubmittedIfUnchanged, changePackaging, setRequirements } = useStore();
   const [status, setStatus] = useState<"idle" | "sending" | "error" | "success">("idle");
   const [error, setError] = useState("");
   const [lineError, setLineError] = useState("");
   const [comment, setComment] = useState("");
-  const [saved, setSaved] = useState<{ id: string; message: string } | null>(null);
+  const [saved, setSaved] = useState<{ id: string; message: string; draftRetained: boolean } | null>(null);
   const attempt = useRef<{ signature: string; id: string } | null>(null);
   const [confirmClear, setConfirmClear] = useState(false);
   const clearButton = useRef<HTMLButtonElement>(null);
   const cancelClearButton = useRef<HTMLButtonElement>(null);
   const emptyHeading = useRef<HTMLHeadingElement>(null);
+  const draftHeading = useRef<HTMLHeadingElement>(null);
   const focusEmpty = useRef(false);
+  const focusDraft = useRef(false);
   const packagingFields = useRef(new Map<string, HTMLSelectElement>());
   const pendingPackagingFocus = useRef<string | null>(null);
   const sending = status === "sending";
@@ -34,7 +36,8 @@ export default function CartClient() {
   useEffect(() => {
     if (pendingPackagingFocus.current) { packagingFields.current.get(pendingPackagingFocus.current)?.focus(); pendingPackagingFocus.current = null; }
     if (!items.length && focusEmpty.current) { emptyHeading.current?.focus(); focusEmpty.current = false; }
-  }, [items]);
+    if (status === "idle" && focusDraft.current && draftHeading.current) { draftHeading.current.focus(); focusDraft.current = false; }
+  }, [items, status]);
   async function submit(event: FormEvent<HTMLFormElement>) {
     event.preventDefault();
     if (!hydrated || sending || !items.length) return;
@@ -46,14 +49,15 @@ export default function CartClient() {
     try {
       const body = await postJson<{ ok?: boolean; id?: string; message?: string }>("/api/requests", { ...payload, requestId: attempt.current.id }, "Не удалось сохранить заявку. Состав и введенные данные остались на странице.");
       if (body.ok !== true || typeof body.id !== "string") throw new Error("Сервер не подтвердил сохранение. Попробуйте еще раз: состав заявки сохранен.");
-      setSaved({ id: body.id, message: body.message || "Тестовая заявка сохранена. Менеджеру она не отправлена." });
-      clearCart(); attempt.current = null; setStatus("success");
+      const cleared = clearSubmittedIfUnchanged(payload.items);
+      setSaved({ id: body.id, message: body.message || "Тестовая заявка сохранена. Менеджеру она не отправлена.", draftRetained: !cleared });
+      attempt.current = null; setStatus("success");
     } catch (failure) { setError(failure instanceof Error ? failure.message : "Не удалось связаться с сервером. Заявка осталась в корзине."); setStatus("error"); }
   }
   if (!hydrated) return <div className="cart-loading" role="status">Загружаем состав заявки...</div>;
-  if (status === "success" && saved) return <div className="cart-success" role="status"><Check size={20} strokeWidth={1.5} /><h2>Тестовая заявка сохранена</h2><p>{saved.message}</p><dl><div><dt>Номер заявки</dt><dd>{saved.id}</dd></div></dl><p>Этот сайт работает в демонстрационном режиме. Отправка менеджеру и Telegram пока не подключены.</p><a href="/catalog" className="button button-dark">Вернуться в каталог<ArrowRight size={20} strokeWidth={1.5} /></a></div>;
+  if (status === "success" && saved) return <div className="cart-success" role="status"><Check size={20} strokeWidth={1.5} /><h2>Тестовая заявка сохранена</h2><p>{saved.message}</p><dl><div><dt>Номер заявки</dt><dd>{saved.id}</dd></div></dl>{saved.draftRetained ? <><p>Текущий список не очищен. Перед следующим запросом проверьте, какие позиции уже вошли в сохраненную заявку.</p>{items.length ? <button type="button" className="button button-secondary" onClick={() => { focusDraft.current = true; setSaved(null); setStatus("idle"); setComment(""); }}>Проверить текущий список</button> : null}</> : null}<p>Этот сайт работает в демонстрационном режиме. Отправка менеджеру и Telegram пока не подключены.</p><a href="/catalog" className="button button-dark">Вернуться в каталог<ArrowRight size={20} strokeWidth={1.5} /></a></div>;
   if (!items.length) return <><div className="cart-empty"><ShoppingBag size={20} strokeWidth={1.5} /><h2 ref={emptyHeading} tabIndex={-1}>В заявке пока нет позиций</h2><p>Выберите реактивы в каталоге или загрузите ранее сохраненный CSV/TSV.</p><a href="/catalog" className="button button-dark">Выбрать реактивы<ArrowRight size={20} strokeWidth={1.5} /></a></div><CartDraftTools /></>;
-  return <div className="cart-layout"><section className="cart-items" aria-label="Состав заявки"><div className="cart-items-heading"><h2>Состав заявки <span>{items.length} / {FORM_LIMITS.linesMax}</span></h2><button ref={clearButton} type="button" className="text-button" disabled={sending} onClick={() => setConfirmClear(true)}>Очистить</button></div>
+  return <div className="cart-layout"><section className="cart-items" aria-label="Состав заявки"><div className="cart-items-heading"><h2 ref={draftHeading} tabIndex={-1}>Состав заявки <span>{items.length} / {FORM_LIMITS.linesMax}</span></h2><button ref={clearButton} type="button" className="text-button" disabled={sending} onClick={() => setConfirmClear(true)}>Очистить</button></div>
     {confirmClear ? <div className="cart-clear-confirm" role="group" aria-label="Подтверждение очистки заявки"><p>Удалить все позиции из заявки?</p><button type="button" className="button" disabled={sending} onClick={() => { focusEmpty.current = true; clearCart(); setConfirmClear(false); }}>Удалить позиции</button><button ref={cancelClearButton} type="button" className="text-button" onClick={() => { setConfirmClear(false); clearButton.current?.focus(); }}>Оставить</button></div> : null}
     {lineError ? <p className="form-error" role="alert">{lineError}</p> : null}
     {items.map(item => {

@@ -4,7 +4,7 @@ import { createContext, useCallback, useContext, useEffect, useMemo, useRef, use
 import { X } from "lucide-react";
 import { products } from "@/lib/catalog";
 import { FORM_LIMITS, normalizeLineRequirements } from "@/lib/form-contract.mjs";
-import { changeDraftPackaging, combineDraft, restoreDraft, type CartItem, type LineRequirements } from "@/lib/quote-draft";
+import { changeDraftPackaging, combineDraft, matchesDraftSnapshot, restoreDraft, type CartItem, type LineRequirements } from "@/lib/quote-draft";
 export type { CartItem } from "@/lib/quote-draft";
 
 type Store = {
@@ -16,6 +16,7 @@ type Store = {
   importItems: (items: CartItem[], replace: boolean) => string | null;
   removeItem: (productId: string, packaging: string) => void;
   clearCart: () => void;
+  clearSubmittedIfUnchanged: (submitted: readonly CartItem[]) => boolean;
 };
 const Context = createContext<Store | null>(null);
 const STORAGE_KEY = "him-standart-cart-v1";
@@ -51,7 +52,10 @@ export function StoreProvider({ children }: { children: ReactNode }) {
     setHydrated(true);
     const sync = (event: StorageEvent) => {
       if (event.key !== STORAGE_KEY && event.key !== null) return;
-      read(event.key === null ? null : event.newValue);
+      // Notifications can be queued. Reconcile with current storage, not an
+      // older event snapshot that could resurrect an already submitted draft.
+      try { read(localStorage.getItem(STORAGE_KEY)); }
+      catch { persistAllowed.current = false; setStorageWarning("Хранилище браузера недоступно. Сохраните список в CSV или TSV перед закрытием страницы."); }
     };
     window.addEventListener("storage", sync);
     return () => window.removeEventListener("storage", sync);
@@ -98,8 +102,23 @@ export function StoreProvider({ children }: { children: ReactNode }) {
   }, [install, setToast]);
   const removeItem = useCallback((productId: string, packaging: string) => install(itemsRef.current.filter(item => item.productId !== productId || item.packaging !== packaging), true), [install]);
   const clearCart = useCallback(() => install([], true), [install]);
+  const clearSubmittedIfUnchanged = useCallback((submitted: readonly CartItem[]) => {
+    if (!matchesDraftSnapshot(itemsRef.current, submitted)) return false;
+    // A storage event may still be queued when the HTTP response arrives.
+    // Read the latest cross-tab draft before deciding whether it can be cleared.
+    try {
+      const latest = restoreDraft(JSON.parse(localStorage.getItem(STORAGE_KEY) || "[]"), products);
+      if (latest.warning || !persistAllowed.current) return false;
+      if (!matchesDraftSnapshot(latest.items, submitted)) { install(latest.items); return false; }
+      if (!matchesDraftSnapshot(itemsRef.current, submitted)) return false;
+      // Publish the successful clear before queued cross-tab events run.
+      localStorage.setItem(STORAGE_KEY, "[]");
+      install([], true);
+      return true;
+    } catch { return false; }
+  }, [install]);
   const toast = notice.message;
-  const value = useMemo(() => ({ items, hydrated, count: items.reduce((total, item) => total + item.quantity, 0), toast, storageWarning, addItem, setQuantity, changePackaging, setRequirements, importItems, removeItem, clearCart }), [items, hydrated, toast, storageWarning, addItem, setQuantity, changePackaging, setRequirements, importItems, removeItem, clearCart]);
+  const value = useMemo(() => ({ items, hydrated, count: items.reduce((total, item) => total + item.quantity, 0), toast, storageWarning, addItem, setQuantity, changePackaging, setRequirements, importItems, removeItem, clearCart, clearSubmittedIfUnchanged }), [items, hydrated, toast, storageWarning, addItem, setQuantity, changePackaging, setRequirements, importItems, removeItem, clearCart, clearSubmittedIfUnchanged]);
   return <Context.Provider value={value}>{children}<div className="store-toast-region" aria-live="polite" aria-atomic="true">{toast ? <div className="store-toast"><span>{toast}</span><a href="/cart">К заявке</a><button className="icon-button" type="button" aria-label="Закрыть уведомление" onClick={() => setToast("")}><X size={20} strokeWidth={1.5} /></button></div> : null}</div></Context.Provider>;
 }
 export function useStore() {

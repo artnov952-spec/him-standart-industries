@@ -1,0 +1,31 @@
+Graphite molecule sculpture poster v2, 2026-10-30.
+
+Original project artwork rendered from components/molecule-scene.ts using the
+unchanged positions and network in lib/hero-molecule-geometry.ts. This is a
+decorative ball-and-stick sculpture, not a chemical identity or medical formula.
+
+The production Three.js scene was bundled with the already-installed esbuild
+for a temporary local preview. Its visible Download PNG button rendered the
+neutral pose and exported the actual WebGL canvas through CUA. No headless
+browser, external texture, AI image generation or photographic retouch was used.
+
+Logical render size: 880 x 560. Native PNG: 1100 x 700, RGBA, 211132 bytes.
+PNG SHA-256: 832a0317a51ea4c4396ebc5dd2b911d960dba128e7e8f1dd9cb45d14c91f69c4
+Final WebP: 1100 x 700, RGBA, quality 92, 24376 bytes. Alpha is preserved.
+Neutral pose: rx=-0.06, ry=0.08, rz=-0.025, x=0, y=0.
+
+23 smooth spheres (64 x 40 segments), 23 connectors (32 radial segments),
+46 small flush connector rings. Actual rendered frame: 3 instanced draw calls,
+135424 triangles. Two shared MeshStandardMaterial instances; no external maps,
+shadow maps or postprocessing. Shared geometry buffers: 131968 bytes;
+instance matrices: 5888 bytes. Rendering remains event-driven, with the existing
+1.25 DPR and 800000-pixel caps. Mobile/reduced-motion fallback is the poster.
+
+The poster uses centered object positioning. At desktop host sizes 880 x 560
+and 768 x 560, the camera's vertical envelope is 5.85 world units, so cropping
+only empty side margins preserves the WebGL object's scale and center.
+
+Primary implementation references:
+https://threejs.org/docs/pages/SphereGeometry.html
+https://threejs.org/docs/pages/InstancedMesh.html
+https://threejs.org/docs/pages/MeshStandardMaterial.html

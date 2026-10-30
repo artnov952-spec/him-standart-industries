@@ -1,12 +1,23 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import { changeDraftPackaging, combineDraft, exportQuoteFile, parseQuoteFile, restoreDraft } from '../lib/quote-draft.ts';
+import { changeDraftPackaging, combineDraft, exportQuoteFile, matchesDraftSnapshot, parseQuoteFile, restoreDraft } from '../lib/quote-draft.ts';
 import { normalizeQuote, payloadHash, sha256 } from '../lib/server-validation.ts';
 import { FORM_LIMITS } from '../lib/form-contract.mjs';
 
 const products = [{ id: 'salt', sku: 'HIM-002', name: 'Натрий хлористый', packages: ['1 кг', '5 кг'] }, { id: 'ethanol', sku: 'HIM-001', packages: ['1 л', '5 л'] }];
 const line = (packaging, quantity, requirements) => ({ productId: 'salt', packaging, quantity, ...(requirements ? { requirements } : {}) });
 const quote = patch => ({ requestId: 'e6bbeded-15de-44c1-833f-e51728c75db8', company: 'Организация', name: 'Закупщик', phone: '+998900000000', email: '', city: 'Ташкент', comment: '', website: '', items: [line('1 кг', 1)], ...patch });
+
+test('successful request can clear only its unchanged draft snapshot', () => {
+  const submitted = [line('1 кг', 2), { productId: 'ethanol', packaging: '1 л', quantity: 1 }];
+  assert.equal(matchesDraftSnapshot([...submitted].reverse(), submitted), true);
+  assert.equal(matchesDraftSnapshot([...submitted, line('5 кг', 1)], submitted), false, 'a second-tab addition must survive');
+  assert.equal(matchesDraftSnapshot([line('1 кг', 3), submitted[1]], submitted), false, 'quantity edited while waiting');
+  assert.equal(matchesDraftSnapshot([line('5 кг', 2), submitted[1]], submitted), false, 'packaging edited while waiting');
+  assert.equal(matchesDraftSnapshot([line('1 кг', 2, { purity: 'х.ч.', alternatives: '', neededBy: '' }), submitted[1]], submitted), false, 'technical requirements edited while waiting');
+  assert.equal(matchesDraftSnapshot([submitted[0]], submitted), false, 'a removed line is also a new draft');
+  assert.deepEqual(submitted[0], line('1 кг', 2), 'comparison must not mutate the sent payload');
+});
 
 test('packaging overflow preserves both original lines and quantities', () => {
   const original = [line('1 кг', 600), line('5 кг', 600)];

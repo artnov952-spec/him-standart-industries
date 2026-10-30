@@ -4,6 +4,8 @@ import "./refinements.css";
 import "./product-cards.css";
 import "./contacts-page.css";
 import "./documents-page.css";
+import "./home-sections.css";
+import "./home-faq.css";
 import {StoreProvider} from "@/components/StoreProvider";
 import HeaderActions from "@/components/HeaderActions";
 import {ArrowUpRight,Mail,Phone} from "lucide-react";

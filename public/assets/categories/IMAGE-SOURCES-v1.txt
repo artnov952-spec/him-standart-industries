@@ -1,0 +1,24 @@
+{
+  "created": "2026-10-30",
+  "method": "Built-in image_gen, original generated editorial illustrations. No external supplier photography copied.",
+  "scope": "Illustrative category photographs only. No actual supplier product, concentration, grade, availability or certification is depicted. No substances are being mixed.",
+  "assets": {
+    "solvents-editorial-v1": [
+      "480x300",
+      "768x480"
+    ],
+    "salts-editorial-v1": [
+      "480x300",
+      "768x480"
+    ],
+    "acids-bases-editorial-v1": [
+      "480x300",
+      "768x480"
+    ]
+  },
+  "prompts": {
+    "solvents": "Use case: photorealistic-natural. Create one premium editorial laboratory photograph for the SOLVENTS category of a restrained industrial B2B chemical catalog. Landscape 16:10 composition. Three clean unbranded pieces of laboratory glass on a pale warm-gray stone laboratory worktop: a low clear reagent bottle with a ground-glass stopper, a small conical flask, and a shallow watch glass, each separated, containing only small amounts of clear colorless liquid. Objects are stationary, nothing being poured, no experiment in progress. Medium close-up from a slightly elevated front angle, objects occupy the central 75 percent with generous but deliberate margins. Realistic fine glass reflections and soft contact shadows, high-quality natural studio window light from the upper left, very pale neutral background #eeeee9. Restrained near-monochrome palette, silver highlights, no saturated colors. Tactile and precise, quiet expensive laboratory editorial photography, crisp subject with subtle depth. No people, no hands, no text anywhere, no letters, no numbers, no labels, no logos, no measurement marks, no printed graduations, no watermark. Not an illustration, not a render, not glossy advertising. Keep all important objects fully in frame. This is generic illustrative glassware, not branded supplier packaging.",
+    "salts": "Use case: photorealistic-natural. Create one premium editorial laboratory photograph for the SALTS AND COMPOUNDS category of a restrained industrial B2B chemical catalog. Landscape 16:10 composition. Two clean separate shallow clear glass crystallizing dishes on a pale warm-gray stone laboratory worktop: the larger dish in the left foreground contains coarse translucent white salt crystals, the slightly smaller dish at the back right contains a few pale naturally blue mineral crystals. The dishes are clearly separate, no mixed substances, no activity. Medium close-up from a slightly elevated front angle, objects occupy the central 75 percent with deliberate margins. Realistic crystalline facets, fine glass reflections and soft contact shadows. High-quality natural studio window light from the upper left, very pale neutral background #eeeee9. Restrained near-monochrome palette with only one subtle desaturated powder-blue color in the rear dish, no strong saturation. Tactile and precise, quiet expensive laboratory editorial photography, crisp subject with subtle depth. No people, no hands, no text anywhere, no letters, no numbers, no labels, no logos, no measurement marks, no printed graduations, no watermark. Not an illustration, not a render, not glossy advertising. Keep all important objects fully in frame. This is generic illustrative laboratory imagery, not branded supplier packaging and not a depiction of mixing.",
+    "acids-bases": "Use case: photorealistic-natural. Create one premium editorial laboratory photograph for the ACIDS AND ALKALIS category of a restrained industrial B2B chemical catalog. Landscape 16:10 composition. Three stationary, clearly separated laboratory objects on a pale warm-gray stone laboratory worktop: in the left foreground a low white porcelain weighing dish holding a small mound of fine off-white powder, in the right foreground a separate small clear glass dish holding a few matte white granules, behind them one clean squat clear-glass reagent bottle with a ground-glass stopper and a small amount of clear colorless liquid. No substances touching, no pouring, no mixing, no experiment, no reaction, no fumes. Medium close-up from a slightly elevated front angle, objects occupy the central 75 percent with deliberate margins. Realistic subtle powder and granule texture, fine glass reflections, matte porcelain and soft contact shadows. High-quality natural studio window light from the upper left, very pale neutral background #eeeee9. Restrained near-monochrome palette, warm white and silver tones, no saturated colors. Tactile and precise, quiet expensive laboratory editorial photography, crisp subject with subtle depth. No people, no hands, no text anywhere, no letters, no numbers, no labels, no logos, no measurement marks, no printed graduations, no watermark. Not an illustration, not a render, not glossy advertising. Keep all important objects fully in frame. This is generic illustrative laboratory imagery, not branded supplier packaging."
+  }
+}

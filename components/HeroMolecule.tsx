@@ -120,5 +120,5 @@ export default function HeroMolecule() {
       poster.style.transform = "none";
     };
   }, [mode]);
-  return <div ref={hostRef} className="hero-molecule" data-renderer="poster" data-motion="poster" aria-hidden="true"><img ref={posterRef} className="hero-molecule-poster" src="/assets/hero-matte.webp" width="1600" height="800" alt="" fetchPriority="high" /><canvas ref={canvasRef} className="hero-molecule-canvas" /></div>;
+  return <div ref={hostRef} className="hero-molecule" data-renderer="poster" data-motion="poster" aria-hidden="true"><img ref={posterRef} className="hero-molecule-poster" src="/assets/hero-graphite-smooth-v2.webp" width="1100" height="700" style={{ objectPosition: "center" }} alt="" fetchPriority="high" /><canvas ref={canvasRef} className="hero-molecule-canvas" /></div>;
 }
