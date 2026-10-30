@@ -23,19 +23,22 @@ const worker = {
         },
       };
     }
-    const response=await runWithConnectorBinding(binding,()=>handler.fetch(request,env,ctx));
+    const url = new URL(request.url);
+    const hashedAsset = /^(?:\/assets\/|\/_next\/static\/(?:chunks|css)\/)(?:[^/]+[.-])?[A-Za-z0-9_-]{8}\.(?:js|css)$/.test(url.pathname);
+    const assets = (env as Cloudflare.Env & { ASSETS?: Fetcher }).ASSETS;
+    const response = hashedAsset && assets && (request.method === "GET" || request.method === "HEAD")
+      ? await assets.fetch(request)
+      : await runWithConnectorBinding(binding,()=>handler.fetch(request,env,ctx));
     const secured=new Response(response.body,response);
     secured.headers.set("X-Content-Type-Options","nosniff");
     secured.headers.set("Referrer-Policy","strict-origin-when-cross-origin");
     secured.headers.set("X-Robots-Tag","noindex, follow");
     secured.headers.append("Content-Security-Policy", "base-uri 'self'; object-src 'none'; form-action 'self'; frame-ancestors 'self' https://chatgpt.com https://*.chatgpt.com");
     secured.headers.set("Permissions-Policy", "camera=(), microphone=(), geolocation=(), payment=(), usb=()");
-    const url = new URL(request.url);
     if (url.protocol === "https:") secured.headers.set("Strict-Transport-Security", "max-age=31536000");
     // Only content-addressed build output is immutable. Product photos retain
     // their normal cache policy; private/API responses must never be cached here.
-    const hashedAsset = /^(?:\/assets\/|\/_next\/static\/(?:chunks|css)\/)(?:[^/]+[.-])?[A-Za-z0-9_-]{8}\.(?:js|css)$/.test(url.pathname);
-    if ((request.method === "GET" || request.method === "HEAD") && secured.ok && hashedAsset) {
+    if ((request.method === "GET" || request.method === "HEAD") && (secured.ok || secured.status === 304) && hashedAsset) {
       secured.headers.set("Cache-Control", "public, max-age=31536000, immutable");
     }
     return secured;
