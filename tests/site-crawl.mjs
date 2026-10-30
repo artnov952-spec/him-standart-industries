@@ -2,6 +2,7 @@
 // Node 24 native fetch; no browser automation, POST, API endpoints, credentials, or external requests.
 import { copyFile, mkdir, readFile, writeFile } from "node:fs/promises";
 import { resolve } from "node:path";
+import { sourceMarkup, sourceTitles, expectedCanonicalUrl } from "./crawl-contract.mjs";
 
 const base = new URL(process.env.HIM_SITE_URL || "http://127.0.0.1:5173");
 if (!["http:", "https:"].includes(base.protocol) || base.username || base.password || base.search || base.hash || base.pathname !== "/") throw new Error("HIM_SITE_URL must be an HTTP(S) origin without credentials, path, query, or hash");
@@ -40,7 +41,7 @@ function attributes(source) {
   return values;
 }
 function tokens(html) {
-  const source = html.replace(/<!--[\s\S]*?-->/g, "").replace(/<(script|style|textarea)\b[^>]*>[\s\S]*?<\/\1\s*>/gi, "");
+  const source = sourceMarkup(html);
   return [...source.matchAll(/<(\/?)([a-z][\w:-]*)(?=\s|\/?>)((?:"[^"]*"|'[^']*'|[^'">])*)>/gi)].filter(match => !match[1]).map(match => ({ name: match[2].toLowerCase(), attrs: attributes(match[3]) }));
 }
 function sameOrigin(value, from) {
@@ -89,12 +90,12 @@ function analyze(response, kind) {
   if (!/^text\/html(?:;|$)/i.test(response.mime)) { row.nonHtml = true; issues(response.url, "html-mime", response.mime); return row; }
   const tags = tokens(body);
   const ids = new Set(tags.flatMap(tag => [tag.attrs.id, tag.name === "a" ? tag.attrs.name : undefined]).filter(Boolean));
-  const titleParts = [...body.matchAll(/<title\b[^>]*>([\s\S]*?)<\/title\s*>/gi)].map(match => clean(match[1]));
-  const h1 = [...body.replace(/<script\b[^>]*>[\s\S]*?<\/script\s*>/gi, "").matchAll(/<h1\b[^>]*>([\s\S]*?)<\/h1\s*>/gi)].map(match => clean(match[1]));
+  const titleParts = sourceTitles(body).map(clean);
+  const h1 = [...sourceMarkup(body).matchAll(/<h1\b[^>]*>([\s\S]*?)<\/h1\s*>/gi)].map(match => clean(match[1]));
   const canonical = tags.filter(tag => tag.name === "link" && tag.attrs.rel?.toLowerCase().split(/\s+/).includes("canonical")).map(tag => tag.attrs.href);
   const canonicalNormalized = canonical.map(value => { try { return new URL(value).href; } catch { return null; } });
   const mainCount = tags.filter(tag => tag.name === "main").length;
-  const expectedCanonical = new URL(new URL(response.finalUrl).pathname, configuredSite).href;
+  const expectedCanonical = expectedCanonicalUrl(response.finalUrl, configuredSite);
   const jsonLd = [];
   for (const match of body.matchAll(/<script\b([^>]*)>([\s\S]*?)<\/script\s*>/gi)) {
     if (attributes(match[1]).type?.toLowerCase() !== "application/ld+json") continue;
