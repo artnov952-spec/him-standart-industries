@@ -97,3 +97,16 @@ input::placeholder,textarea::placeholder{color:#666963;opacity:1}.breadcrumbs>sp
 
 .article-visual>span{color:#5f625c}
 .prose a.button{text-decoration:none}
+
+/* Editorial covers replace decorative placeholders across every article list. */
+.article-preview{display:flex;flex-direction:column;align-items:stretch;min-width:0}
+.article-preview .article-visual{display:block;position:relative;aspect-ratio:2/1;height:auto;padding:0;overflow:hidden;background:#e8e9e6;border:1px solid var(--line);border-radius:var(--radius)}
+.article-preview .article-visual::after{content:none}
+.article-cover-image{display:block;width:100%;height:100%;aspect-ratio:2/1;object-fit:cover;object-position:center;transform:scale(1);transition:transform 800ms cubic-bezier(.2,.65,.3,1)}
+.article-preview .article-meta{margin:16px 0 8px}
+.article-preview>h2,.article-preview>h3{margin:0 0 16px;font-size:26px;line-height:1.25;letter-spacing:-.6px}
+.article-preview>p{margin:0 0 24px;color:var(--secondary)}
+.article-preview>.text-link{align-self:flex-start;margin-top:auto;min-height:48px;display:inline-flex;align-items:center;gap:8px}
+@media(hover:hover) and (pointer:fine){.article-preview:hover .article-cover-image,.article-preview:focus-within .article-cover-image{transform:scale(1.025) translateY(-.25%)}}
+@media(max-width:520px){.article-preview>h2,.article-preview>h3{font-size:24px}.article-preview>.text-link{min-height:44px}}
+@media(prefers-reduced-motion:reduce),(hover:none),(pointer:coarse),(max-width:800px){.article-cover-image{transition:none;transform:none!important}}

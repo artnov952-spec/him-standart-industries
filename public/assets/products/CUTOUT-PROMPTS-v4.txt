@@ -1,0 +1,33 @@
+Mode: built-in image_gen.imagegen, background-extraction, transparent_background=true.
+Twenty separate edits, one original source per target. Sources and per-target outputs are recorded in ATTRIBUTION-cutout-v4.txt. Existing source licenses and generic-product disclaimers remain applicable.
+
+Prompt set used for the cutouts:
+1. Remove ONLY the entire opaque white/gray photographic background and tabletop; output genuine alpha transparency, not a checkerboard drawn into RGB.
+2. Preserve the original specimen or vessel, all original outlines, geometry, materials, colors, reflections, contents and markings. Preserve the distinct real specimen, do not invent a new product or label.
+3. Glass and translucent crystals retain natural reflections and fine edges with no hard gray rectangle or colored edge halos.
+4. Keep full object(s), no crop, centered on a square transparent canvas with consistent clear margins.
+5. No new text, logos, watermark, graphic effects or extra objects.
+
+Per-target subject constraints:
+ethanol: original unlabelled bottle, colorless liquid, beige ribbed cap; no claim that the source proves96% concentration.
+sodium-chloride: original six clear cubic crystals and arrangement.
+isopropanol: original tall volumetric flask, stopper, blue glass markings and colorless liquid.
+acetone: original wash bottle, red spout, label and hazard markings.
+glycerol: original Erlenmeyer flask, glass markings and colorless liquid.
+sodium-hydroxide: original glass dish and white pellets.
+potassium-hydroxide: original top-down clear vessel and white flakes.
+copper-sulfate-pentahydrate: original vial, black cap and blue crystals.
+trisodium-citrate-dihydrate: original crystal chunks and arrangement.
+boric-acid: original circular glass dish and white granules.
+calcium-carbonate: original circular dish and white powder heap.
+iron-sulfate-heptahydrate: original mint-green crystal mound and scattered granules.
+iron-chloride-hexahydrate: original ochre powder heap and scattered grains.
+zinc-oxide: original clear dish and white powder mound.
+magnesium-oxide: original oval glass dish at its original angle and irregular white powder heap.
+urea: original capped glass jar and white granules.
+glycine: original clear dish and fine white granules.
+sucrose: original clear crystal cluster, arrangement and facets.
+citric-acid-anhydrous: original fine crystal mound and scatter, physical form preserved.
+sodium-bicarbonate: original fine white powder mound, shape, color and edge texture.
+
+Delivery processing: full-frame resize and WebP82 encoding to480/720/960px, alpha preserved. No synthetic substance identities, specifications, availability or supplier packaging were added.

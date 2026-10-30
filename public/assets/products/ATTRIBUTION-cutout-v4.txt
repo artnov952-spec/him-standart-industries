@@ -1,0 +1,557 @@
+HIM STANDART demo. Source-derived image background extraction, built-in imagegen, 2026-10-30.
+Changes: opaque photographic background removed to genuine alpha; specimen, material and identity preserved as an illustration. WebP82 full-frame resizing to480/720/960. Invisible RGB under zero alpha is discarded for delivery. No claim of actual supplied goods, concentration or packaging. Original sources and licenses remain applicable.
+
+[
+  {
+    "key": "ethanol",
+    "source": "ethanol-form-studio-v3.webp",
+    "master": "exec-305ab7cd-1606-46d2-b3b2-8d26c2aa1abe.png",
+    "files": [
+      {
+        "file": "ethanol-cutout-v4-480.webp",
+        "width": 480,
+        "bytes": 19798
+      },
+      {
+        "file": "ethanol-cutout-v4-720.webp",
+        "width": 720,
+        "bytes": 36140
+      },
+      {
+        "file": "ethanol-cutout-v4.webp",
+        "width": 960,
+        "bytes": 55390
+      }
+    ],
+    "credit": {
+      "name": "LHcheM; цветокоррекция Jacek Halicki",
+      "url": "https://commons.wikimedia.org/wiki/File:Sample_of_Absolute_Ethanol.jpg",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0"
+    }
+  },
+  {
+    "key": "sodium-chloride",
+    "source": "sodium-chloride-studio-v2.webp",
+    "master": "exec-4b863748-8320-40ad-b3b0-19048b023d8c.png",
+    "files": [
+      {
+        "file": "sodium-chloride-cutout-v4-480.webp",
+        "width": 480,
+        "bytes": 29730
+      },
+      {
+        "file": "sodium-chloride-cutout-v4-720.webp",
+        "width": 720,
+        "bytes": 54954
+      },
+      {
+        "file": "sodium-chloride-cutout-v4.webp",
+        "width": 960,
+        "bytes": 85498
+      }
+    ],
+    "credit": {
+      "name": "Alessandro e Damiano",
+      "url": "https://commons.wikimedia.org/wiki/File:Crystals_of_NaCl.jpg",
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0"
+    }
+  },
+  {
+    "key": "isopropanol",
+    "source": "isopropanol-studio-v2.webp",
+    "master": "exec-bf9051eb-23f0-4f12-9081-b741b7d78182.png",
+    "files": [
+      {
+        "file": "isopropanol-cutout-v4-480.webp",
+        "width": 480,
+        "bytes": 13474
+      },
+      {
+        "file": "isopropanol-cutout-v4-720.webp",
+        "width": 720,
+        "bytes": 24660
+      },
+      {
+        "file": "isopropanol-cutout-v4.webp",
+        "width": 960,
+        "bytes": 37432
+      }
+    ],
+    "credit": {
+      "name": "Danny S.; переработка Jacek Halicki",
+      "url": "https://commons.wikimedia.org/wiki/File:Isopropanol_by_Danny_S.jpg",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0"
+    }
+  },
+  {
+    "key": "acetone",
+    "source": "acetone.webp",
+    "master": "exec-e0c9e94b-9ee5-483d-9e2b-004590e5ede2.png",
+    "files": [
+      {
+        "file": "acetone-cutout-v4-480.webp",
+        "width": 480,
+        "bytes": 19224
+      },
+      {
+        "file": "acetone-cutout-v4-720.webp",
+        "width": 720,
+        "bytes": 34802
+      },
+      {
+        "file": "acetone-cutout-v4.webp",
+        "width": 960,
+        "bytes": 54012
+      }
+    ],
+    "credit": {
+      "name": "Antonkneeyo",
+      "url": "https://commons.wikimedia.org/wiki/File:Acetone_Bottle.png",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+    }
+  },
+  {
+    "key": "glycerol",
+    "source": "glycerol-sample-studio-v3.webp",
+    "master": "exec-6dd472e9-3126-4581-aaf6-18ac297040d2.png",
+    "files": [
+      {
+        "file": "glycerol-cutout-v4-480.webp",
+        "width": 480,
+        "bytes": 23014
+      },
+      {
+        "file": "glycerol-cutout-v4-720.webp",
+        "width": 720,
+        "bytes": 42118
+      },
+      {
+        "file": "glycerol-cutout-v4.webp",
+        "width": 960,
+        "bytes": 63876
+      }
+    ],
+    "credit": {
+      "name": "LHcheM",
+      "url": "https://commons.wikimedia.org/wiki/File:Sample_of_Glycerine.jpg",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0"
+    }
+  },
+  {
+    "key": "sodium-hydroxide",
+    "source": "sodium-hydroxide-studio-v2.webp",
+    "master": "exec-5dde10c1-ac8f-403c-a1dd-a262a0a5811a.png",
+    "files": [
+      {
+        "file": "sodium-hydroxide-cutout-v4-480.webp",
+        "width": 480,
+        "bytes": 58290
+      },
+      {
+        "file": "sodium-hydroxide-cutout-v4-720.webp",
+        "width": 720,
+        "bytes": 110706
+      },
+      {
+        "file": "sodium-hydroxide-cutout-v4.webp",
+        "width": 960,
+        "bytes": 179510
+      }
+    ],
+    "credit": {
+      "name": "Walkerma",
+      "url": "https://commons.wikimedia.org/wiki/File:SodiumHydroxide.jpg",
+      "license": "Public domain"
+    }
+  },
+  {
+    "key": "potassium-hydroxide",
+    "source": "potassium-hydroxide-studio-v2.webp",
+    "master": "exec-4d39ab4f-833d-47b9-a1c3-3093f4fbbc64.png",
+    "files": [
+      {
+        "file": "potassium-hydroxide-cutout-v4-480.webp",
+        "width": 480,
+        "bytes": 35086
+      },
+      {
+        "file": "potassium-hydroxide-cutout-v4-720.webp",
+        "width": 720,
+        "bytes": 64282
+      },
+      {
+        "file": "potassium-hydroxide-cutout-v4.webp",
+        "width": 960,
+        "bytes": 100716
+      }
+    ],
+    "credit": {
+      "name": "Pań w żółtym kapeluszu",
+      "url": "https://commons.wikimedia.org/wiki/File:Potassium_hydrooxide_flakes.jpg",
+      "license": "CC0",
+      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/deed.en"
+    }
+  },
+  {
+    "key": "copper-sulfate-pentahydrate",
+    "source": "copper-sulfate-pentahydrate-studio-v2.webp",
+    "master": "exec-3edffda2-7ff8-46d3-8c60-a39d2dbafefc.png",
+    "files": [
+      {
+        "file": "copper-sulfate-pentahydrate-cutout-v4-480.webp",
+        "width": 480,
+        "bytes": 38342
+      },
+      {
+        "file": "copper-sulfate-pentahydrate-cutout-v4-720.webp",
+        "width": 720,
+        "bytes": 78950
+      },
+      {
+        "file": "copper-sulfate-pentahydrate-cutout-v4.webp",
+        "width": 960,
+        "bytes": 127972
+      }
+    ],
+    "credit": {
+      "name": "W. Oelen",
+      "url": "https://commons.wikimedia.org/wiki/File:Copper_sulfate_pentahydrate_crystals.jpg",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0"
+    }
+  },
+  {
+    "key": "trisodium-citrate-dihydrate",
+    "source": "trisodium-citrate-dihydrate-studio-v2.webp",
+    "master": "exec-c45c2ad2-9772-4215-b4de-3f9ba17b1f19.png",
+    "files": [
+      {
+        "file": "trisodium-citrate-dihydrate-cutout-v4-480.webp",
+        "width": 480,
+        "bytes": 42608
+      },
+      {
+        "file": "trisodium-citrate-dihydrate-cutout-v4-720.webp",
+        "width": 720,
+        "bytes": 79234
+      },
+      {
+        "file": "trisodium-citrate-dihydrate-cutout-v4.webp",
+        "width": 960,
+        "bytes": 125312
+      }
+    ],
+    "credit": {
+      "name": "Toffel (атрибуция Wikimedia Commons)",
+      "url": "https://commons.wikimedia.org/wiki/File:Natriumcitrat_Kristalle.JPG",
+      "license": "Public domain"
+    }
+  },
+  {
+    "key": "boric-acid",
+    "source": "boric-acid-studio-v2.webp",
+    "master": "exec-3a2c7e03-9e2d-4f0c-9a05-ca3b96b5b869.png",
+    "files": [
+      {
+        "file": "boric-acid-cutout-v4-480.webp",
+        "width": 480,
+        "bytes": 66052
+      },
+      {
+        "file": "boric-acid-cutout-v4-720.webp",
+        "width": 720,
+        "bytes": 128288
+      },
+      {
+        "file": "boric-acid-cutout-v4.webp",
+        "width": 960,
+        "bytes": 209318
+      }
+    ],
+    "credit": {
+      "name": "Walkerma",
+      "url": "https://commons.wikimedia.org/wiki/File:Boric_acid.jpg",
+      "license": "Public domain"
+    }
+  },
+  {
+    "key": "calcium-carbonate",
+    "source": "calcium-carbonate-studio-v2.webp",
+    "master": "exec-724b831b-5c4b-4597-bd11-bee52d118c28.png",
+    "files": [
+      {
+        "file": "calcium-carbonate-cutout-v4-480.webp",
+        "width": 480,
+        "bytes": 90582
+      },
+      {
+        "file": "calcium-carbonate-cutout-v4-720.webp",
+        "width": 720,
+        "bytes": 172838
+      },
+      {
+        "file": "calcium-carbonate-cutout-v4.webp",
+        "width": 960,
+        "bytes": 276440
+      }
+    ],
+    "credit": {
+      "name": "Walkerma",
+      "url": "https://commons.wikimedia.org/wiki/File:Calcium_carbonate.jpg",
+      "license": "Public domain"
+    }
+  },
+  {
+    "key": "iron-sulfate-heptahydrate",
+    "source": "iron-sulfate-heptahydrate-studio-v3.webp",
+    "master": "exec-5e0eb51f-3a45-47f2-9f09-7f6c9bb02f77.png",
+    "files": [
+      {
+        "file": "iron-sulfate-heptahydrate-cutout-v4-480.webp",
+        "width": 480,
+        "bytes": 76820
+      },
+      {
+        "file": "iron-sulfate-heptahydrate-cutout-v4-720.webp",
+        "width": 720,
+        "bytes": 145094
+      },
+      {
+        "file": "iron-sulfate-heptahydrate-cutout-v4.webp",
+        "width": 960,
+        "bytes": 227282
+      }
+    ],
+    "credit": {
+      "name": "Benjah-bmm27",
+      "url": "https://commons.wikimedia.org/wiki/File:Iron(II)-sulfate-heptahydrate-sample.jpg",
+      "license": "Public domain"
+    }
+  },
+  {
+    "key": "iron-chloride-hexahydrate",
+    "source": "iron-chloride-hexahydrate.webp",
+    "master": "exec-caa375ef-5bdc-419a-b953-bf10e225afe4.png",
+    "files": [
+      {
+        "file": "iron-chloride-hexahydrate-cutout-v4-480.webp",
+        "width": 480,
+        "bytes": 86650
+      },
+      {
+        "file": "iron-chloride-hexahydrate-cutout-v4-720.webp",
+        "width": 720,
+        "bytes": 176334
+      },
+      {
+        "file": "iron-chloride-hexahydrate-cutout-v4.webp",
+        "width": 960,
+        "bytes": 282734
+      }
+    ],
+    "credit": {
+      "name": "Benjah-bmm27",
+      "url": "https://commons.wikimedia.org/wiki/File:Iron(III)-chloride-hexahydrate-sample.jpg",
+      "license": "Public domain"
+    }
+  },
+  {
+    "key": "zinc-oxide",
+    "source": "zinc-oxide-studio-v2.webp",
+    "master": "exec-9acce690-73f9-40f3-bcb2-0c3099f61599.png",
+    "files": [
+      {
+        "file": "zinc-oxide-cutout-v4-480.webp",
+        "width": 480,
+        "bytes": 75994
+      },
+      {
+        "file": "zinc-oxide-cutout-v4-720.webp",
+        "width": 720,
+        "bytes": 155982
+      },
+      {
+        "file": "zinc-oxide-cutout-v4.webp",
+        "width": 960,
+        "bytes": 258578
+      }
+    ],
+    "credit": {
+      "name": "Walkerma",
+      "url": "https://commons.wikimedia.org/wiki/File:Zinc_oxide.jpg",
+      "license": "Public domain"
+    }
+  },
+  {
+    "key": "magnesium-oxide",
+    "source": "magnesium-oxide-studio-v3.webp",
+    "master": "exec-f7eae56d-2b09-4f20-8445-48800a202f7d.png",
+    "files": [
+      {
+        "file": "magnesium-oxide-cutout-v4-480.webp",
+        "width": 480,
+        "bytes": 41638
+      },
+      {
+        "file": "magnesium-oxide-cutout-v4-720.webp",
+        "width": 720,
+        "bytes": 80622
+      },
+      {
+        "file": "magnesium-oxide-cutout-v4.webp",
+        "width": 960,
+        "bytes": 128732
+      }
+    ],
+    "credit": {
+      "name": "Adam Rędzikowski",
+      "url": "https://commons.wikimedia.org/wiki/File:Magnesium_oxide_sample.jpg",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+    }
+  },
+  {
+    "key": "urea",
+    "source": "urea-studio-v2.webp",
+    "master": "exec-be259c0f-f99c-4144-96fd-f797f0441671.png",
+    "files": [
+      {
+        "file": "urea-cutout-v4-480.webp",
+        "width": 480,
+        "bytes": 23972
+      },
+      {
+        "file": "urea-cutout-v4-720.webp",
+        "width": 720,
+        "bytes": 47518
+      },
+      {
+        "file": "urea-cutout-v4.webp",
+        "width": 960,
+        "bytes": 77334
+      }
+    ],
+    "credit": {
+      "name": "LHcheM",
+      "url": "https://commons.wikimedia.org/wiki/File:Sample_of_Urea.jpg",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0"
+    }
+  },
+  {
+    "key": "glycine",
+    "source": "glycine-studio-v2.webp",
+    "master": "exec-868cbba9-1a48-48bd-9153-313c02340949.png",
+    "files": [
+      {
+        "file": "glycine-cutout-v4-480.webp",
+        "width": 480,
+        "bytes": 69708
+      },
+      {
+        "file": "glycine-cutout-v4-720.webp",
+        "width": 720,
+        "bytes": 141908
+      },
+      {
+        "file": "glycine-cutout-v4.webp",
+        "width": 960,
+        "bytes": 233698
+      }
+    ],
+    "credit": {
+      "name": "SPOTzillah",
+      "url": "https://commons.wikimedia.org/wiki/File:Glycin.jpg",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+    }
+  },
+  {
+    "key": "sucrose",
+    "source": "sucrose-studio-v2.webp",
+    "master": "exec-14b56bbe-21f9-40c9-af2b-885a71d38358.png",
+    "files": [
+      {
+        "file": "sucrose-cutout-v4-480.webp",
+        "width": 480,
+        "bytes": 51402
+      },
+      {
+        "file": "sucrose-cutout-v4-720.webp",
+        "width": 720,
+        "bytes": 104020
+      },
+      {
+        "file": "sucrose-cutout-v4.webp",
+        "width": 960,
+        "bytes": 165388
+      }
+    ],
+    "credit": {
+      "name": "Nachovfranco",
+      "url": "https://commons.wikimedia.org/wiki/File:Sucrose_crystals.JPG",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+    }
+  },
+  {
+    "key": "citric-acid-anhydrous",
+    "source": "citric-acid-anhydrous-studio-v2.webp",
+    "master": "exec-3dfb9a0b-5e15-45c8-a5e7-033a13ff3d8c.png",
+    "files": [
+      {
+        "file": "citric-acid-anhydrous-cutout-v4-480.webp",
+        "width": 480,
+        "bytes": 80818
+      },
+      {
+        "file": "citric-acid-anhydrous-cutout-v4-720.webp",
+        "width": 720,
+        "bytes": 156898
+      },
+      {
+        "file": "citric-acid-anhydrous-cutout-v4.webp",
+        "width": 960,
+        "bytes": 243952
+      }
+    ],
+    "credit": {
+      "name": "Renate90",
+      "url": "https://commons.wikimedia.org/wiki/File:Citronens%C3%A4ure.JPG",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0"
+    }
+  },
+  {
+    "key": "sodium-bicarbonate",
+    "source": "sodium-bicarbonate-studio-v2.webp",
+    "master": "exec-203e412b-45f4-417d-8641-7e55b053c813.png",
+    "files": [
+      {
+        "file": "sodium-bicarbonate-cutout-v4-480.webp",
+        "width": 480,
+        "bytes": 26916
+      },
+      {
+        "file": "sodium-bicarbonate-cutout-v4-720.webp",
+        "width": 720,
+        "bytes": 52176
+      },
+      {
+        "file": "sodium-bicarbonate-cutout-v4.webp",
+        "width": 960,
+        "bytes": 84226
+      }
+    ],
+    "credit": {
+      "name": "Thavox",
+      "url": "https://commons.wikimedia.org/wiki/File:Sodium_bicarbonate.jpg",
+      "license": "Public domain"
+    }
+  }
+]
