@@ -1,0 +1,10 @@
+isopropanol-unmarked-v5.webp and responsive 480/720 variants
+Source: https://commons.wikimedia.org/wiki/File:Isopropanol_by_Danny_S.jpg
+Authors: Danny S.; переработка Jacek Halicki
+License: CC BY-SA 3.0 https://creativecommons.org/licenses/by-sa/3.0/
+Derived from the previously processed isopropanol-cutout-v4.webp.
+Edited 2026-10-30 using the built-in image_gen tool: printed glassware markings removed, clear glass reconstructed, transparent alpha and original frontal composition preserved. This remains a generic illustration, not a photograph of the supplier's actual product or packaging. Derivative distributed under CC BY-SA 3.0.
+Delivery: 960/720/480 square WebP, quality90. All files alpha0..255, transparent corners. Original source and previous versions retained.
+
+Exact edit prompt:
+Use case: precise-object-edit. Edit target: the referenced transparent cutout photograph of a single isopropanol volumetric flask. Remove ALL printed typography and markings from the glass: every blue letter, digit, logo, scale marking, symbol and the blue printed ring around the narrow neck. Reconstruct clean, unprinted, clear glass and the natural reflections behind the removed ink. Preserve the exact flask silhouette, tall narrow neck, stopper, round-bottom bulb, frontal camera angle, centered position, scale and proportions within the square canvas. Preserve the transparent liquid, meniscus, realistic clean glass highlights and glass material. Keep the entire flask fully visible, with the same generous transparent empty space on both sides. The background must be genuinely transparent alpha, not a white or gray backdrop, not a checkerboard printed into the pixels. Clean the cutout edge, preserving fine glass edges and translucent highlights. No new objects, no labels, no writing, no letters, no numbers, no logos, no watermarks, no drop shadow outside the flask. Only remove the ink and retain the original object. Output one square high-quality transparent product cutout.

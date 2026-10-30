@@ -2,6 +2,7 @@ export type PhotoPresentation = { src: string; width?: number; srcSet?: string; 
 
 // 20 source-derived alpha cutouts on a shared CSS stage.
 // Editing and attribution: IMAGE-SOURCES.md and public/assets/products/ATTRIBUTION-cutout-v4.txt.
+// Isopropanol v5 removes printed glassware markings; see ATTRIBUTION-isopropanol-v5.txt.
 // Product-level generic illustration alt/captions must take precedence.
 export const productPhotoPresentation: Record<string, PhotoPresentation> = {
   "/assets/products/ethanol-96.webp": {
@@ -31,7 +32,7 @@ export const productPhotoPresentation: Record<string, PhotoPresentation> = {
     "srcSet": "/assets/products/sodium-chloride-cutout-v4-480.webp 480w, /assets/products/sodium-chloride-cutout-v4-720.webp 720w, /assets/products/sodium-chloride-cutout-v4.webp 960w"
   },
   "/assets/products/isopropanol.webp": {
-    "src": "/assets/products/isopropanol-cutout-v4.webp",
+    "src": "/assets/products/isopropanol-unmarked-v5.webp",
     "credit": {
       "name": "Danny S.; переработка Jacek Halicki",
       "url": "https://commons.wikimedia.org/wiki/File:Isopropanol_by_Danny_S.jpg",
@@ -40,7 +41,7 @@ export const productPhotoPresentation: Record<string, PhotoPresentation> = {
     },
     "width": 960,
     "height": 960,
-    "srcSet": "/assets/products/isopropanol-cutout-v4-480.webp 480w, /assets/products/isopropanol-cutout-v4-720.webp 720w, /assets/products/isopropanol-cutout-v4.webp 960w"
+    "srcSet": "/assets/products/isopropanol-unmarked-v5-480.webp 480w, /assets/products/isopropanol-unmarked-v5-720.webp 720w, /assets/products/isopropanol-unmarked-v5.webp 960w"
   },
   "/assets/products/acetone.webp": {
     "src": "/assets/products/acetone-cutout-v4.webp",
