@@ -2,7 +2,7 @@ export type PhotoPresentation = { src: string; width?: number; srcSet?: string; 
 
 // 20 source-derived alpha cutouts on a shared CSS stage.
 // Editing and attribution: IMAGE-SOURCES.md and public/assets/products/ATTRIBUTION-cutout-v4.txt.
-// Isopropanol v5 removes printed glassware markings; see ATTRIBUTION-isopropanol-v5.txt.
+// Isopropanol and glycerol v5 remove printed glassware markings; see their ATTRIBUTION files.
 // Product-level generic illustration alt/captions must take precedence.
 export const productPhotoPresentation: Record<string, PhotoPresentation> = {
   "/assets/products/ethanol-96.webp": {
@@ -56,7 +56,7 @@ export const productPhotoPresentation: Record<string, PhotoPresentation> = {
     "srcSet": "/assets/products/acetone-cutout-v4-480.webp 480w, /assets/products/acetone-cutout-v4-720.webp 720w, /assets/products/acetone-cutout-v4.webp 960w"
   },
   "/assets/products/glycerol.webp": {
-    "src": "/assets/products/glycerol-cutout-v4.webp",
+    "src": "/assets/products/glycerol-unmarked-v5.webp",
     "credit": {
       "name": "LHcheM",
       "url": "https://commons.wikimedia.org/wiki/File:Sample_of_Glycerine.jpg",
@@ -64,10 +64,10 @@ export const productPhotoPresentation: Record<string, PhotoPresentation> = {
       "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0"
     },
     "alt": "Бесцветная жидкость в лабораторной колбе, иллюстрация глицерина без товарной этикетки",
-    "caption": "Глицерин в лабораторной колбе. Иллюстрация вещества, не фото поставляемого товара. Маркировка стеклянной посуды не обозначает фасовку позиции. Фон обработан.",
+    "caption": "Глицерин в лабораторной колбе. Иллюстрация вещества, не фото поставляемого товара.",
     "width": 960,
     "height": 960,
-    "srcSet": "/assets/products/glycerol-cutout-v4-480.webp 480w, /assets/products/glycerol-cutout-v4-720.webp 720w, /assets/products/glycerol-cutout-v4.webp 960w"
+    "srcSet": "/assets/products/glycerol-unmarked-v5-480.webp 480w, /assets/products/glycerol-unmarked-v5-720.webp 720w, /assets/products/glycerol-unmarked-v5.webp 960w"
   },
   "/assets/products/sodium-hydroxide.webp": {
     "src": "/assets/products/sodium-hydroxide-cutout-v4.webp",

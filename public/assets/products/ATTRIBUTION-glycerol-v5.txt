@@ -1,0 +1,10 @@
+glycerol-unmarked-v5.webp and responsive 480/720 variants
+Source: https://commons.wikimedia.org/wiki/File:Sample_of_Glycerine.jpg
+Author: LHcheM
+License: CC BY-SA 3.0 https://creativecommons.org/licenses/by-sa/3.0/
+Derived from the previously processed glycerol-cutout-v4.webp.
+Edited 2026-10-30 using the built-in image_gen tool: removed printed glassware logos and volume markings, reconstructed clear glass, retained transparent alpha and upright composition. This is a generic illustration, not a photograph of the supplier's actual product or packaging. Derivative distributed under CC BY-SA 3.0.
+Delivery: 960/720/480 square WebP, quality90. All files alpha0..255, transparent corners. Original source and previous versions retained.
+
+Exact edit prompt:
+Use case: precise-object-edit. Asset type: transparent catalog photo cutout. Edit target: the attached photograph of a small clear laboratory flask containing colorless liquid. Remove ONLY all printed white ink, text, logos and volume markings from the glass, including SCHOTT, DURAN, 25 ml, Made in Germany and the printed oval logo. Reconstruct the underlying clear glass and liquid naturally, preserving realistic refraction, highlights, reflections, vessel silhouette, liquid fill level, exact upright orientation, composition, neutral color and scale. Keep the entire flask fully visible with the existing padding on a truly transparent background. No writing, numbers, labels, replacement logos, new objects or drop shadow. Clean transparent antialiased edges without colored fringe. This remains a generic illustrative photograph, not a claim about supplied packaging.
