@@ -45,15 +45,10 @@ const baseProducts: Product[] = [
   { ...common, id: "trisodium-citrate-dihydrate", imageAlt: "Бесцветные кристаллы цитрата натрия", imageCaption: "Кристаллы цитрата натрия. Форму гидрата подтверждаем в предложении.", image: "/assets/products/trisodium-citrate-dihydrate.webp", imageCredit: {"name": "Toffel (атрибуция Wikimedia Commons)", "url": "https://commons.wikimedia.org/wiki/File:Natriumcitrat_Kristalle.JPG", "license": "Public domain"}, name: "Натрий лимоннокислый 2-водный", cas: "6132-04-3", formula: "C₆H₅Na₃O₇·2H₂O", category: "salts", categoryName: "Соли и соединения", grade: "Чистый для анализа", packages: ["500 г", "1 кг"], sku: "HIM-009", description: "Тринатрийцитрат дигидрат, соль лимонной кислоты. В заявке укажите требуемую форму гидрата, квалификацию и фасовку. Подберем предложение по требованиям вашей лабораторной методики.", usage: ["Буферные составы по утвержденной методике", "Аналитические работы", "Лабораторные исследования"], specs: { "Наименование": "Тринатрийцитрат дигидрат", "CAS": "6132-04-3", "Формула": "C₆H₅Na₃O₇·2H₂O", "Форма": "Кристаллическое вещество", "Квалификация в демо": "Чистый для анализа", "Фасовка в демо": "500 г / 1 кг" } },
 ];
 
-const liquidPhoto = baseProducts.find(p=>p.id==="isopropanol")!;
-const crystalPhoto = baseProducts.find(p=>p.id==="sodium-chloride")!;
-const granulePhoto = baseProducts.find(p=>p.id==="sodium-hydroxide")!;
 export const products: Product[] = [...baseProducts, ...extraProducts.map(p=>{
-  const exact=productPhotoMap[p.id];
-  if(exact)return {...p,...exact};
-  const form=Object.values(p.specs).join(" ").toLowerCase();
-  const sample=(form.includes("жидк")||p.category==="solvents")?liquidPhoto:form.includes("гранул")?granulePhoto:crystalPhoto;
-  return {...p,image:sample.image,imageAlt:`${p.name}: иллюстрация физической формы, не фотография выбранного продукта`,imageCaption:"Иллюстрация физической формы",imageCredit:sample.imageCredit};
+  const photo = productPhotoMap[p.id];
+  if (!photo) throw new Error(`Missing product photograph: ${p.id}`);
+  return { ...p, ...photo };
 })];
 
 export type Article = { slug: string; title: string; excerpt: string; date: string; readTime: string; paragraphs: string[] };

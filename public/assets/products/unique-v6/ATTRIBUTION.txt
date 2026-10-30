@@ -1,0 +1,154 @@
+HIM STANDART demo: individual reagent illustrations, 2026-10-30
+30 replacements; exact originals and editing prompts in SOURCES.json.
+These are illustrative derivatives, not photos of actual supplier packaging.
+CC BY-SA derivatives retain their corresponding source license. Original files and previous versions retained.
+
+sodium-carbonate
+https://commons.wikimedia.org/wiki/File:Sodium_carbonate.JPG
+Chemicalinterest | Public domain | https://commons.wikimedia.org/wiki/File:Sodium_carbonate.JPG#Licensing
+Выбран полный реальный образец на металлической подложке. Оригинал 701x548, не увеличен. Описание Commons обозначает карбонат натрия, но безводность не подтверждает. Обрезанный первый кандидат сохранен отдельно и не используется.
+
+potassium-chloride
+https://commons.wikimedia.org/wiki/File:Potassium_chloride_podwer.jpg
+Pań w żółtym kapeluszu | CC0 | http://creativecommons.org/publicdomain/zero/1.0/deed.en
+Реальное фото вещества; квалификация конкретной партии фотографией не подтверждается.
+
+calcium-chloride-dihydrate
+https://commons.wikimedia.org/wiki/File:Petri_Dish_containing_Calcium_Chloride.jpg
+Roi.Frvr | CC0 | http://creativecommons.org/publicdomain/zero/1.0/deed.en
+Реальное фото образца; гидратная форма не указана в описании Commons.
+
+magnesium-sulfate-heptahydrate
+https://commons.wikimedia.org/wiki/File:Magnesium_sulfate.JPG
+Chemicalinterest  at  en.wikipedia | Public domain | https://commons.wikimedia.org/wiki/File:Magnesium_sulfate.JPG#Licensing
+Описание Commons прямо указывает magnesium sulfate heptahydrate. Оригинал меньшего разрешения; не увеличен: 782x638.
+
+sodium-sulfate
+https://commons.wikimedia.org/wiki/File:S%C3%ADran_sodn%C3%BD.JPG
+Ondřej Mangl | Public domain | https://commons.wikimedia.org/wiki/File:S%C3%ADran_sodn%C3%BD.JPG#Licensing
+Источник обозначает соль; безводность образца описанием Commons не подтверждена. Оригинал меньшего разрешения; не увеличен: 573x480.
+
+potassium-sulfate
+https://commons.wikimedia.org/wiki/File:S%C3%ADran_draseln%C3%BD.JPG
+Ondřej Mangl | Public domain | https://commons.wikimedia.org/wiki/File:S%C3%ADran_draseln%C3%BD.JPG#Licensing
+Реальное фото указанного вещества; квалификация партии не подтверждается. Оригинал меньшего разрешения; не увеличен: 594x480.
+
+ammonium-sulfate
+https://commons.wikimedia.org/wiki/File:S%C3%ADran_amonn%C3%BD.jpg
+Kapitánka Nemo | CC BY-SA 3.0 | https://creativecommons.org/licenses/by-sa/3.0
+Реальное фото указанного вещества; квалификация партии не подтверждается. Оригинал меньшего разрешения; не увеличен: 530x530.
+
+sodium-acetate-trihydrate
+https://commons.wikimedia.org/wiki/File:Octan_sodn%C3%BD_vzorek.jpg
+Milda 444 | CC BY-SA 4.0 | https://creativecommons.org/licenses/by-sa/4.0
+Источник обозначает ацетат натрия; именно тригидрат описанием Commons не подтвержден.
+
+ammonium-acetate
+https://commons.wikimedia.org/wiki/File:Ammonium-acetate.JPG
+Vidak | Public domain | https://commons.wikimedia.org/wiki/File:Ammonium-acetate.JPG#Licensing
+Реальное фото вещества; квалификация конкретной партии фотографией не подтверждается.
+
+potassium-dihydrogen-phosphate
+https://commons.wikimedia.org/wiki/File:Kaliumdihydrogenphosphat.jpg
+Bahmtec | CC BY-SA 3.0 | https://creativecommons.org/licenses/by-sa/3.0
+Реальное фото указанного вещества; квалификация партии не подтверждается. При обработке исключен один частично обрезанный краем кадра кристалл; остальные реальные кристаллы сохранены, линейка и фон удалены.
+
+dipotassium-hydrogen-phosphate
+https://commons.wikimedia.org/wiki/File:Hydrogenfosfore%C4%8Dnan_draseln%C3%BD.JPG
+Ondřej Mangl | Public domain | https://commons.wikimedia.org/wiki/Commons:Licensing#Material_in_the_public_domain
+Источник прямо идентифицирует K2HPO4; фото образца, не поставляемого товара.
+
+sodium-dihydrogen-phosphate-monohydrate
+https://commons.wikimedia.org/wiki/File:Dihydrogenfosfore%C4%8Dnan_sodn%C3%BD.JPG
+Ondřej Mangl | Public domain | https://commons.wikimedia.org/wiki/Commons:Licensing#Material_in_the_public_domain
+Source identifies NaH2PO4. Hydration is not confirmed: do not describe this specimen as proven monohydrate. Author and public-domain release verified in saved monosodium-source.html.
+
+disodium-hydrogen-phosphate-dodecahydrate
+https://commons.wikimedia.org/wiki/File:Disodium_phosphate_dodecahydrate.JPG
+Leiem | CC BY-SA 4.0 | https://creativecommons.org/licenses/by-sa/4.0/
+Источник прямо указывает dodecahydrate; это иллюстрация вещества, не товара поставщика. Цвет только пластиковой крышки изменен с синего на графитовый, химический образец сохранен.
+
+sodium-thiosulfate-pentahydrate
+https://commons.wikimedia.org/wiki/File:Sodium_thiosulfate_pentahydrate.jpg
+Walkerma (Martin Walker) | Public domain | https://commons.wikimedia.org/wiki/Commons:Licensing#Material_in_the_public_domain
+Источник прямо указывает pentahydrate. Невысокое разрешение оригинала 405×377. Original is only405x377. AI reconstruction enhances grain detail; do not represent as an exact macro photograph.
+
+potassium-sodium-tartrate-tetrahydrate
+https://commons.wikimedia.org/wiki/File:Potassium_Sodium_Tartrate_Tetrahydrate.jpg
+ERS ROHU | CC BY 4.0 | https://creativecommons.org/licenses/by/4.0/
+Источник прямо подтверждает tetrahydrate. Образец в бутылке, а не фото товара клиента.
+
+aluminum-sulfate-octadecahydrate
+https://commons.wikimedia.org/wiki/File:Aluminium_sulfate_crystals.JPG
+Chemicalinterest | Public domain | https://commons.wikimedia.org/wiki/Commons:Licensing#Material_in_the_public_domain
+Подписано aluminium sulfate crystals; степень гидратации в источнике не подтверждена. Не выдавать за доказанный18-водный образец.
+
+tris-base
+https://assets.thermofisher.com/chem-specs-pdf/retrievePdf?rootSku=A18494&sku=A18494.0E
+Описание физической формы: Thermo Fisher | Оригинальная демонстрационная иллюстрация | 
+Exact free source photograph of Tris base was not found. Original generated image illustrates only the physical form described in the primary manufacturer's specification; not a photograph of a specimen or supplied product.
+
+citric-acid-monohydrate
+https://commons.wikimedia.org/wiki/File:Kyselina_citronov%C3%A1_monohydr%C3%A1t.jpg
+Milda444 | CC BY-SA 4.0 | https://creativecommons.org/licenses/by-sa/4.0/
+Source explicitly identifies monohydrate. Food grade mentioned for source specimen is not a supplier-product claim. Different source from Citric_acid_crystals.jpg used for the anhydrous entry. Original retained; imagegen input copy downscaled to3000px without semantic edits.
+
+succinic-acid
+https://commons.wikimedia.org/wiki/File:Sample_of_succinic_acid.jpg
+LHcheM | CC BY-SA 3.0 | https://creativecommons.org/licenses/by-sa/3.0/
+Specimen photograph, not client-supplied product photography.
+
+tartaric-acid
+https://commons.wikimedia.org/wiki/File:CommercialTartaric.jpg
+Rei at English Wikipedia | CC BY-SA 3.0 | https://creativecommons.org/licenses/by-sa/3.0/
+Source does not specify stereoisomer. Do not infer stereochemistry from the picture. Source is a macro crop with incomplete mound boundaries. Outer outline reconstructed to show a complete small mound; crystalline material and fine granular morphology retained as source reference.
+
+acetic-acid
+https://commons.wikimedia.org/wiki/File:Acetic_acid.jpg
+W. Oelen | CC BY-SA 3.0 | https://creativecommons.org/licenses/by-sa/3.0
+Real acetic acid reagent bottle in the source. Source grade, concentration and one-liter packaging do not confirm supplied product specifications. Background and manufacturer label removed with built-in image_gen; original distinct blue/red cap vessel retained; no supplied-stock claim. Second built-in edit neutralized cap and tamper ring to graphite/charcoal only; glass and liquid unchanged.
+
+ascorbic-acid
+https://commons.wikimedia.org/wiki/File:Sample_of_ascorbic_acid.jpg
+LHcheM | CC BY-SA 3.0 | https://creativecommons.org/licenses/by-sa/3.0
+Real ascorbic acid sample. Illustration of the substance, not supplied stock or a confirmed grade. Background extracted with built-in image_gen; original specimen identity/morphology retained. No supplied-stock claim.
+
+benzoic-acid
+https://commons.wikimedia.org/wiki/File:Pile_of_benzoic_acid_crystals.jpg
+Devon Fyson | CC BY-SA 4.0 | https://creativecommons.org/licenses/by-sa/4.0
+Real benzoic acid recrystallized from hot water; specimen photograph only, not a supplied grade or stock claim. Built-in image_gen extracted background and preserved the real specimen/container.
+
+d-glucose
+https://assets.thermofisher.com/chem-specs-pdf/retrievePdf?rootSku=A16828&sku=A16828.0E
+Описание физической формы: Thermo Fisher | Оригинальная демонстрационная иллюстрация | 
+A suitable exact free photograph was not found; original generated illustration based only on the physical appearance in a primary manufacturer's specification. Not an actual specimen, supplied product or packaging.
+
+edta-disodium-dihydrate
+https://commons.wikimedia.org/wiki/File:EDTA-2Na-dihydrate.jpg
+Leiem | CC BY-SA 4.0 | https://creativecommons.org/licenses/by-sa/4.0
+Real EDTA disodium salt dihydrate sample per source description. The source purity statement is not a claim about HIM STANDART stock. Background extracted with built-in image_gen; original specimen identity/morphology retained. No supplied-stock claim.
+
+propylene-glycol
+https://www.tcichemicals.com/CA/en/p/P0485
+Описание физической формы: TCI | Оригинальная демонстрационная иллюстрация | 
+A suitable exact free photograph was not found; original generated illustration based only on the physical appearance in a primary manufacturer's specification. Not an actual specimen, supplied product or packaging.
+
+ethyl-acetate
+https://commons.wikimedia.org/wiki/File:Essigs%C3%A4ureethylester_by_Danny_S._-_001.JPG
+Danny S. | CC BY-SA 3.0 | https://creativecommons.org/licenses/by-sa/3.0
+Real ethyl acetate in laboratory glassware. Illustration, not confirmed supplied packaging. Built-in image_gen extracted background and preserved the real specimen/container. Minor short open glass top/rim reconstructed where the source frame cuts it; illustrative glass completion only, no chemical material, labels or volume markings invented.
+
+dimethyl-sulfoxide
+https://commons.wikimedia.org/wiki/File:Sample_of_Dimethyl_sulfoxide_01.jpg
+Σ64 | CC BY 3.0 | https://creativecommons.org/licenses/by/3.0
+Real dimethyl sulfoxide sample; no source grade or supplied packaging claim. Background extracted with built-in image_gen; original distinct vial preserved.
+
+n-butanol
+https://commons.wikimedia.org/wiki/File:Butanol._Etiqueta_de_seguridad.jpg
+Daemon Canchig | CC BY-SA 4.0 | https://creativecommons.org/licenses/by-sa/4.0
+Actual butanol bottle, categorized by source as Butan-1-ol. Source label diagram is extraneous. Isomer and grade cannot be inferred from appearance. Original 6944x9248 JPEG was rejected by built-in image_gen as invalid_image_file. A nonsemantic mechanical 1538x2048 JPEG reference copy was made; source remains unchanged. Built-in image_gen removed surrounding safety graphics/background and preserved actual individual bottle/sample.
+
+deionized-water
+https://commons.wikimedia.org/wiki/File:Distilled_water_001.jpg
+أمين | CC BY-SA 4.0 | https://creativecommons.org/licenses/by-sa/4.0
+Real water ampoule from a source titled Distilled water 001.jpg; original package says water for injections. Used only as an unmarked water-container illustration. Photograph does not prove deionization, conductivity, laboratory grade, sterility, injectable suitability or supplied packaging; none of those properties should be transferred to the catalog product. Other ampoules, printed label and background removed using built-in image_gen.

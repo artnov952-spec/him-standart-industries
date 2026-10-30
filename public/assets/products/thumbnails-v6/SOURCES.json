@@ -1,0 +1,641 @@
+[
+  {
+    "id": "ethanol-96",
+    "file": "/assets/products/thumbnails-v6/ethanol-96-320.webp",
+    "bytes": 12046,
+    "source": "/assets/products/ethanol-cutout-v4.webp",
+    "credit": {
+      "name": "LHcheM; цветокоррекция Jacek Halicki",
+      "url": "https://commons.wikimedia.org/wiki/File:Sample_of_Absolute_Ethanol.jpg",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0"
+    },
+    "processing": "Only downsampled and encoded to 320px WebP. No semantic image edits."
+  },
+  {
+    "id": "sodium-chloride",
+    "file": "/assets/products/thumbnails-v6/sodium-chloride-320.webp",
+    "bytes": 17900,
+    "source": "/assets/products/sodium-chloride-cutout-v4.webp",
+    "credit": {
+      "name": "Alessandro e Damiano",
+      "url": "https://commons.wikimedia.org/wiki/File:Crystals_of_NaCl.jpg",
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0"
+    },
+    "processing": "Only downsampled and encoded to 320px WebP. No semantic image edits."
+  },
+  {
+    "id": "isopropanol",
+    "file": "/assets/products/thumbnails-v6/isopropanol-320.webp",
+    "bytes": 8318,
+    "source": "/assets/products/isopropanol-unmarked-v5.webp",
+    "credit": {
+      "name": "Danny S.; переработка Jacek Halicki",
+      "url": "https://commons.wikimedia.org/wiki/File:Isopropanol_by_Danny_S.jpg",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0"
+    },
+    "processing": "Only downsampled and encoded to 320px WebP. No semantic image edits."
+  },
+  {
+    "id": "acetone",
+    "file": "/assets/products/thumbnails-v6/acetone-320.webp",
+    "bytes": 12148,
+    "source": "/assets/products/acetone-cutout-v4.webp",
+    "credit": {
+      "name": "Antonkneeyo",
+      "url": "https://commons.wikimedia.org/wiki/File:Acetone_Bottle.png",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+    },
+    "processing": "Only downsampled and encoded to 320px WebP. No semantic image edits."
+  },
+  {
+    "id": "glycerol",
+    "file": "/assets/products/thumbnails-v6/glycerol-320.webp",
+    "bytes": 14686,
+    "source": "/assets/products/glycerol-unmarked-v5.webp",
+    "credit": {
+      "name": "LHcheM",
+      "url": "https://commons.wikimedia.org/wiki/File:Sample_of_Glycerine.jpg",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0"
+    },
+    "processing": "Only downsampled and encoded to 320px WebP. No semantic image edits."
+  },
+  {
+    "id": "sodium-hydroxide",
+    "file": "/assets/products/thumbnails-v6/sodium-hydroxide-320.webp",
+    "bytes": 35210,
+    "source": "/assets/products/sodium-hydroxide-cutout-v4.webp",
+    "credit": {
+      "name": "Walkerma",
+      "url": "https://commons.wikimedia.org/wiki/File:SodiumHydroxide.jpg",
+      "license": "Public domain"
+    },
+    "processing": "Only downsampled and encoded to 320px WebP. No semantic image edits."
+  },
+  {
+    "id": "potassium-hydroxide",
+    "file": "/assets/products/thumbnails-v6/potassium-hydroxide-320.webp",
+    "bytes": 22048,
+    "source": "/assets/products/potassium-hydroxide-cutout-v4.webp",
+    "credit": {
+      "name": "Pań w żółtym kapeluszu",
+      "url": "https://commons.wikimedia.org/wiki/File:Potassium_hydrooxide_flakes.jpg",
+      "license": "CC0",
+      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/deed.en"
+    },
+    "processing": "Only downsampled and encoded to 320px WebP. No semantic image edits."
+  },
+  {
+    "id": "copper-sulfate-pentahydrate",
+    "file": "/assets/products/thumbnails-v6/copper-sulfate-pentahydrate-320.webp",
+    "bytes": 20952,
+    "source": "/assets/products/copper-sulfate-pentahydrate-cutout-v4.webp",
+    "credit": {
+      "name": "W. Oelen",
+      "url": "https://commons.wikimedia.org/wiki/File:Copper_sulfate_pentahydrate_crystals.jpg",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0"
+    },
+    "processing": "Only downsampled and encoded to 320px WebP. No semantic image edits."
+  },
+  {
+    "id": "trisodium-citrate-dihydrate",
+    "file": "/assets/products/thumbnails-v6/trisodium-citrate-dihydrate-320.webp",
+    "bytes": 25982,
+    "source": "/assets/products/trisodium-citrate-dihydrate-cutout-v4.webp",
+    "credit": {
+      "name": "Toffel (атрибуция Wikimedia Commons)",
+      "url": "https://commons.wikimedia.org/wiki/File:Natriumcitrat_Kristalle.JPG",
+      "license": "Public domain"
+    },
+    "processing": "Only downsampled and encoded to 320px WebP. No semantic image edits."
+  },
+  {
+    "id": "sodium-bicarbonate",
+    "file": "/assets/products/thumbnails-v6/sodium-bicarbonate-320.webp",
+    "bytes": 14140,
+    "source": "/assets/products/sodium-bicarbonate-cutout-v4.webp",
+    "credit": {
+      "name": "Thavox",
+      "url": "https://commons.wikimedia.org/wiki/File:Sodium_bicarbonate.jpg",
+      "license": "Public domain"
+    },
+    "processing": "Only downsampled and encoded to 320px WebP. No semantic image edits."
+  },
+  {
+    "id": "sodium-carbonate",
+    "file": "/assets/products/thumbnails-v6/sodium-carbonate-320.webp",
+    "bytes": 16950,
+    "source": "/assets/products/unique-v6/sodium-carbonate.webp",
+    "credit": {
+      "name": "Chemicalinterest",
+      "url": "https://commons.wikimedia.org/wiki/File:Sodium_carbonate.JPG",
+      "license": "Public domain",
+      "licenseUrl": "https://commons.wikimedia.org/wiki/File:Sodium_carbonate.JPG#Licensing"
+    },
+    "processing": "Only downsampled and encoded to 320px WebP. No semantic image edits."
+  },
+  {
+    "id": "potassium-chloride",
+    "file": "/assets/products/thumbnails-v6/potassium-chloride-320.webp",
+    "bytes": 16896,
+    "source": "/assets/products/unique-v6/potassium-chloride.webp",
+    "credit": {
+      "name": "Pań w żółtym kapeluszu",
+      "url": "https://commons.wikimedia.org/wiki/File:Potassium_chloride_podwer.jpg",
+      "license": "CC0",
+      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/deed.en"
+    },
+    "processing": "Only downsampled and encoded to 320px WebP. No semantic image edits."
+  },
+  {
+    "id": "calcium-chloride-dihydrate",
+    "file": "/assets/products/thumbnails-v6/calcium-chloride-dihydrate-320.webp",
+    "bytes": 29128,
+    "source": "/assets/products/unique-v6/calcium-chloride-dihydrate.webp",
+    "credit": {
+      "name": "Roi.Frvr",
+      "url": "https://commons.wikimedia.org/wiki/File:Petri_Dish_containing_Calcium_Chloride.jpg",
+      "license": "CC0",
+      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/deed.en"
+    },
+    "processing": "Only downsampled and encoded to 320px WebP. No semantic image edits."
+  },
+  {
+    "id": "magnesium-sulfate-heptahydrate",
+    "file": "/assets/products/thumbnails-v6/magnesium-sulfate-heptahydrate-320.webp",
+    "bytes": 37304,
+    "source": "/assets/products/unique-v6/magnesium-sulfate-heptahydrate.webp",
+    "credit": {
+      "name": "Chemicalinterest  at  en.wikipedia",
+      "url": "https://commons.wikimedia.org/wiki/File:Magnesium_sulfate.JPG",
+      "license": "Public domain",
+      "licenseUrl": "https://commons.wikimedia.org/wiki/File:Magnesium_sulfate.JPG#Licensing"
+    },
+    "processing": "Only downsampled and encoded to 320px WebP. No semantic image edits."
+  },
+  {
+    "id": "sodium-sulfate",
+    "file": "/assets/products/thumbnails-v6/sodium-sulfate-320.webp",
+    "bytes": 34150,
+    "source": "/assets/products/unique-v6/sodium-sulfate.webp",
+    "credit": {
+      "name": "Ondřej Mangl",
+      "url": "https://commons.wikimedia.org/wiki/File:S%C3%ADran_sodn%C3%BD.JPG",
+      "license": "Public domain",
+      "licenseUrl": "https://commons.wikimedia.org/wiki/File:S%C3%ADran_sodn%C3%BD.JPG#Licensing"
+    },
+    "processing": "Only downsampled and encoded to 320px WebP. No semantic image edits."
+  },
+  {
+    "id": "potassium-sulfate",
+    "file": "/assets/products/thumbnails-v6/potassium-sulfate-320.webp",
+    "bytes": 21358,
+    "source": "/assets/products/unique-v6/potassium-sulfate.webp",
+    "credit": {
+      "name": "Ondřej Mangl",
+      "url": "https://commons.wikimedia.org/wiki/File:S%C3%ADran_draseln%C3%BD.JPG",
+      "license": "Public domain",
+      "licenseUrl": "https://commons.wikimedia.org/wiki/File:S%C3%ADran_draseln%C3%BD.JPG#Licensing"
+    },
+    "processing": "Only downsampled and encoded to 320px WebP. No semantic image edits."
+  },
+  {
+    "id": "ammonium-sulfate",
+    "file": "/assets/products/thumbnails-v6/ammonium-sulfate-320.webp",
+    "bytes": 36822,
+    "source": "/assets/products/unique-v6/ammonium-sulfate.webp",
+    "credit": {
+      "name": "Kapitánka Nemo",
+      "url": "https://commons.wikimedia.org/wiki/File:S%C3%ADran_amonn%C3%BD.jpg",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0"
+    },
+    "processing": "Only downsampled and encoded to 320px WebP. No semantic image edits."
+  },
+  {
+    "id": "sodium-acetate-trihydrate",
+    "file": "/assets/products/thumbnails-v6/sodium-acetate-trihydrate-320.webp",
+    "bytes": 30232,
+    "source": "/assets/products/unique-v6/sodium-acetate-trihydrate.webp",
+    "credit": {
+      "name": "Milda 444",
+      "url": "https://commons.wikimedia.org/wiki/File:Octan_sodn%C3%BD_vzorek.jpg",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+    },
+    "processing": "Only downsampled and encoded to 320px WebP. No semantic image edits."
+  },
+  {
+    "id": "ammonium-acetate",
+    "file": "/assets/products/thumbnails-v6/ammonium-acetate-320.webp",
+    "bytes": 26240,
+    "source": "/assets/products/unique-v6/ammonium-acetate.webp",
+    "credit": {
+      "name": "Vidak",
+      "url": "https://commons.wikimedia.org/wiki/File:Ammonium-acetate.JPG",
+      "license": "Public domain",
+      "licenseUrl": "https://commons.wikimedia.org/wiki/File:Ammonium-acetate.JPG#Licensing"
+    },
+    "processing": "Only downsampled and encoded to 320px WebP. No semantic image edits."
+  },
+  {
+    "id": "potassium-dihydrogen-phosphate",
+    "file": "/assets/products/thumbnails-v6/potassium-dihydrogen-phosphate-320.webp",
+    "bytes": 33996,
+    "source": "/assets/products/unique-v6/potassium-dihydrogen-phosphate.webp",
+    "credit": {
+      "name": "Bahmtec",
+      "url": "https://commons.wikimedia.org/wiki/File:Kaliumdihydrogenphosphat.jpg",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0"
+    },
+    "processing": "Only downsampled and encoded to 320px WebP. No semantic image edits."
+  },
+  {
+    "id": "dipotassium-hydrogen-phosphate",
+    "file": "/assets/products/thumbnails-v6/dipotassium-hydrogen-phosphate-320.webp",
+    "bytes": 16614,
+    "source": "/assets/products/unique-v6/dipotassium-hydrogen-phosphate.webp",
+    "credit": {
+      "name": "Ondřej Mangl",
+      "url": "https://commons.wikimedia.org/wiki/File:Hydrogenfosfore%C4%8Dnan_draseln%C3%BD.JPG",
+      "license": "Public domain",
+      "licenseUrl": "https://commons.wikimedia.org/wiki/Commons:Licensing#Material_in_the_public_domain"
+    },
+    "processing": "Only downsampled and encoded to 320px WebP. No semantic image edits."
+  },
+  {
+    "id": "sodium-dihydrogen-phosphate-monohydrate",
+    "file": "/assets/products/thumbnails-v6/sodium-dihydrogen-phosphate-monohydrate-320.webp",
+    "bytes": 14870,
+    "source": "/assets/products/unique-v6/sodium-dihydrogen-phosphate-monohydrate.webp",
+    "credit": {
+      "name": "Ondřej Mangl",
+      "url": "https://commons.wikimedia.org/wiki/File:Dihydrogenfosfore%C4%8Dnan_sodn%C3%BD.JPG",
+      "license": "Public domain",
+      "licenseUrl": "https://commons.wikimedia.org/wiki/Commons:Licensing#Material_in_the_public_domain"
+    },
+    "processing": "Only downsampled and encoded to 320px WebP. No semantic image edits."
+  },
+  {
+    "id": "disodium-hydrogen-phosphate-dodecahydrate",
+    "file": "/assets/products/thumbnails-v6/disodium-hydrogen-phosphate-dodecahydrate-320.webp",
+    "bytes": 20700,
+    "source": "/assets/products/unique-v6/disodium-hydrogen-phosphate-dodecahydrate.webp",
+    "credit": {
+      "name": "Leiem",
+      "url": "https://commons.wikimedia.org/wiki/File:Disodium_phosphate_dodecahydrate.JPG",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/"
+    },
+    "processing": "Only downsampled and encoded to 320px WebP. No semantic image edits."
+  },
+  {
+    "id": "sodium-thiosulfate-pentahydrate",
+    "file": "/assets/products/thumbnails-v6/sodium-thiosulfate-pentahydrate-320.webp",
+    "bytes": 26512,
+    "source": "/assets/products/unique-v6/sodium-thiosulfate-pentahydrate.webp",
+    "credit": {
+      "name": "Walkerma (Martin Walker)",
+      "url": "https://commons.wikimedia.org/wiki/File:Sodium_thiosulfate_pentahydrate.jpg",
+      "license": "Public domain",
+      "licenseUrl": "https://commons.wikimedia.org/wiki/Commons:Licensing#Material_in_the_public_domain"
+    },
+    "processing": "Only downsampled and encoded to 320px WebP. No semantic image edits."
+  },
+  {
+    "id": "potassium-sodium-tartrate-tetrahydrate",
+    "file": "/assets/products/thumbnails-v6/potassium-sodium-tartrate-tetrahydrate-320.webp",
+    "bytes": 12534,
+    "source": "/assets/products/unique-v6/potassium-sodium-tartrate-tetrahydrate.webp",
+    "credit": {
+      "name": "ERS ROHU",
+      "url": "https://commons.wikimedia.org/wiki/File:Potassium_Sodium_Tartrate_Tetrahydrate.jpg",
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "processing": "Only downsampled and encoded to 320px WebP. No semantic image edits."
+  },
+  {
+    "id": "calcium-carbonate",
+    "file": "/assets/products/thumbnails-v6/calcium-carbonate-320.webp",
+    "bytes": 50918,
+    "source": "/assets/products/calcium-carbonate-cutout-v4.webp",
+    "credit": {
+      "name": "Walkerma",
+      "url": "https://commons.wikimedia.org/wiki/File:Calcium_carbonate.jpg",
+      "license": "Public domain"
+    },
+    "processing": "Only downsampled and encoded to 320px WebP. No semantic image edits."
+  },
+  {
+    "id": "magnesium-oxide",
+    "file": "/assets/products/thumbnails-v6/magnesium-oxide-320.webp",
+    "bytes": 24098,
+    "source": "/assets/products/magnesium-oxide-cutout-v4.webp",
+    "credit": {
+      "name": "Adam Rędzikowski",
+      "url": "https://commons.wikimedia.org/wiki/File:Magnesium_oxide_sample.jpg",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+    },
+    "processing": "Only downsampled and encoded to 320px WebP. No semantic image edits."
+  },
+  {
+    "id": "zinc-oxide",
+    "file": "/assets/products/thumbnails-v6/zinc-oxide-320.webp",
+    "bytes": 43356,
+    "source": "/assets/products/zinc-oxide-cutout-v4.webp",
+    "credit": {
+      "name": "Walkerma",
+      "url": "https://commons.wikimedia.org/wiki/File:Zinc_oxide.jpg",
+      "license": "Public domain"
+    },
+    "processing": "Only downsampled and encoded to 320px WebP. No semantic image edits."
+  },
+  {
+    "id": "iron-sulfate-heptahydrate",
+    "file": "/assets/products/thumbnails-v6/iron-sulfate-heptahydrate-320.webp",
+    "bytes": 41752,
+    "source": "/assets/products/iron-sulfate-heptahydrate-cutout-v4.webp",
+    "credit": {
+      "name": "Benjah-bmm27",
+      "url": "https://commons.wikimedia.org/wiki/File:Iron(II)-sulfate-heptahydrate-sample.jpg",
+      "license": "Public domain"
+    },
+    "processing": "Only downsampled and encoded to 320px WebP. No semantic image edits."
+  },
+  {
+    "id": "iron-chloride-hexahydrate",
+    "file": "/assets/products/thumbnails-v6/iron-chloride-hexahydrate-320.webp",
+    "bytes": 47742,
+    "source": "/assets/products/iron-chloride-hexahydrate-cutout-v4.webp",
+    "credit": {
+      "name": "Benjah-bmm27",
+      "url": "https://commons.wikimedia.org/wiki/File:Iron(III)-chloride-hexahydrate-sample.jpg",
+      "license": "Public domain"
+    },
+    "processing": "Only downsampled and encoded to 320px WebP. No semantic image edits."
+  },
+  {
+    "id": "aluminum-sulfate-octadecahydrate",
+    "file": "/assets/products/thumbnails-v6/aluminum-sulfate-octadecahydrate-320.webp",
+    "bytes": 35148,
+    "source": "/assets/products/unique-v6/aluminum-sulfate-octadecahydrate.webp",
+    "credit": {
+      "name": "Chemicalinterest",
+      "url": "https://commons.wikimedia.org/wiki/File:Aluminium_sulfate_crystals.JPG",
+      "license": "Public domain",
+      "licenseUrl": "https://commons.wikimedia.org/wiki/Commons:Licensing#Material_in_the_public_domain"
+    },
+    "processing": "Only downsampled and encoded to 320px WebP. No semantic image edits."
+  },
+  {
+    "id": "tris-base",
+    "file": "/assets/products/thumbnails-v6/tris-base-320.webp",
+    "bytes": 10162,
+    "source": "/assets/products/unique-v6/tris-base.webp",
+    "credit": {
+      "name": "Описание физической формы: Thermo Fisher",
+      "url": "https://assets.thermofisher.com/chem-specs-pdf/retrievePdf?rootSku=A18494&sku=A18494.0E",
+      "license": "Оригинальная демонстрационная иллюстрация"
+    },
+    "processing": "Only downsampled and encoded to 320px WebP. No semantic image edits."
+  },
+  {
+    "id": "citric-acid-monohydrate",
+    "file": "/assets/products/thumbnails-v6/citric-acid-monohydrate-320.webp",
+    "bytes": 14686,
+    "source": "/assets/products/unique-v6/citric-acid-monohydrate.webp",
+    "credit": {
+      "name": "Milda444",
+      "url": "https://commons.wikimedia.org/wiki/File:Kyselina_citronov%C3%A1_monohydr%C3%A1t.jpg",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/"
+    },
+    "processing": "Only downsampled and encoded to 320px WebP. No semantic image edits."
+  },
+  {
+    "id": "citric-acid-anhydrous",
+    "file": "/assets/products/thumbnails-v6/citric-acid-anhydrous-320.webp",
+    "bytes": 42886,
+    "source": "/assets/products/citric-acid-anhydrous-cutout-v4.webp",
+    "credit": {
+      "name": "Renate90",
+      "url": "https://commons.wikimedia.org/wiki/File:Citronens%C3%A4ure.JPG",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0"
+    },
+    "processing": "Only downsampled and encoded to 320px WebP. No semantic image edits."
+  },
+  {
+    "id": "acetic-acid",
+    "file": "/assets/products/thumbnails-v6/acetic-acid-320.webp",
+    "bytes": 9774,
+    "source": "/assets/products/unique-v6/acetic-acid.webp",
+    "credit": {
+      "name": "W. Oelen",
+      "url": "https://commons.wikimedia.org/wiki/File:Acetic_acid.jpg",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0"
+    },
+    "processing": "Only downsampled and encoded to 320px WebP. No semantic image edits."
+  },
+  {
+    "id": "succinic-acid",
+    "file": "/assets/products/thumbnails-v6/succinic-acid-320.webp",
+    "bytes": 13832,
+    "source": "/assets/products/unique-v6/succinic-acid.webp",
+    "credit": {
+      "name": "LHcheM",
+      "url": "https://commons.wikimedia.org/wiki/File:Sample_of_succinic_acid.jpg",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/"
+    },
+    "processing": "Only downsampled and encoded to 320px WebP. No semantic image edits."
+  },
+  {
+    "id": "tartaric-acid",
+    "file": "/assets/products/thumbnails-v6/tartaric-acid-320.webp",
+    "bytes": 21250,
+    "source": "/assets/products/unique-v6/tartaric-acid.webp",
+    "credit": {
+      "name": "Rei at English Wikipedia",
+      "url": "https://commons.wikimedia.org/wiki/File:CommercialTartaric.jpg",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/"
+    },
+    "processing": "Only downsampled and encoded to 320px WebP. No semantic image edits."
+  },
+  {
+    "id": "ascorbic-acid",
+    "file": "/assets/products/thumbnails-v6/ascorbic-acid-320.webp",
+    "bytes": 18030,
+    "source": "/assets/products/unique-v6/ascorbic-acid.webp",
+    "credit": {
+      "name": "LHcheM",
+      "url": "https://commons.wikimedia.org/wiki/File:Sample_of_ascorbic_acid.jpg",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0"
+    },
+    "processing": "Only downsampled and encoded to 320px WebP. No semantic image edits."
+  },
+  {
+    "id": "benzoic-acid",
+    "file": "/assets/products/thumbnails-v6/benzoic-acid-320.webp",
+    "bytes": 26576,
+    "source": "/assets/products/unique-v6/benzoic-acid.webp",
+    "credit": {
+      "name": "Devon Fyson",
+      "url": "https://commons.wikimedia.org/wiki/File:Pile_of_benzoic_acid_crystals.jpg",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+    },
+    "processing": "Only downsampled and encoded to 320px WebP. No semantic image edits."
+  },
+  {
+    "id": "boric-acid",
+    "file": "/assets/products/thumbnails-v6/boric-acid-320.webp",
+    "bytes": 38006,
+    "source": "/assets/products/boric-acid-cutout-v4.webp",
+    "credit": {
+      "name": "Walkerma",
+      "url": "https://commons.wikimedia.org/wiki/File:Boric_acid.jpg",
+      "license": "Public domain"
+    },
+    "processing": "Only downsampled and encoded to 320px WebP. No semantic image edits."
+  },
+  {
+    "id": "d-glucose",
+    "file": "/assets/products/thumbnails-v6/d-glucose-320.webp",
+    "bytes": 10236,
+    "source": "/assets/products/unique-v6/d-glucose.webp",
+    "credit": {
+      "name": "Описание физической формы: Thermo Fisher",
+      "url": "https://assets.thermofisher.com/chem-specs-pdf/retrievePdf?rootSku=A16828&sku=A16828.0E",
+      "license": "Оригинальная демонстрационная иллюстрация"
+    },
+    "processing": "Only downsampled and encoded to 320px WebP. No semantic image edits."
+  },
+  {
+    "id": "sucrose",
+    "file": "/assets/products/thumbnails-v6/sucrose-320.webp",
+    "bytes": 27112,
+    "source": "/assets/products/sucrose-cutout-v4.webp",
+    "credit": {
+      "name": "Nachovfranco",
+      "url": "https://commons.wikimedia.org/wiki/File:Sucrose_crystals.JPG",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+    },
+    "processing": "Only downsampled and encoded to 320px WebP. No semantic image edits."
+  },
+  {
+    "id": "glycine",
+    "file": "/assets/products/thumbnails-v6/glycine-320.webp",
+    "bytes": 37922,
+    "source": "/assets/products/glycine-cutout-v4.webp",
+    "credit": {
+      "name": "SPOTzillah",
+      "url": "https://commons.wikimedia.org/wiki/File:Glycin.jpg",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+    },
+    "processing": "Only downsampled and encoded to 320px WebP. No semantic image edits."
+  },
+  {
+    "id": "urea",
+    "file": "/assets/products/thumbnails-v6/urea-320.webp",
+    "bytes": 14122,
+    "source": "/assets/products/urea-cutout-v4.webp",
+    "credit": {
+      "name": "LHcheM",
+      "url": "https://commons.wikimedia.org/wiki/File:Sample_of_Urea.jpg",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0"
+    },
+    "processing": "Only downsampled and encoded to 320px WebP. No semantic image edits."
+  },
+  {
+    "id": "edta-disodium-dihydrate",
+    "file": "/assets/products/thumbnails-v6/edta-disodium-dihydrate-320.webp",
+    "bytes": 23496,
+    "source": "/assets/products/unique-v6/edta-disodium-dihydrate.webp",
+    "credit": {
+      "name": "Leiem",
+      "url": "https://commons.wikimedia.org/wiki/File:EDTA-2Na-dihydrate.jpg",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+    },
+    "processing": "Only downsampled and encoded to 320px WebP. No semantic image edits."
+  },
+  {
+    "id": "propylene-glycol",
+    "file": "/assets/products/thumbnails-v6/propylene-glycol-320.webp",
+    "bytes": 15650,
+    "source": "/assets/products/unique-v6/propylene-glycol.webp",
+    "credit": {
+      "name": "Описание физической формы: TCI",
+      "url": "https://www.tcichemicals.com/CA/en/p/P0485",
+      "license": "Оригинальная демонстрационная иллюстрация"
+    },
+    "processing": "Only downsampled and encoded to 320px WebP. No semantic image edits."
+  },
+  {
+    "id": "ethyl-acetate",
+    "file": "/assets/products/thumbnails-v6/ethyl-acetate-320.webp",
+    "bytes": 10596,
+    "source": "/assets/products/unique-v6/ethyl-acetate.webp",
+    "credit": {
+      "name": "Danny S.",
+      "url": "https://commons.wikimedia.org/wiki/File:Essigs%C3%A4ureethylester_by_Danny_S._-_001.JPG",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0"
+    },
+    "processing": "Only downsampled and encoded to 320px WebP. No semantic image edits."
+  },
+  {
+    "id": "dimethyl-sulfoxide",
+    "file": "/assets/products/thumbnails-v6/dimethyl-sulfoxide-320.webp",
+    "bytes": 12594,
+    "source": "/assets/products/unique-v6/dimethyl-sulfoxide.webp",
+    "credit": {
+      "name": "Σ64",
+      "url": "https://commons.wikimedia.org/wiki/File:Sample_of_Dimethyl_sulfoxide_01.jpg",
+      "license": "CC BY 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/3.0"
+    },
+    "processing": "Only downsampled and encoded to 320px WebP. No semantic image edits."
+  },
+  {
+    "id": "n-butanol",
+    "file": "/assets/products/thumbnails-v6/n-butanol-320.webp",
+    "bytes": 12102,
+    "source": "/assets/products/unique-v6/n-butanol.webp",
+    "credit": {
+      "name": "Daemon Canchig",
+      "url": "https://commons.wikimedia.org/wiki/File:Butanol._Etiqueta_de_seguridad.jpg",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+    },
+    "processing": "Only downsampled and encoded to 320px WebP. No semantic image edits."
+  },
+  {
+    "id": "deionized-water",
+    "file": "/assets/products/thumbnails-v6/deionized-water-320.webp",
+    "bytes": 5646,
+    "source": "/assets/products/unique-v6/deionized-water.webp",
+    "credit": {
+      "name": "أمين",
+      "url": "https://commons.wikimedia.org/wiki/File:Distilled_water_001.jpg",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+    },
+    "processing": "Only downsampled and encoded to 320px WebP. No semantic image edits."
+  }
+]

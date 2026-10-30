@@ -65,7 +65,7 @@ export default function CartClient() {
       const photo = getProductPhoto(product);
       const requirements = item.requirements || { purity: "", alternatives: "", neededBy: "" };
       return <article className="cart-item" key={`${item.productId}:${item.packaging}`}>
-        <a className="cart-item-image" href={`/catalog/${product.id}`}><img src={photo.src} width="120" height="120" alt={photo.alt} /></a>
+        <a className="cart-item-image" href={`/catalog/${product.id}`}><img src={photo.src} srcSet={photo.srcSet} sizes="(max-width: 520px) 72px, 96px" width="120" height="120" loading="lazy" decoding="async" alt={photo.alt} /></a>
         <div className="cart-item-info"><a href={`/catalog/${product.id}`} className="cart-item-name">{product.name}</a><span className="cart-item-meta">{product.sku} · CAS {product.cas}</span>
           <label className="cart-packaging"><span>Фасовка</span><select ref={node => { const key = `${item.productId}:${item.packaging}`; if (node) packagingFields.current.set(key, node); else packagingFields.current.delete(key); }} aria-label={`Фасовка: ${product.name}`} value={item.packaging} disabled={sending} onChange={event => { const to = event.target.value; const failure = changePackaging(item.productId, item.packaging, to); setLineError(failure || ""); if (failure) { event.currentTarget.value = item.packaging; return; } pendingPackagingFocus.current = `${item.productId}:${to}`; }}>{product.packages.map(packaging => <option key={packaging}>{packaging}</option>)}</select></label>
         </div>

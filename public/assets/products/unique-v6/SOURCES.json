@@ -1,0 +1,535 @@
+[
+  {
+    "id": "sodium-carbonate",
+    "pageUrl": "https://commons.wikimedia.org/wiki/File:Sodium_carbonate.JPG",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/c/c7/Sodium_carbonate.JPG",
+    "originalImageUrl": "https://upload.wikimedia.org/wikipedia/commons/c/c7/Sodium_carbonate.JPG",
+    "author": "Chemicalinterest",
+    "license": "Public domain",
+    "licenseUrl": "https://commons.wikimedia.org/wiki/File:Sodium_carbonate.JPG#Licensing",
+    "notes": "Выбран полный реальный образец на металлической подложке. Оригинал 701x548, не увеличен. Описание Commons обозначает карбонат натрия, но безводность не подтверждает. Обрезанный первый кандидат сохранен отдельно и не используется.",
+    "prompt": "Use case: background-extraction / precise-object-edit. The referenced original photograph is the exact edit target. Create a faithful cutout of its actual sample, not a freshly invented chemical illustration. Change only the background, unrelated equipment and distracting markings; neutralize illumination gently. Preserve the specimen's real form, original individual shapes, scale relationships, arrangement, color and camera viewpoint. No generic decorative gems, no replacement with a different substance, no jar or vessel added. Square canvas, whole subject centered in the central approximately 76% area, at least 12% transparent padding on every side. True alpha background with clean neutral antialiased edges, no colored chroma-key fringe, no shadow, no gray or white rectangular background. No text, letters, numerals, branding or watermark. Extract only the complete heap of white sodium carbonate powder and its irregular chalky crumbly lumps from the metal scoop. Remove the metal scoop, tabletop and surrounding equipment as background/support. Keep the actual chalky broken-clump morphology and original arrangement; do not turn it into translucent faceted crystals or a smooth cone. The hydrate form is not asserted by the photo.",
+    "files": {
+      "960": 117508,
+      "720": 75786,
+      "480": 36032
+    },
+    "derivative": "Reference-derived illustration. ImageGen used for background cleanup and visual normalization; see prompt and notes for the specific modifications. Not a photograph of supplied product or packaging.",
+    "sha256": "c3ea68d6442a84e2326c52e282c70e077c9d4f3348d0962d3f537b23101c1404"
+  },
+  {
+    "id": "potassium-chloride",
+    "pageUrl": "https://commons.wikimedia.org/wiki/File:Potassium_chloride_podwer.jpg",
+    "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2f/Potassium_chloride_podwer.jpg/1280px-Potassium_chloride_podwer.jpg",
+    "originalImageUrl": "https://upload.wikimedia.org/wikipedia/commons/2/2f/Potassium_chloride_podwer.jpg",
+    "author": "Pań w żółtym kapeluszu",
+    "license": "CC0",
+    "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+    "notes": "Реальное фото вещества; квалификация конкретной партии фотографией не подтверждается.",
+    "prompt": "Use case: background-extraction. Edit target: the supplied real Commons photograph. Isolate ONLY the foreground clear laboratory beaker containing the white potassium chloride powder; remove the unrelated container visible behind it. Preserve this specific vessel, the actual crystal or powder arrangement, sample morphology, color and camera angle. Remove the table/background, unrelated objects, photographic cast shadows outside the vessel and any printed glassware brand/volume markings. Do not replace the sample with generic decorative crystals or another reagent, do not add a label or any typography. Center the whole original subject on a square genuinely transparent canvas with even 12% empty margins on all sides, no cropping of glass or sample. Clean antialiased transparent edges, neutral studio light compatible with a light gray catalog stage. No new objects, no pedestal, no backdrop rectangle, no watermark. Keep the individual identity of this source photo so it remains visibly distinct from other catalog photographs.",
+    "files": {
+      "960": 98248,
+      "720": 66702,
+      "480": 35210
+    },
+    "derivative": "Reference-derived illustration. ImageGen used for background cleanup and visual normalization; see prompt and notes for the specific modifications. Not a photograph of supplied product or packaging.",
+    "sha256": "795e162f4963ba4c178516c41c29e19d0eb5754dfe1b0458aeeddcf59ac16b71"
+  },
+  {
+    "id": "calcium-chloride-dihydrate",
+    "pageUrl": "https://commons.wikimedia.org/wiki/File:Petri_Dish_containing_Calcium_Chloride.jpg",
+    "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9c/Petri_Dish_containing_Calcium_Chloride.jpg/1280px-Petri_Dish_containing_Calcium_Chloride.jpg",
+    "originalImageUrl": "https://upload.wikimedia.org/wikipedia/commons/9/9c/Petri_Dish_containing_Calcium_Chloride.jpg",
+    "author": "Roi.Frvr",
+    "license": "CC0",
+    "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+    "notes": "Реальное фото образца; гидратная форма не указана в описании Commons.",
+    "prompt": "Use case: background-extraction. Edit target: the supplied real Commons photograph. Isolate ONLY the complete round clear glass dish and its existing uneven white calcium chloride flakes. Preserve this specific vessel, the actual crystal or powder arrangement, sample morphology, color and camera angle. Remove the table/background, unrelated objects, photographic cast shadows outside the vessel and any printed glassware brand/volume markings. Do not replace the sample with generic decorative crystals or another reagent, do not add a label or any typography. Center the whole original subject on a square genuinely transparent canvas with even 12% empty margins on all sides, no cropping of glass or sample. Clean antialiased transparent edges, neutral studio light compatible with a light gray catalog stage. No new objects, no pedestal, no backdrop rectangle, no watermark. Keep the individual identity of this source photo so it remains visibly distinct from other catalog photographs.",
+    "files": {
+      "960": 200352,
+      "720": 128098,
+      "480": 64762
+    },
+    "derivative": "Reference-derived illustration. ImageGen used for background cleanup and visual normalization; see prompt and notes for the specific modifications. Not a photograph of supplied product or packaging.",
+    "sha256": "5f630a81279f8a9c41812a2591eda9f8ed2db08b9a977af8aac685ac73463eff"
+  },
+  {
+    "id": "magnesium-sulfate-heptahydrate",
+    "pageUrl": "https://commons.wikimedia.org/wiki/File:Magnesium_sulfate.JPG",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/6/6a/Magnesium_sulfate.JPG",
+    "originalImageUrl": "https://upload.wikimedia.org/wikipedia/commons/6/6a/Magnesium_sulfate.JPG",
+    "author": "Chemicalinterest  at  en.wikipedia",
+    "license": "Public domain",
+    "licenseUrl": "https://commons.wikimedia.org/wiki/File:Magnesium_sulfate.JPG#Licensing",
+    "notes": "Описание Commons прямо указывает magnesium sulfate heptahydrate. Оригинал меньшего разрешения; не увеличен: 782x638.",
+    "prompt": "Use case: background-extraction / precise-object-edit. The referenced photograph is the edit target, not inspiration for a new image. Make a faithful transparent catalog cutout of the actual sample. Remove only the surrounding tabletop/background, unrelated objects and color cast. Preserve the substance, real morphology, relative particle sizes, arrangement, color, camera angle and distinctive composition of this exact photograph. Improve neutral studio lighting and edge clarity modestly without inventing a new material. Do not replace powder with decorative crystals or make it look like other stock reagent images. Keep any relevant clear glass support as specified. Square canvas, whole subject centered, about 12% fully transparent margin around the object. True alpha transparent background, no floor plane, no rectangular white/gray backing, no cast shadow, no new labels, writing, numbers, logo or watermark. This is magnesium sulfate heptahydrate: preserve the compact irregular heap of tiny translucent short rectangular shards and the scattered small shards. Keep the granular small-shard appearance and original oblique camera angle. No bowl or jar should be added.",
+    "files": {
+      "960": 236130,
+      "720": 156592,
+      "480": 78704
+    },
+    "derivative": "Reference-derived illustration. ImageGen used for background cleanup and visual normalization; see prompt and notes for the specific modifications. Not a photograph of supplied product or packaging.",
+    "sha256": "ff829c110e104fa60548b07fc59539d84691a264c6bfad724bca18e3316dde73"
+  },
+  {
+    "id": "sodium-sulfate",
+    "pageUrl": "https://commons.wikimedia.org/wiki/File:S%C3%ADran_sodn%C3%BD.JPG",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/5/57/S%C3%ADran_sodn%C3%BD.JPG",
+    "originalImageUrl": "https://upload.wikimedia.org/wikipedia/commons/5/57/S%C3%ADran_sodn%C3%BD.JPG",
+    "author": "Ondřej Mangl",
+    "license": "Public domain",
+    "licenseUrl": "https://commons.wikimedia.org/wiki/File:S%C3%ADran_sodn%C3%BD.JPG#Licensing",
+    "notes": "Источник обозначает соль; безводность образца описанием Commons не подтверждена. Оригинал меньшего разрешения; не увеличен: 573x480.",
+    "prompt": "Use case: background-extraction / precise-object-edit. The referenced photograph is the edit target, not inspiration for a new image. Make a faithful transparent catalog cutout of the actual sample. Remove only the surrounding tabletop/background, unrelated objects and color cast. Preserve the substance, real morphology, relative particle sizes, arrangement, color, camera angle and distinctive composition of this exact photograph. Improve neutral studio lighting and edge clarity modestly without inventing a new material. Do not replace powder with decorative crystals or make it look like other stock reagent images. Keep any relevant clear glass support as specified. Square canvas, whole subject centered, about 12% fully transparent margin around the object. True alpha transparent background, no floor plane, no rectangular white/gray backing, no cast shadow, no new labels, writing, numbers, logo or watermark. This is a sodium sulfate sample on a shallow round clear watch glass. Keep this same watch glass shape and its powder pile, the fine white grain texture and original slightly oblique top-down angle. The dark patch is uneven illumination; lighten it neutrally without changing the powder's morphology. Do not create large faceted crystals.",
+    "files": {
+      "960": 224792,
+      "720": 140376,
+      "480": 67534
+    },
+    "derivative": "Reference-derived illustration. ImageGen used for background cleanup and visual normalization; see prompt and notes for the specific modifications. Not a photograph of supplied product or packaging.",
+    "sha256": "5fe27195bed45ba2be0d5b51a38ad47344818a1b7530392754908b5413e6fb52"
+  },
+  {
+    "id": "potassium-sulfate",
+    "pageUrl": "https://commons.wikimedia.org/wiki/File:S%C3%ADran_draseln%C3%BD.JPG",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/7/7d/S%C3%ADran_draseln%C3%BD.JPG",
+    "originalImageUrl": "https://upload.wikimedia.org/wikipedia/commons/7/7d/S%C3%ADran_draseln%C3%BD.JPG",
+    "author": "Ondřej Mangl",
+    "license": "Public domain",
+    "licenseUrl": "https://commons.wikimedia.org/wiki/File:S%C3%ADran_draseln%C3%BD.JPG#Licensing",
+    "notes": "Реальное фото указанного вещества; квалификация партии не подтверждается. Оригинал меньшего разрешения; не увеличен: 594x480.",
+    "prompt": "Use case: background-extraction / precise-object-edit. The referenced photograph is the edit target, not inspiration for a new image. Make a faithful transparent catalog cutout of the actual sample. Remove only the surrounding tabletop/background, unrelated objects and color cast. Preserve the substance, real morphology, relative particle sizes, arrangement, color, camera angle and distinctive composition of this exact photograph. Improve neutral studio lighting and edge clarity modestly without inventing a new material. Do not replace powder with decorative crystals or make it look like other stock reagent images. Keep any relevant clear glass support as specified. Square canvas, whole subject centered, about 12% fully transparent margin around the object. True alpha transparent background, no floor plane, no rectangular white/gray backing, no cast shadow, no new labels, writing, numbers, logo or watermark. This is a potassium sulfate sample on a shallow round clear watch glass. Preserve its distinctive several irregular white compact clumps with a light dusting around them and the same oblique top-down view. Preserve the difference from a smooth powder mound. Keep the existing glass support; remove the faint manufacturer stamp on the glass only. Do not introduce new crystals or another container.",
+    "files": {
+      "960": 173582,
+      "720": 109472,
+      "480": 47914
+    },
+    "derivative": "Reference-derived illustration. ImageGen used for background cleanup and visual normalization; see prompt and notes for the specific modifications. Not a photograph of supplied product or packaging.",
+    "sha256": "e172923e0513ae67e9f1e590a55d76c97726957ae894e66225278c7d193e8fb5"
+  },
+  {
+    "id": "ammonium-sulfate",
+    "pageUrl": "https://commons.wikimedia.org/wiki/File:S%C3%ADran_amonn%C3%BD.jpg",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/8/85/S%C3%ADran_amonn%C3%BD.jpg",
+    "originalImageUrl": "https://upload.wikimedia.org/wikipedia/commons/8/85/S%C3%ADran_amonn%C3%BD.jpg",
+    "author": "Kapitánka Nemo",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "notes": "Реальное фото указанного вещества; квалификация партии не подтверждается. Оригинал меньшего разрешения; не увеличен: 530x530.",
+    "prompt": "Use case: background-extraction / precise-object-edit. Edit the referenced real photograph directly; it is the target, not inspiration for a new chemical product image. Remove the surrounding tabletop/background and unrelated items only. Preserve the exact substance, fine morphology, original relative grain sizes, distinctive pile arrangement, camera viewpoint and relevant clear glass support. Neutralize the original lighting/color cast and clean the edges modestly, without replacing the material with decorative or large generic crystals. No new labels, letters, numbers, logo, jar or extra equipment. Square canvas with true alpha transparency and no rectangular backing, floor, cast shadow or fake white border. The complete glass support and sample should fit in the central approximately 76% of canvas width/height, leaving at least 12% clear transparent margins on all sides. Keep this round clear watch glass with its conical mound of small white granular ammonium sulfate and the few loose grains. Remove the red tiled tabletop and dark grout lines. Keep the same top-down oblique ellipse and granularity; do not make big angular gemstones.",
+    "files": {
+      "960": 226396,
+      "720": 145664,
+      "480": 71210
+    },
+    "derivative": "Reference-derived illustration. ImageGen used for background cleanup and visual normalization; see prompt and notes for the specific modifications. Not a photograph of supplied product or packaging.",
+    "sha256": "bce174852b84138e0f88c35518eeaeaa85a95758d0ac1bda9445eb112cf18bf9"
+  },
+  {
+    "id": "sodium-acetate-trihydrate",
+    "pageUrl": "https://commons.wikimedia.org/wiki/File:Octan_sodn%C3%BD_vzorek.jpg",
+    "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6d/Octan_sodn%C3%BD_vzorek.jpg/1280px-Octan_sodn%C3%BD_vzorek.jpg",
+    "originalImageUrl": "https://upload.wikimedia.org/wikipedia/commons/6/6d/Octan_sodn%C3%BD_vzorek.jpg",
+    "author": "Milda 444",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "notes": "Источник обозначает ацетат натрия; именно тригидрат описанием Commons не подтвержден.",
+    "prompt": "Use case: background-extraction / precise-object-edit. Edit the referenced real photograph directly; it is the target, not inspiration for a new chemical product image. Remove the surrounding tabletop/background and unrelated items only. Preserve the exact substance, fine morphology, original relative grain sizes, distinctive pile arrangement, camera viewpoint and relevant clear glass support. Neutralize the original lighting/color cast and clean the edges modestly, without replacing the material with decorative or large generic crystals. No new labels, letters, numbers, logo, jar or extra equipment. Square canvas with true alpha transparency and no rectangular backing, floor, cast shadow or fake white border. The complete glass support and sample should fit in the central approximately 76% of canvas width/height, leaving at least 12% clear transparent margins on all sides. Keep this shallow clear watch glass with the actual coarse irregular small sodium acetate crystals and tiny flakes in its broad mound, viewed from the same slightly oblique top-down angle. The specimen's hydrate form is not visually asserted. Remove the light gray paper/table background only. Keep the crystalline texture distinct from a smooth fine powder, but do not enlarge individual crystals or add decorative facets.",
+    "files": {
+      "960": 195938,
+      "720": 123236,
+      "480": 59744
+    },
+    "derivative": "Reference-derived illustration. ImageGen used for background cleanup and visual normalization; see prompt and notes for the specific modifications. Not a photograph of supplied product or packaging.",
+    "sha256": "09df1e92cc3ea033392d9a9374d9fa799186492c269334389e97df7d499a8349"
+  },
+  {
+    "id": "ammonium-acetate",
+    "pageUrl": "https://commons.wikimedia.org/wiki/File:Ammonium-acetate.JPG",
+    "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d0/Ammonium-acetate.JPG/1280px-Ammonium-acetate.JPG",
+    "originalImageUrl": "https://upload.wikimedia.org/wikipedia/commons/d/d0/Ammonium-acetate.JPG",
+    "author": "Vidak",
+    "license": "Public domain",
+    "licenseUrl": "https://commons.wikimedia.org/wiki/File:Ammonium-acetate.JPG#Licensing",
+    "notes": "Реальное фото вещества; квалификация конкретной партии фотографией не подтверждается.",
+    "prompt": "Use case: background-extraction. Edit target: the supplied real Commons photograph. Isolate ONLY the complete round shallow glass dish and its existing fine colorless ammonium acetate crystals; gently neutralize the poor warm/dark lighting without changing the sample. Preserve this specific vessel, the actual crystal or powder arrangement, sample morphology, color and camera angle. Remove the table/background, unrelated objects, photographic cast shadows outside the vessel and any printed glassware brand/volume markings. Do not replace the sample with generic decorative crystals or another reagent, do not add a label or any typography. Center the whole original subject on a square genuinely transparent canvas with even 12% empty margins on all sides, no cropping of glass or sample. Clean antialiased transparent edges, neutral studio light compatible with a light gray catalog stage. No new objects, no pedestal, no backdrop rectangle, no watermark. Keep the individual identity of this source photo so it remains visibly distinct from other catalog photographs.",
+    "files": {
+      "960": 201370,
+      "720": 125758,
+      "480": 58952
+    },
+    "derivative": "Reference-derived illustration. ImageGen used for background cleanup and visual normalization; see prompt and notes for the specific modifications. Not a photograph of supplied product or packaging.",
+    "sha256": "aa7ab97a8c71aecda3f250d0d8f0fab6d07ecd372d1dfb3f0c0eb2bf31dd3e47"
+  },
+  {
+    "id": "potassium-dihydrogen-phosphate",
+    "pageUrl": "https://commons.wikimedia.org/wiki/File:Kaliumdihydrogenphosphat.jpg",
+    "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/88/Kaliumdihydrogenphosphat.jpg/1280px-Kaliumdihydrogenphosphat.jpg",
+    "originalImageUrl": "https://upload.wikimedia.org/wikipedia/commons/8/88/Kaliumdihydrogenphosphat.jpg",
+    "author": "Bahmtec",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "notes": "Реальное фото указанного вещества; квалификация партии не подтверждается. При обработке исключен один частично обрезанный краем кадра кристалл; остальные реальные кристаллы сохранены, линейка и фон удалены.",
+    "prompt": "Use case: background-extraction / precise-object-edit. The referenced original photograph is the exact edit target. Create a faithful cutout of its actual sample, not a freshly invented chemical illustration. Change only the background, unrelated equipment and distracting markings; neutralize illumination gently. Preserve the specimen's real form, original individual shapes, scale relationships, arrangement, color and camera viewpoint. No generic decorative gems, no replacement with a different substance, no jar or vessel added. Square canvas, whole subject centered in the central approximately 76% area, at least 12% transparent padding on every side. True alpha background with clean neutral antialiased edges, no colored chroma-key fringe, no shadow, no gray or white rectangular background. No text, letters, numerals, branding or watermark. Extract the group of actual clear monopotassium phosphate crystals from this photo. Remove the ruler, its numbers and black textured surface. Preserve the distinctive uneven prism shapes, small flaws, facets, relative positions and original oblique top-down perspective of all fully visible crystals in the main central group. Exclude only the one incomplete crystal cut by the far right image edge rather than inventing its missing geometry. Do not substitute identical cubes or generic diamonds.",
+    "files": {
+      "960": 221732,
+      "720": 143958,
+      "480": 72500
+    },
+    "derivative": "Reference-derived illustration. ImageGen used for background cleanup and visual normalization; see prompt and notes for the specific modifications. Not a photograph of supplied product or packaging.",
+    "sha256": "ce9cf40372e596e0a7f3ffd3814a2b199a325c3c4f4df9515dadc23aa9f9da45"
+  },
+  {
+    "id": "dipotassium-hydrogen-phosphate",
+    "pageUrl": "https://commons.wikimedia.org/wiki/File:Hydrogenfosfore%C4%8Dnan_draseln%C3%BD.JPG",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/a/aa/Hydrogenfosfore%C4%8Dnan_draseln%C3%BD.JPG",
+    "author": "Ondřej Mangl",
+    "license": "Public domain",
+    "licenseUrl": "https://commons.wikimedia.org/wiki/Commons:Licensing#Material_in_the_public_domain",
+    "notes": "Источник прямо идентифицирует K2HPO4; фото образца, не поставляемого товара.",
+    "prompt": "Use case: precise-object-edit, background extraction. Edit the referenced REAL photograph, do not invent a replacement chemical sample. Preserve the actual uneven peaked mound of very fine matte white powder, its larger clumps and surrounding tiny powder fragments on its round shallow clear watch glass. Keep the thin transparent glass rim and exact low camera angle. Remove only the gray paper/tabletop/background. Do not turn this powder into crystals or beads. Keep the specimen morphology, relative particle sizes, color and distinctive arrangement. Correct only the background color cast to neutral soft product lighting. Full subject, centered in square, approximately 12 percent transparent padding. True transparent alpha background, no checkerboard and no white rectangle. No labels, letters, numbers, logos, added objects, decorative crystals, glow or shadows outside the object. Source-preserving catalog illustration.",
+    "modification": "Background extracted and neutral product lighting reconstructed with image_gen; source morphology and distinctive composition used as reference. This is an edited catalog illustration, not a supplier product photo.",
+    "files": {
+      "960": 107992,
+      "720": 71470,
+      "480": 36068
+    },
+    "derivative": "Reference-derived illustration. ImageGen used for background cleanup and visual normalization; see prompt and notes for the specific modifications. Not a photograph of supplied product or packaging.",
+    "sha256": "a74e2345e6e7cdea7dcb6407a6ae24624bf955ac79825e9b19832c5b5eaae20f"
+  },
+  {
+    "id": "sodium-dihydrogen-phosphate-monohydrate",
+    "pageUrl": "https://commons.wikimedia.org/wiki/File:Dihydrogenfosfore%C4%8Dnan_sodn%C3%BD.JPG",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/5/5e/Dihydrogenfosfore%C4%8Dnan_sodn%C3%BD.JPG",
+    "author": "Ondřej Mangl",
+    "license": "Public domain",
+    "licenseUrl": "https://commons.wikimedia.org/wiki/Commons:Licensing#Material_in_the_public_domain",
+    "notes": "Source identifies NaH2PO4. Hydration is not confirmed: do not describe this specimen as proven monohydrate. Author and public-domain release verified in saved monosodium-source.html.",
+    "prompt": "Use case: precise-object-edit, real-photo background extraction. Edit the referenced real photograph without inventing a different chemical sample. Preserve this specific small rounded mound of very fine translucent-white crystalline granules, its fine loose scattered grains, and the round shallow transparent watch glass. Keep the original low angled view and irregular mound silhouette. Do not turn the fine granules into big crystals, decorative gemstones, or fine flour-like powder. Preserve the original specimen, whose hydration state is not specified. Keep the real shape, material, particle proportions, camera angle and distinctive composition. Remove only the surroundings. Soft neutral studio lighting, natural material texture. Whole subject centered in a square with approximately 12 percent truly transparent alpha padding on every side, no clipping. True transparent background, no printed checkerboard and no white rectangle. No letters, numbers, labels, brands, watermark, extra props, decorative gems, glow, or shadow beyond the object. This is an edited specimen illustration, not proof of supplier product, grade or hydration.",
+    "modification": "Background removed and lighting normalized with image_gen. Edited specimen illustration, not supplier product photography.",
+    "files": {
+      "960": 109340,
+      "720": 70662,
+      "480": 33466
+    },
+    "derivative": "Reference-derived illustration. ImageGen used for background cleanup and visual normalization; see prompt and notes for the specific modifications. Not a photograph of supplied product or packaging.",
+    "sha256": "e6f42a4478ddf8981c83942d70b61e20b215e61ef525e4ddf3e63134617f4476"
+  },
+  {
+    "id": "disodium-hydrogen-phosphate-dodecahydrate",
+    "pageUrl": "https://commons.wikimedia.org/wiki/File:Disodium_phosphate_dodecahydrate.JPG",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/0/02/Disodium_phosphate_dodecahydrate.JPG",
+    "author": "Leiem",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "notes": "Источник прямо указывает dodecahydrate; это иллюстрация вещества, не товара поставщика. Цвет только пластиковой крышки изменен с синего на графитовый, химический образец сохранен.",
+    "prompt": "Use case: precise-object-edit. Make ONE tiny material-color edit only: change the blue PLASTIC CAP to neutral dark graphite gray. Retain its exact silhouette, grooves, rim, scratches and physical texture. Retain ALL the existing white translucent crystal aggregate entirely unchanged: exact position, size, morphology, color, brightness and arrangement. Keep the same composition and complete cap. Do not desaturate or recolor any crystals. Keep all existing transparent alpha areas fully transparent. No other changes. Transparent background, full object, no labels or text.",
+    "modification": "Background extracted and neutral product lighting reconstructed with image_gen; source morphology and distinctive composition used as reference. This is an edited catalog illustration, not a supplier product photo.",
+    "files": {
+      "960": 119046,
+      "720": 80108,
+      "480": 43284
+    },
+    "derivative": "Reference-derived illustration. ImageGen used for background cleanup and visual normalization; see prompt and notes for the specific modifications. Not a photograph of supplied product or packaging.",
+    "sha256": "9dc430c94915f84ea9db1c0b958c18852e303bd2197e9c006495f52dc70d476c"
+  },
+  {
+    "id": "sodium-thiosulfate-pentahydrate",
+    "pageUrl": "https://commons.wikimedia.org/wiki/File:Sodium_thiosulfate_pentahydrate.jpg",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/0/0c/Sodium_thiosulfate_pentahydrate.jpg",
+    "author": "Walkerma (Martin Walker)",
+    "license": "Public domain",
+    "licenseUrl": "https://commons.wikimedia.org/wiki/Commons:Licensing#Material_in_the_public_domain",
+    "notes": "Источник прямо указывает pentahydrate. Невысокое разрешение оригинала 405×377. Original is only405x377. AI reconstruction enhances grain detail; do not represent as an exact macro photograph.",
+    "prompt": "Use case: precise-object-edit, background extraction. Edit the referenced REAL photograph, do not invent a replacement chemical sample. Preserve only the actual mound of small white translucent granular crystals in its original squat compact asymmetrical arrangement, with the original rounded and short angular grains and scattered few grains. Remove the glass dish and dark table/background. Do not turn these small grains into large decorative gem crystals. Keep the specimen morphology, relative particle sizes, color and distinctive arrangement. Correct only the background color cast to neutral soft product lighting. Full subject, centered in square, approximately 12 percent transparent padding. True transparent alpha background, no checkerboard and no white rectangle. No labels, letters, numbers, logos, added objects, decorative crystals, glow or shadows outside the object. Source-preserving catalog illustration.",
+    "modification": "Background extracted and neutral product lighting reconstructed with image_gen; source morphology and distinctive composition used as reference. This is an edited catalog illustration, not a supplier product photo.",
+    "files": {
+      "960": 188248,
+      "720": 122820,
+      "480": 57570
+    },
+    "derivative": "Reference-derived illustration. ImageGen used for background cleanup and visual normalization; see prompt and notes for the specific modifications. Not a photograph of supplied product or packaging.",
+    "sha256": "684150b6f42c06a4075b005e441a027c19812a77978e408e34fe99390f4611e2"
+  },
+  {
+    "id": "potassium-sodium-tartrate-tetrahydrate",
+    "pageUrl": "https://commons.wikimedia.org/wiki/File:Potassium_Sodium_Tartrate_Tetrahydrate.jpg",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/6/6e/Potassium_Sodium_Tartrate_Tetrahydrate.jpg",
+    "author": "ERS ROHU",
+    "license": "CC BY 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+    "notes": "Источник прямо подтверждает tetrahydrate. Образец в бутылке, а не фото товара клиента.",
+    "prompt": "Use case: precise-object-edit, background extraction. Edit the referenced REAL photograph, do not invent a replacement chemical sample. Preserve the actual clear glass ground-stopper sample bottle, its exact frontal silhouette, clear white fine crystals settled in its lower part and dusting naturally adhering to its inside. Remove the tabletop and room background. Do not replace the bottle with a pile of crystals. Keep the original specimen morphology, relative particle sizes, color, camera angle and distinctive composition. Correct only the heavy background color cast to quiet neutral product lighting while retaining natural material texture and realistic glass when present. Keep the entire subject centered inside a square image, with approximately 12 percent genuinely transparent alpha padding around it, no cropping. Background must be true transparent alpha, not a white rectangle or a printed checkerboard. No labels, no letters, no numbers, no logos, no added objects, no stylized illustration, no generic decorative crystal pile, no glow, no drop shadow outside the object. This is a source-preserving catalog illustration, not proof of a hydrate form or supplier product.",
+    "modification": "Background extracted and neutral product lighting reconstructed with image_gen; source morphology and distinctive composition used as reference. This is an edited catalog illustration, not a supplier product photo.",
+    "files": {
+      "960": 92052,
+      "720": 56964,
+      "480": 27276
+    },
+    "derivative": "Reference-derived illustration. ImageGen used for background cleanup and visual normalization; see prompt and notes for the specific modifications. Not a photograph of supplied product or packaging.",
+    "sha256": "b028db199c284f3a9ec64b9cb73cc3a36ac4c1c06a1eb56210f9a8937e29ad3f"
+  },
+  {
+    "id": "aluminum-sulfate-octadecahydrate",
+    "pageUrl": "https://commons.wikimedia.org/wiki/File:Aluminium_sulfate_crystals.JPG",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/8/89/Aluminium_sulfate_crystals.JPG",
+    "author": "Chemicalinterest",
+    "license": "Public domain",
+    "licenseUrl": "https://commons.wikimedia.org/wiki/Commons:Licensing#Material_in_the_public_domain",
+    "notes": "Подписано aluminium sulfate crystals; степень гидратации в источнике не подтверждена. Не выдавать за доказанный18-водный образец.",
+    "prompt": "Use case: precise-object-edit, background extraction. Edit the referenced REAL photograph, do not invent a replacement chemical sample. Preserve the original small low irregular heap of off-white thin translucent flakes/crystal chips and its scattered small fragments, including the naturally angular flat broken shapes. Remove the dark green background only. Do not turn the small flakes into large gem-like crystals. Keep the original specimen morphology, relative particle sizes, color, camera angle and distinctive composition. Correct only the heavy background color cast to quiet neutral product lighting while retaining natural material texture and realistic glass when present. Keep the entire subject centered inside a square image, with approximately 12 percent genuinely transparent alpha padding around it, no cropping. Background must be true transparent alpha, not a white rectangle or a printed checkerboard. No labels, no letters, no numbers, no logos, no added objects, no stylized illustration, no generic decorative crystal pile, no glow, no drop shadow outside the object. This is a source-preserving catalog illustration, not proof of a hydrate form or supplier product.",
+    "modification": "Background extracted and neutral product lighting reconstructed with image_gen; source morphology and distinctive composition used as reference. This is an edited catalog illustration, not a supplier product photo.",
+    "files": {
+      "960": 230632,
+      "720": 150986,
+      "480": 74568
+    },
+    "derivative": "Reference-derived illustration. ImageGen used for background cleanup and visual normalization; see prompt and notes for the specific modifications. Not a photograph of supplied product or packaging.",
+    "sha256": "70af8d3635cae1c6c92f04544c2570fea7907ee36e738c8d681ef68796ff2f38"
+  },
+  {
+    "id": "tris-base",
+    "prompt": "Use case: scientific-educational product illustration. Create one original photorealistic demonstration illustration for a neutral B2B laboratory reagent catalog: a modest mound of fine WHITE crystalline powder representing the physical form of Tris base (tris(hydroxymethyl)aminomethane, CAS 77-86-1) on a small clear elongated rectangular laboratory weighing boat with gently upturned ends. Physical form is based on the manufacturer's appearance specification; do not imply a verified brand, grade, batch, or supplied packaging. The mound must look like fine granular crystalline powder, NOT transparent gemstones or coarse salt cubes. Three-quarter camera angle, the whole transparent boat and powder fully visible, neutral soft studio lighting, quiet realistic glass highlights. Square canvas, centered composition, object occupies about 72% of width with generous even clear margins, genuinely transparent background. No label, typography, numbers, seals, logos, watermark, pedestal, colorful glow, background rectangle, laboratory scene or additional objects. This is an explicitly labeled demonstration illustration, not a photograph of an actual supplied product.",
+    "kind": "generated-demonstration-illustration",
+    "pageUrl": "https://assets.thermofisher.com/chem-specs-pdf/retrievePdf?rootSku=A18494&sku=A18494.0E",
+    "appearanceSource": "Thermo Fisher Tris base CAS 77-86-1 product specification: white crystalline powder/crystals/chunks; no purity or grade transferred.",
+    "author": "Описание физической формы: Thermo Fisher",
+    "license": "Оригинальная демонстрационная иллюстрация",
+    "notes": "Exact free source photograph of Tris base was not found. Original generated image illustrates only the physical form described in the primary manufacturer's specification; not a photograph of a specimen or supplied product.",
+    "files": {
+      "960": 71234,
+      "720": 45528,
+      "480": 21326
+    },
+    "derivative": "Original generated demonstration illustration based only on the cited physical-appearance specification. No source photograph was used.",
+    "sha256": "4a999746216b6677de4f2c49dc19189593e602c6b1b9d62651b701c416381f13"
+  },
+  {
+    "id": "citric-acid-monohydrate",
+    "pageUrl": "https://commons.wikimedia.org/wiki/File:Kyselina_citronov%C3%A1_monohydr%C3%A1t.jpg",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/5/56/Kyselina_citronov%C3%A1_monohydr%C3%A1t.jpg",
+    "author": "Milda444",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "notes": "Source explicitly identifies monohydrate. Food grade mentioned for source specimen is not a supplier-product claim. Different source from Citric_acid_crystals.jpg used for the anhydrous entry. Original retained; imagegen input copy downscaled to3000px without semantic edits.",
+    "prompt": "Use case: precise-object-edit, real-photo background extraction. Edit the referenced real photograph without inventing a different chemical sample. Preserve the specific broad low mound of relatively coarse individually distinct irregular translucent-white citric-acid-monohydrate grains on the shallow circular watch glass, with this near-overhead oblique viewing angle. Keep the original large-vs-small particle distribution and irregular heap and glass outline; do not turn it into fine powder, needles, flakes or decorative big crystals. Keep the real shape, material, particle proportions, camera angle and distinctive composition. Remove only the surroundings. Soft neutral studio lighting, natural material texture. Whole subject centered in a square with approximately 12 percent truly transparent alpha padding on every side, no clipping. True transparent background, no printed checkerboard and no white rectangle. No letters, numbers, labels, brands, watermark, extra props, decorative gems, glow, or shadow beyond the object. This is an edited specimen illustration, not proof of supplier product, grade or hydration.",
+    "modification": "Background removed and lighting normalized with image_gen. Edited specimen illustration, not supplier product photography.",
+    "files": {
+      "960": 88226,
+      "720": 58154,
+      "480": 30578
+    },
+    "derivative": "Reference-derived illustration. ImageGen used for background cleanup and visual normalization; see prompt and notes for the specific modifications. Not a photograph of supplied product or packaging.",
+    "sha256": "33aaa5314bad3cd7565fa56e7760656597c474e4488c8615f5e5e64d060bb7ab"
+  },
+  {
+    "id": "succinic-acid",
+    "pageUrl": "https://commons.wikimedia.org/wiki/File:Sample_of_succinic_acid.jpg",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/7/7d/Sample_of_succinic_acid.jpg",
+    "author": "LHcheM",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+    "notes": "Specimen photograph, not client-supplied product photography.",
+    "prompt": "Use case: precise-object-edit, real-photo background extraction. Edit the referenced real photograph without inventing a different chemical sample. Preserve this exact complete upright cylindrical clear-glass sample vial, its ribbed metal screw cap with quiet natural warm metallic tones, its thin base, and its small original amount of pale cream translucent white crystalline flakes settled inside at the bottom. Preserve the distinctive flake morphology, low fill level and naturally adhering tiny particles on the inside wall. Remove the table and room background only. Do not replace the bottle, enlarge the sample, change the cap design or add labels. Reduce only the harsh flash and room color cast. Keep the real shape, material, particle proportions, camera angle and distinctive composition. Remove only the surroundings. Soft neutral studio lighting, natural material texture. Whole subject centered in a square with approximately 12 percent truly transparent alpha padding on every side, no clipping. True transparent background, no printed checkerboard and no white rectangle. No letters, numbers, labels, brands, watermark, extra props, decorative gems, glow, or shadow beyond the object. This is an edited specimen illustration, not proof of supplier product, grade or hydration.",
+    "modification": "Background removed and lighting normalized with image_gen. Edited specimen illustration, not supplier product photography.",
+    "files": {
+      "960": 99838,
+      "720": 62344,
+      "480": 29282
+    },
+    "derivative": "Reference-derived illustration. ImageGen used for background cleanup and visual normalization; see prompt and notes for the specific modifications. Not a photograph of supplied product or packaging.",
+    "sha256": "1cd1a1ca245c0e78c02c939a110a986d7c7d81f18341d75cf3b3beaaab7092a1"
+  },
+  {
+    "id": "tartaric-acid",
+    "pageUrl": "https://commons.wikimedia.org/wiki/File:CommercialTartaric.jpg",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/6/6f/CommercialTartaric.jpg",
+    "author": "Rei at English Wikipedia",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+    "notes": "Source does not specify stereoisomer. Do not infer stereochemistry from the picture. Source is a macro crop with incomplete mound boundaries. Outer outline reconstructed to show a complete small mound; crystalline material and fine granular morphology retained as source reference.",
+    "prompt": "Use case: precise-object-edit, real specimen background extraction. Edit this real macro photograph of commercially produced tartaric acid. Preserve the source material: a low broad irregular mound of extremely small near-colorless slightly warm-white translucent crystalline granules, with the same fine sugar-like particle morphology, subtle angular grains, tiny highlights and powder-fine particles between them. Keep the natural granular texture and broad oblique sloping surface. Remove the surrounding dish rim and table only. The original crop fills the frame, so present the visible material as a complete small low mound with quiet irregular edges, extending its existing tiny-grain appearance only at the cropped perimeter; do not introduce a different chemical material or large crystals. Whole mound centered in a square with 12 percent truly transparent alpha padding on all sides. Soft neutral studio light, retaining real material texture. True alpha, no white rectangle or checkerboard. No glassware, bottle, labels, letters, numbers, brands, watermark, new props, decorative gems, needles, large blocks, glow or external drop shadow. This is an edited catalog illustration based on the real source specimen, not an exact supplier photo or claim of stereoisomer.",
+    "modification": "Background and dish removed with image_gen; outer mound boundary reconstructed from a source macro crop. Edited specimen illustration, not an exact supplier product photograph.",
+    "files": {
+      "960": 158408,
+      "720": 105522,
+      "480": 49092
+    },
+    "derivative": "Reference-derived illustration. ImageGen used for background cleanup and visual normalization; see prompt and notes for the specific modifications. Not a photograph of supplied product or packaging.",
+    "sha256": "8a2ff869892a6052957371ca83c2c8f0cce7f54b27ed6ea86cd3b49c49ab2087"
+  },
+  {
+    "id": "acetic-acid",
+    "pageUrl": "https://commons.wikimedia.org/wiki/File:Acetic_acid.jpg",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/a/ab/Acetic_acid.jpg",
+    "author": "W. Oelen",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "notes": "Real acetic acid reagent bottle in the source. Source grade, concentration and one-liter packaging do not confirm supplied product specifications. Background and manufacturer label removed with built-in image_gen; original distinct blue/red cap vessel retained; no supplied-stock claim. Second built-in edit neutralized cap and tamper ring to graphite/charcoal only; glass and liquid unchanged.",
+    "prompt": "Use case: background-extraction. Edit target: the existing real acetic-acid reagent bottle in the reference photograph. Remove the graph-paper background, support surface and all unrelated surroundings. Keep this individual wide clear glass bottle exactly: the full blue ribbed cap with red tamper ring, its sloped shoulders, broad cylindrical body, thick glass base, clear colorless liquid and its actual fill level, original straight-on camera angle and proportions. Remove the existing paper manufacturer label and all printed letters, numbers and logos, leaving the same bottle as clean unmarked transparent glass; do not invent a replacement label. Keep natural photographic glass refraction and neutral reflections, but remove the graph-paper pattern reflected through the liquid. Center the complete original bottle on a square genuinely transparent alpha canvas, with approximately 12 percent clear padding above and below. No additional objects, no new vessels, no change of liquid, no cropping, no outside shadow, no printed checkerboard, no typography. This is a conservative extraction of the original real photographed bottle, not a generic flask replacement. SECOND EDIT: Use case: precise-object-edit. Edit target: this existing transparent cutout of a real acetic-acid bottle. Change ONLY the solid cap and tamper ring colors: make the currently bright blue ribbed cap a restrained neutral graphite gray, and make the currently red tamper ring a slightly darker neutral charcoal gray. Preserve their exact shape, ribbing, texture, highlights and position. Every other pixel must remain visually unchanged: keep the clear glass bottle geometry, transparent colorless liquid, fill level, surface, photographic reflections, dimensions, camera angle, framing, and alpha background exactly as in the input. Keep the same transparent square canvas and existing bottle scale. No new text, labels, letters, numbers, logos, vessels, colors or shadows. Do not redraw or re-style the bottle, do not alter the glass or liquid. This is a local cap-and-ring desaturation/recolor only.",
+    "promptSteps": [
+      "Use case: background-extraction. Edit target: the existing real acetic-acid reagent bottle in the reference photograph. Remove the graph-paper background, support surface and all unrelated surroundings. Keep this individual wide clear glass bottle exactly: the full blue ribbed cap with red tamper ring, its sloped shoulders, broad cylindrical body, thick glass base, clear colorless liquid and its actual fill level, original straight-on camera angle and proportions. Remove the existing paper manufacturer label and all printed letters, numbers and logos, leaving the same bottle as clean unmarked transparent glass; do not invent a replacement label. Keep natural photographic glass refraction and neutral reflections, but remove the graph-paper pattern reflected through the liquid. Center the complete original bottle on a square genuinely transparent alpha canvas, with approximately 12 percent clear padding above and below. No additional objects, no new vessels, no change of liquid, no cropping, no outside shadow, no printed checkerboard, no typography. This is a conservative extraction of the original real photographed bottle, not a generic flask replacement.",
+      "Use case: precise-object-edit. Edit target: this existing transparent cutout of a real acetic-acid bottle. Change ONLY the solid cap and tamper ring colors: make the currently bright blue ribbed cap a restrained neutral graphite gray, and make the currently red tamper ring a slightly darker neutral charcoal gray. Preserve their exact shape, ribbing, texture, highlights and position. Every other pixel must remain visually unchanged: keep the clear glass bottle geometry, transparent colorless liquid, fill level, surface, photographic reflections, dimensions, camera angle, framing, and alpha background exactly as in the input. Keep the same transparent square canvas and existing bottle scale. No new text, labels, letters, numbers, logos, vessels, colors or shadows. Do not redraw or re-style the bottle, do not alter the glass or liquid. This is a local cap-and-ring desaturation/recolor only."
+    ],
+    "files": {
+      "960": 51622,
+      "720": 35080,
+      "480": 19060
+    },
+    "derivative": "Reference-derived illustration. ImageGen used for background cleanup and visual normalization; see prompt and notes for the specific modifications. Not a photograph of supplied product or packaging.",
+    "sha256": "e131e673bacd95c7265456576688b24c22578dfcac0845cc12672baefb732f8b"
+  },
+  {
+    "id": "ascorbic-acid",
+    "pageUrl": "https://commons.wikimedia.org/wiki/File:Sample_of_ascorbic_acid.jpg",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/0/04/Sample_of_ascorbic_acid.jpg",
+    "author": "LHcheM",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "notes": "Real ascorbic acid sample. Illustration of the substance, not supplied stock or a confirmed grade. Background extracted with built-in image_gen; original specimen identity/morphology retained. No supplied-stock claim.",
+    "prompt": "Use case: background-extraction. Edit target: this real photograph of an ascorbic acid sample. Extract only the existing white finely granular powder mound and scattered grains belonging to that mound. Remove the dark surrounding background and the underlying glass dish as background. Preserve the exact individual mound silhouette, fine granular morphology, natural irregular clumps, white color, photographic texture and original viewing angle. Do NOT turn this material into decorative crystals or invent a different pile. Keep all visible powder, do not crop it. Place this original sample at its natural proportions, centered on a square genuinely transparent alpha canvas with approximately 12 percent clear padding on the limiting sides. Neutral photographic light. No additional objects, containers, labels, letters, numbers, logos, shadows outside the subject, or printed checkerboard. Edit only the background and framing, preserve the real substance.",
+    "files": {
+      "960": 125988,
+      "720": 79974,
+      "480": 37194
+    },
+    "derivative": "Reference-derived illustration. ImageGen used for background cleanup and visual normalization; see prompt and notes for the specific modifications. Not a photograph of supplied product or packaging.",
+    "sha256": "a822c0e61cd06c81dc1f257876f85243f86254387850a28c3cbc2b670137bf35"
+  },
+  {
+    "id": "benzoic-acid",
+    "pageUrl": "https://commons.wikimedia.org/wiki/File:Pile_of_benzoic_acid_crystals.jpg",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/b/b7/Pile_of_benzoic_acid_crystals.jpg",
+    "author": "Devon Fyson",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "notes": "Real benzoic acid recrystallized from hot water; specimen photograph only, not a supplied grade or stock claim. Built-in image_gen extracted background and preserved the real specimen/container.",
+    "prompt": "Use case: background-extraction. Edit target: this real benzoic-acid crystal specimen photograph. Remove ONLY the dark surrounding background. Preserve the actual wide low asymmetric pile of very thin elongated transparent-white needle crystals: every characteristic long needle, the interwoven and layered morphology, the existing pile silhouette, density, highlights, color, tiny loose crystals and original oblique camera angle. Do NOT transform it into chunky decorative salt crystals, a uniform powder mound, faceted gemstones or another material. Keep the complete main specimen. Center it at its original proportions on a square genuinely transparent alpha canvas with about 12 percent clear margin on the limiting sides. Neutral photographic light, no invented objects, no dish, no labels, no typography, no shadow outside the specimen, no cropping and no printed checkerboard. This is a precise extraction of the real photographed needle-crystal pile.",
+    "files": {
+      "960": 197832,
+      "720": 120484,
+      "480": 57982
+    },
+    "derivative": "Reference-derived illustration. ImageGen used for background cleanup and visual normalization; see prompt and notes for the specific modifications. Not a photograph of supplied product or packaging.",
+    "sha256": "df2f84d29c0ef0434a786c65b4f00b86e34db65ec01c7ad827f967b32baa2e78"
+  },
+  {
+    "id": "d-glucose",
+    "prompt": "Use case: scientific-educational product illustration. Create one original photorealistic DEMONSTRATION illustration for a restrained B2B reagent catalog: a small mound of fine white D-glucose anhydrous powder in a shallow triangular white porcelain weighing dish with a small pouring lip, viewed from a low three-quarter angle; fine powder with slight natural clumping, NOT coarse transparent sugar cubes. Illustrate only the physical form described in the manufacturer appearance specification, without claiming a verified supplier, grade, batch, concentration, or delivered packaging. The full object and its contents must fit comfortably on a square truly transparent canvas with even 12% clear margins. Neutral soft studio light, quiet realistic materials, clean alpha edges, no photographic backdrop, no table rectangle, no cast shadow outside the subject, no logos, labels, writing, digits, seal, watermark, glowing effects, apparatus or other objects. The composition must be visually distinct from a tall volumetric flask or generic identical crystal cluster. It will be clearly captioned as a demonstration illustration, not an actual product photograph.",
+    "kind": "generated-demonstration-illustration",
+    "pageUrl": "https://assets.thermofisher.com/chem-specs-pdf/retrievePdf?rootSku=A16828&sku=A16828.0E",
+    "appearanceSource": "D-glucose anhydrous, CAS50-99-7; white powder",
+    "author": "Описание физической формы: Thermo Fisher",
+    "license": "Оригинальная демонстрационная иллюстрация",
+    "notes": "A suitable exact free photograph was not found; original generated illustration based only on the physical appearance in a primary manufacturer's specification. Not an actual specimen, supplied product or packaging.",
+    "files": {
+      "960": 66612,
+      "720": 43980,
+      "480": 21084
+    },
+    "derivative": "Original generated demonstration illustration based only on the cited physical-appearance specification. No source photograph was used.",
+    "sha256": "ceab32dd0ca4baa2654353d5211eee7fd3299e3733eb8d0d4455c3326de5d634"
+  },
+  {
+    "id": "edta-disodium-dihydrate",
+    "pageUrl": "https://commons.wikimedia.org/wiki/File:EDTA-2Na-dihydrate.jpg",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/3/37/EDTA-2Na-dihydrate.jpg",
+    "author": "Leiem",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "notes": "Real EDTA disodium salt dihydrate sample per source description. The source purity statement is not a claim about HIM STANDART stock. Background extracted with built-in image_gen; original specimen identity/morphology retained. No supplied-stock claim.",
+    "prompt": "Use case: background-extraction. Edit target: this real photograph of EDTA disodium salt dihydrate powder. Remove only the textured gray surrounding surface/background. Preserve the existing irregular white powder mound exactly: its asymmetric outline, the large lumpy clods, small powder grains, hollows, white color, relative scale and original overhead-oblique camera angle. Do NOT replace it with uniform decorative crystals or another powder pile. Keep the whole original specimen with every main clump visible. Center the specimen on a square genuinely transparent alpha canvas with approximately 12 percent clear padding on the limiting sides. Neutral photographic lighting, no color changes. No new vessels, additional substances, labels, letters, digits, logos, outside drop shadows or printed checkerboard. This is a precise background extraction, not a new sample.",
+    "files": {
+      "960": 147960,
+      "720": 101552,
+      "480": 50628
+    },
+    "derivative": "Reference-derived illustration. ImageGen used for background cleanup and visual normalization; see prompt and notes for the specific modifications. Not a photograph of supplied product or packaging.",
+    "sha256": "c968981fe7c017ff9cf6414ac21ff1787b8152b0a2098b7997eaa974f6c7b53e"
+  },
+  {
+    "id": "propylene-glycol",
+    "prompt": "Use case: scientific-educational product illustration. Create one original photorealistic DEMONSTRATION illustration for a restrained B2B reagent catalog: one squat wide straight-sided transparent cylindrical laboratory sample jar with a plain matte charcoal screw cap, two-thirds filled with a clear colorless viscous liquid representing propylene glycol; realistic neutral reflections and visible liquid meniscus, no bubbles, no label. Illustrate only the physical form described in the manufacturer appearance specification, without claiming a verified supplier, grade, batch, concentration, or delivered packaging. The full object and its contents must fit comfortably on a square truly transparent canvas with even 12% clear margins. Neutral soft studio light, quiet realistic materials, clean alpha edges, no photographic backdrop, no table rectangle, no cast shadow outside the subject, no logos, labels, writing, digits, seal, watermark, glowing effects, apparatus or other objects. The composition must be visually distinct from a tall volumetric flask or generic identical crystal cluster. It will be clearly captioned as a demonstration illustration, not an actual product photograph.",
+    "kind": "generated-demonstration-illustration",
+    "pageUrl": "https://www.tcichemicals.com/CA/en/p/P0485",
+    "appearanceSource": "Propylene glycol, CAS57-55-6; colorless clear liquid",
+    "author": "Описание физической формы: TCI",
+    "license": "Оригинальная демонстрационная иллюстрация",
+    "notes": "A suitable exact free photograph was not found; original generated illustration based only on the physical appearance in a primary manufacturer's specification. Not an actual specimen, supplied product or packaging.",
+    "files": {
+      "960": 112284,
+      "720": 72216,
+      "480": 34960
+    },
+    "derivative": "Original generated demonstration illustration based only on the cited physical-appearance specification. No source photograph was used.",
+    "sha256": "3d3e50059bd74a17f9eda61d5f4a3e80ac3402f1accf48107852c51182bcae33"
+  },
+  {
+    "id": "ethyl-acetate",
+    "pageUrl": "https://commons.wikimedia.org/wiki/File:Essigs%C3%A4ureethylester_by_Danny_S._-_001.JPG",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/2/24/Essigs%C3%A4ureethylester_by_Danny_S._-_001.JPG",
+    "author": "Danny S.",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "notes": "Real ethyl acetate in laboratory glassware. Illustration, not confirmed supplied packaging. Built-in image_gen extracted background and preserved the real specimen/container. Minor short open glass top/rim reconstructed where the source frame cuts it; illustrative glass completion only, no chemical material, labels or volume markings invented.",
+    "prompt": "Use case: background-extraction with a minor glass-edge completion. Edit target: this real photograph of ethyl acetate in a plain clear cylindrical laboratory test tube. Remove the brown background and wooden support, preserving the entire photographed sample: its meniscus and liquid fill level, the long straight transparent glass walls, rounded thick base, droplets, realistic highlights, existing proportions and original straight camera angle. The very upper edge of the tube is cut by the source photograph: complete ONLY a short missing top section of plain clear glass and a simple open rolled glass rim, adding no more than 12 percent of the visible tube height. Do not add a cap or stopper. All visible source glass, liquid and bottom must remain unchanged. Do not invent or change chemical material. Remove the brown background transmitted through the glass, keep the liquid colorless. Center the complete tall tube on a square genuinely transparent alpha canvas, approximately 12 percent padding at the limiting edges. No labels, letters, digits, logos, markings, volume graduations, additional vessels or outside shadows. The glass top completion is an illustrative reconstruction of missing glass only.",
+    "files": {
+      "960": 62676,
+      "720": 41164,
+      "480": 21100
+    },
+    "derivative": "Reference-derived illustration. ImageGen used for background cleanup and visual normalization; see prompt and notes for the specific modifications. Not a photograph of supplied product or packaging.",
+    "sha256": "bff534c863dc133a5b81beeea1bdc688f609bddb7e7398eae2cfa4efb3d767b0"
+  },
+  {
+    "id": "dimethyl-sulfoxide",
+    "pageUrl": "https://commons.wikimedia.org/wiki/File:Sample_of_Dimethyl_sulfoxide_01.jpg",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/5/56/Sample_of_Dimethyl_sulfoxide_01.jpg",
+    "author": "Σ64",
+    "license": "CC BY 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+    "notes": "Real dimethyl sulfoxide sample; no source grade or supplied packaging claim. Background extracted with built-in image_gen; original distinct vial preserved.",
+    "prompt": "Use case: background-extraction. Edit target: this real photograph of a dimethyl sulfoxide sample. Remove only the dark textured tabletop and surrounding background. Preserve this exact individual small cylindrical clear glass vial and its broad white ribbed screw cap, straight glass walls, thick rounded base, original slightly elevated camera angle, liquid fill level, proportions and photographic surface detail. Keep the transparent liquid and realistic glass highlights/refraction; remove tabletop texture showing through the vessel as part of removing the background. Center the complete vial on a square genuinely transparent alpha canvas with approximately 12 percent clear padding on the limiting sides. Neutral photographic lighting. No replacement flask or bottle, no different cap, no additional objects, no label, no letters, digits or logos, no outside drop shadow, no cropping, no painted checkerboard. Preserve the real photographed container and sample rather than synthesizing a generic container.",
+    "files": {
+      "960": 70636,
+      "720": 48580,
+      "480": 24672
+    },
+    "derivative": "Reference-derived illustration. ImageGen used for background cleanup and visual normalization; see prompt and notes for the specific modifications. Not a photograph of supplied product or packaging.",
+    "sha256": "2591cc0aa0bd5457314112e2db6c1b1e1947457a961a057c124a10f48403f615"
+  },
+  {
+    "id": "n-butanol",
+    "pageUrl": "https://commons.wikimedia.org/wiki/File:Butanol._Etiqueta_de_seguridad.jpg",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/f/fb/Butanol._Etiqueta_de_seguridad.jpg",
+    "author": "Daemon Canchig",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "notes": "Actual butanol bottle, categorized by source as Butan-1-ol. Source label diagram is extraneous. Isomer and grade cannot be inferred from appearance. Original 6944x9248 JPEG was rejected by built-in image_gen as invalid_image_file. A nonsemantic mechanical 1538x2048 JPEG reference copy was made; source remains unchanged. Built-in image_gen removed surrounding safety graphics/background and preserved actual individual bottle/sample.",
+    "prompt": "Use case: background-extraction. Edit target: the real clear glass n-butanol bottle located in the CENTER of this photograph with surrounding safety graphics. Extract ONLY the existing complete bottle and its actual colorless liquid. Remove every surrounding diagram, all overlay text including the small vertical photo credit, the formulas, colored panels, safety diamonds, cloth, wall and background. Preserve the exact bottle geometry: narrow neck with screw threads, black ribbed cylindrical cap, softly rounded shoulders, tall straight body, thick curved clear base, original camera angle, exact liquid level and glass surface character. Keep this particular bottle, not a new generic flask. Remove environmental yellow cast/reflected backdrop as part of background extraction while preserving colorless glass and liquid. Center the complete individual bottle on a square genuinely transparent alpha canvas with about 12 percent clear padding at the limiting edges. Neutral realistic light. No text, digits, logos, labels, new materials, new objects, external shadow, cropping or checkerboard.",
+    "files": {
+      "960": 73828,
+      "720": 48346,
+      "480": 24424
+    },
+    "derivative": "Reference-derived illustration. ImageGen used for background cleanup and visual normalization; see prompt and notes for the specific modifications. Not a photograph of supplied product or packaging.",
+    "sha256": "c48bdacd8264846c5de0556d7e221685e3500d30c3c29ef778ea6ed7bb7d69f2"
+  },
+  {
+    "id": "deionized-water",
+    "pageUrl": "https://commons.wikimedia.org/wiki/File:Distilled_water_001.jpg",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/f/fe/Distilled_water_001.jpg",
+    "author": "أمين",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "notes": "Real water ampoule from a source titled Distilled water 001.jpg; original package says water for injections. Used only as an unmarked water-container illustration. Photograph does not prove deionization, conductivity, laboratory grade, sterility, injectable suitability or supplied packaging; none of those properties should be transferred to the catalog product. Other ampoules, printed label and background removed using built-in image_gen.",
+    "prompt": "Use case: background-extraction. Edit target: this actual photograph of four clear plastic water ampoules. Extract ONLY the LEFTMOST complete real ampoule, including its sealed flat twist-off top and its intact bottom; remove the other three ampoules, the white basin, wall and every surrounding object. Preserve the exact first ampoule silhouette, its slightly translucent frosted clear plastic, softly rounded shoulders, narrow neck, flat sealed grip, body, proportions, existing water and actual photographic viewing angle. Remove the printed manufacturer label and every black letter, digit, barcode and code from this single ampoule, leaving clean unmarked plastic. Do not add any new text or label. Keep the individual original vessel and its subtle natural material, not a glass flask or replacement bottle. Neutral photographic lighting. Center this whole one ampoule on a square genuinely transparent alpha canvas with about 12 percent clear padding at limiting edges. No new contents, no additional objects, no cropping, no extra cap, no outside shadows or painted checkerboard. Background extraction and label removal only; do not make any visual claim about water purity, grade, deionization or sterile status.",
+    "files": {
+      "960": 31740,
+      "720": 21078,
+      "480": 10456
+    },
+    "derivative": "Reference-derived illustration. ImageGen used for background cleanup and visual normalization; see prompt and notes for the specific modifications. Not a photograph of supplied product or packaging.",
+    "sha256": "9b25a2f0be826802fa4463eb48fbfdc23ba76c459427b90469828915333517a0"
+  }
+]

@@ -1,4 +1,6 @@
 /* Dense catalog summary; the product page retains the complete description. */
+.cart-item-image{background:var(--photo-bg)}
+.cart-item-image img{display:block;mix-blend-mode:normal}
 .product-card--compact .product-media-stage,
 .catalog-grid.is-list .product-card--compact .product-media-stage{
   height:176px;

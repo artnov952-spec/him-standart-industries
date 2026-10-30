@@ -1,7 +1,7 @@
 import type { Product } from "./catalog";
 
-// 20 unique real photographs; attribution and limitations: IMAGE-SOURCES.md.
-// Exact illustrations and explicitly captioned physical-form fallbacks for all 41 extra products.
+// Individual illustrations for all extra products; attribution and limitations: IMAGE-SOURCES.md.
+// No shared physical-form fallback: every product has its own source image.
 export const productPhotoMap: Record<string, Pick<Product, "image" | "imageAlt" | "imageCaption" | "imageCredit">> = {
   "boric-acid": {
     "image": "/assets/products/boric-acid.webp",
@@ -119,320 +119,330 @@ export const productPhotoMap: Record<string, Pick<Product, "image" | "imageAlt" 
     }
   },
   "citric-acid-monohydrate": {
-    "image": "/assets/products/citric-acid-anhydrous.webp",
-    "imageAlt": "Кристаллы лимонной кислоты под поляризационным микроскопом",
-    "imageCaption": "Лимонная кислота под микроскопом, увеличение 250x. Форму гидрата согласуем отдельно.",
+    "image": "/assets/products/unique-v6/citric-acid-monohydrate.webp",
+    "imageAlt": "Кислота лимонная: отдельный лабораторный образец",
+    "imageCaption": "Иллюстрация вещества, не фото поставляемого товара.",
     "imageCredit": {
-      "name": "Doc. RNDr. Josef Reischig, CSc.",
-      "url": "https://commons.wikimedia.org/wiki/File:Citric_acid_crystals.jpg",
-      "license": "CC BY 3.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by/3.0"
+      "name": "Milda444",
+      "url": "https://commons.wikimedia.org/wiki/File:Kyselina_citronov%C3%A1_monohydr%C3%A1t.jpg",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/"
     }
   },
   "sodium-carbonate": {
-    "image": "/assets/products/calcium-carbonate.webp",
-    "imageAlt": "Белый порошок на лабораторном стекле, иллюстрация формы вещества",
-    "imageCaption": "Иллюстрация формы вещества. Не фотография выбранного продукта.",
+    "image": "/assets/products/unique-v6/sodium-carbonate.webp",
+    "imageAlt": "Натрий углекислый: отдельный лабораторный образец",
+    "imageCaption": "Иллюстрация образца соединения. Гидратная форма и фасовка по фото не подтверждаются.",
     "imageCredit": {
-      "name": "Walkerma",
-      "url": "https://commons.wikimedia.org/wiki/File:Calcium_carbonate.jpg",
-      "license": "Public domain"
+      "name": "Chemicalinterest",
+      "url": "https://commons.wikimedia.org/wiki/File:Sodium_carbonate.JPG",
+      "license": "Public domain",
+      "licenseUrl": "https://commons.wikimedia.org/wiki/File:Sodium_carbonate.JPG#Licensing"
     }
   },
   "potassium-chloride": {
-    "image": "/assets/products/sodium-chloride.webp",
-    "imageAlt": "Белые или бесцветные кристаллы, иллюстрация формы вещества",
-    "imageCaption": "Иллюстрация формы вещества. Не фотография выбранного продукта.",
+    "image": "/assets/products/unique-v6/potassium-chloride.webp",
+    "imageAlt": "Калий хлористый: отдельный лабораторный образец",
+    "imageCaption": "Иллюстрация вещества, не фото поставляемого товара.",
     "imageCredit": {
-      "name": "Alessandro e Damiano",
-      "url": "https://commons.wikimedia.org/wiki/File:Crystals_of_NaCl.jpg",
-      "license": "CC BY 4.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by/4.0"
+      "name": "Pań w żółtym kapeluszu",
+      "url": "https://commons.wikimedia.org/wiki/File:Potassium_chloride_podwer.jpg",
+      "license": "CC0",
+      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/deed.en"
     }
   },
   "calcium-chloride-dihydrate": {
-    "image": "/assets/products/trisodium-citrate-dihydrate.webp",
-    "imageAlt": "Белые или бесцветные кристаллы, иллюстрация формы вещества",
-    "imageCaption": "Иллюстрация формы вещества. Не фотография выбранного продукта.",
+    "image": "/assets/products/unique-v6/calcium-chloride-dihydrate.webp",
+    "imageAlt": "Кальций хлористый: отдельный лабораторный образец",
+    "imageCaption": "Иллюстрация образца соединения. Гидратная форма и фасовка по фото не подтверждаются.",
     "imageCredit": {
-      "name": "Toffel (атрибуция Wikimedia Commons)",
-      "url": "https://commons.wikimedia.org/wiki/File:Natriumcitrat_Kristalle.JPG",
-      "license": "Public domain"
+      "name": "Roi.Frvr",
+      "url": "https://commons.wikimedia.org/wiki/File:Petri_Dish_containing_Calcium_Chloride.jpg",
+      "license": "CC0",
+      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/deed.en"
     }
   },
   "magnesium-sulfate-heptahydrate": {
-    "image": "/assets/products/boric-acid.webp",
-    "imageAlt": "Белые или бесцветные кристаллы, иллюстрация формы вещества",
-    "imageCaption": "Иллюстрация формы вещества. Не фотография выбранного продукта.",
+    "image": "/assets/products/unique-v6/magnesium-sulfate-heptahydrate.webp",
+    "imageAlt": "Магний сернокислый: отдельный лабораторный образец",
+    "imageCaption": "Иллюстрация вещества, не фото поставляемого товара.",
     "imageCredit": {
-      "name": "Walkerma",
-      "url": "https://commons.wikimedia.org/wiki/File:Boric_acid.jpg",
-      "license": "Public domain"
+      "name": "Chemicalinterest  at  en.wikipedia",
+      "url": "https://commons.wikimedia.org/wiki/File:Magnesium_sulfate.JPG",
+      "license": "Public domain",
+      "licenseUrl": "https://commons.wikimedia.org/wiki/File:Magnesium_sulfate.JPG#Licensing"
     }
   },
   "sodium-sulfate": {
-    "image": "/assets/products/trisodium-citrate-dihydrate.webp",
-    "imageAlt": "Белые или бесцветные кристаллы, иллюстрация формы вещества",
-    "imageCaption": "Иллюстрация формы вещества. Не фотография выбранного продукта.",
+    "image": "/assets/products/unique-v6/sodium-sulfate.webp",
+    "imageAlt": "Натрий сернокислый: отдельный лабораторный образец",
+    "imageCaption": "Иллюстрация образца соединения. Гидратная форма и фасовка по фото не подтверждаются.",
     "imageCredit": {
-      "name": "Toffel (атрибуция Wikimedia Commons)",
-      "url": "https://commons.wikimedia.org/wiki/File:Natriumcitrat_Kristalle.JPG",
-      "license": "Public domain"
+      "name": "Ondřej Mangl",
+      "url": "https://commons.wikimedia.org/wiki/File:S%C3%ADran_sodn%C3%BD.JPG",
+      "license": "Public domain",
+      "licenseUrl": "https://commons.wikimedia.org/wiki/File:S%C3%ADran_sodn%C3%BD.JPG#Licensing"
     }
   },
   "potassium-sulfate": {
-    "image": "/assets/products/sodium-chloride.webp",
-    "imageAlt": "Белые или бесцветные кристаллы, иллюстрация формы вещества",
-    "imageCaption": "Иллюстрация формы вещества. Не фотография выбранного продукта.",
+    "image": "/assets/products/unique-v6/potassium-sulfate.webp",
+    "imageAlt": "Калий сернокислый: отдельный лабораторный образец",
+    "imageCaption": "Иллюстрация вещества, не фото поставляемого товара.",
     "imageCredit": {
-      "name": "Alessandro e Damiano",
-      "url": "https://commons.wikimedia.org/wiki/File:Crystals_of_NaCl.jpg",
-      "license": "CC BY 4.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by/4.0"
+      "name": "Ondřej Mangl",
+      "url": "https://commons.wikimedia.org/wiki/File:S%C3%ADran_draseln%C3%BD.JPG",
+      "license": "Public domain",
+      "licenseUrl": "https://commons.wikimedia.org/wiki/File:S%C3%ADran_draseln%C3%BD.JPG#Licensing"
     }
   },
   "ammonium-sulfate": {
-    "image": "/assets/products/trisodium-citrate-dihydrate.webp",
-    "imageAlt": "Белые или бесцветные кристаллы, иллюстрация формы вещества",
-    "imageCaption": "Иллюстрация формы вещества. Не фотография выбранного продукта.",
+    "image": "/assets/products/unique-v6/ammonium-sulfate.webp",
+    "imageAlt": "Аммоний сернокислый: отдельный лабораторный образец",
+    "imageCaption": "Иллюстрация вещества, не фото поставляемого товара.",
     "imageCredit": {
-      "name": "Toffel (атрибуция Wikimedia Commons)",
-      "url": "https://commons.wikimedia.org/wiki/File:Natriumcitrat_Kristalle.JPG",
-      "license": "Public domain"
+      "name": "Kapitánka Nemo",
+      "url": "https://commons.wikimedia.org/wiki/File:S%C3%ADran_amonn%C3%BD.jpg",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0"
     }
   },
   "sodium-acetate-trihydrate": {
-    "image": "/assets/products/sucrose.webp",
-    "imageAlt": "Белые или бесцветные кристаллы, иллюстрация формы вещества",
-    "imageCaption": "Иллюстрация формы вещества. Не фотография выбранного продукта.",
+    "image": "/assets/products/unique-v6/sodium-acetate-trihydrate.webp",
+    "imageAlt": "Натрий уксуснокислый: отдельный лабораторный образец",
+    "imageCaption": "Иллюстрация образца соединения. Гидратная форма и фасовка по фото не подтверждаются.",
     "imageCredit": {
-      "name": "Nachovfranco",
-      "url": "https://commons.wikimedia.org/wiki/File:Sucrose_crystals.JPG",
+      "name": "Milda 444",
+      "url": "https://commons.wikimedia.org/wiki/File:Octan_sodn%C3%BD_vzorek.jpg",
       "license": "CC BY-SA 4.0",
       "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
     }
   },
   "ammonium-acetate": {
-    "image": "/assets/products/sodium-chloride.webp",
-    "imageAlt": "Белые или бесцветные кристаллы, иллюстрация формы вещества",
-    "imageCaption": "Иллюстрация формы вещества. Не фотография выбранного продукта.",
+    "image": "/assets/products/unique-v6/ammonium-acetate.webp",
+    "imageAlt": "Аммоний уксуснокислый: отдельный лабораторный образец",
+    "imageCaption": "Иллюстрация вещества, не фото поставляемого товара.",
     "imageCredit": {
-      "name": "Alessandro e Damiano",
-      "url": "https://commons.wikimedia.org/wiki/File:Crystals_of_NaCl.jpg",
-      "license": "CC BY 4.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by/4.0"
+      "name": "Vidak",
+      "url": "https://commons.wikimedia.org/wiki/File:Ammonium-acetate.JPG",
+      "license": "Public domain",
+      "licenseUrl": "https://commons.wikimedia.org/wiki/File:Ammonium-acetate.JPG#Licensing"
     }
   },
   "potassium-dihydrogen-phosphate": {
-    "image": "/assets/products/boric-acid.webp",
-    "imageAlt": "Белые или бесцветные кристаллы, иллюстрация формы вещества",
-    "imageCaption": "Иллюстрация формы вещества. Не фотография выбранного продукта.",
+    "image": "/assets/products/unique-v6/potassium-dihydrogen-phosphate.webp",
+    "imageAlt": "Калий фосфорнокислый однозамещенный: отдельный лабораторный образец",
+    "imageCaption": "Иллюстрация вещества, не фото поставляемого товара.",
     "imageCredit": {
-      "name": "Walkerma",
-      "url": "https://commons.wikimedia.org/wiki/File:Boric_acid.jpg",
-      "license": "Public domain"
+      "name": "Bahmtec",
+      "url": "https://commons.wikimedia.org/wiki/File:Kaliumdihydrogenphosphat.jpg",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0"
     }
   },
   "dipotassium-hydrogen-phosphate": {
-    "image": "/assets/products/sodium-chloride.webp",
-    "imageAlt": "Белые или бесцветные кристаллы, иллюстрация формы вещества",
-    "imageCaption": "Иллюстрация формы вещества. Не фотография выбранного продукта.",
+    "image": "/assets/products/unique-v6/dipotassium-hydrogen-phosphate.webp",
+    "imageAlt": "Калий фосфорнокислый двузамещенный: отдельный лабораторный образец",
+    "imageCaption": "Иллюстрация вещества, не фото поставляемого товара.",
     "imageCredit": {
-      "name": "Alessandro e Damiano",
-      "url": "https://commons.wikimedia.org/wiki/File:Crystals_of_NaCl.jpg",
-      "license": "CC BY 4.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by/4.0"
+      "name": "Ondřej Mangl",
+      "url": "https://commons.wikimedia.org/wiki/File:Hydrogenfosfore%C4%8Dnan_draseln%C3%BD.JPG",
+      "license": "Public domain",
+      "licenseUrl": "https://commons.wikimedia.org/wiki/Commons:Licensing#Material_in_the_public_domain"
     }
   },
   "sodium-dihydrogen-phosphate-monohydrate": {
-    "image": "/assets/products/sucrose.webp",
-    "imageAlt": "Белые или бесцветные кристаллы, иллюстрация формы вещества",
-    "imageCaption": "Иллюстрация формы вещества. Не фотография выбранного продукта.",
+    "image": "/assets/products/unique-v6/sodium-dihydrogen-phosphate-monohydrate.webp",
+    "imageAlt": "Натрий фосфорнокислый однозамещенный: отдельный лабораторный образец",
+    "imageCaption": "Иллюстрация образца соединения. Гидратная форма и фасовка по фото не подтверждаются.",
     "imageCredit": {
-      "name": "Nachovfranco",
-      "url": "https://commons.wikimedia.org/wiki/File:Sucrose_crystals.JPG",
-      "license": "CC BY-SA 4.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+      "name": "Ondřej Mangl",
+      "url": "https://commons.wikimedia.org/wiki/File:Dihydrogenfosfore%C4%8Dnan_sodn%C3%BD.JPG",
+      "license": "Public domain",
+      "licenseUrl": "https://commons.wikimedia.org/wiki/Commons:Licensing#Material_in_the_public_domain"
     }
   },
   "disodium-hydrogen-phosphate-dodecahydrate": {
-    "image": "/assets/products/trisodium-citrate-dihydrate.webp",
-    "imageAlt": "Белые или бесцветные кристаллы, иллюстрация формы вещества",
-    "imageCaption": "Иллюстрация формы вещества. Не фотография выбранного продукта.",
+    "image": "/assets/products/unique-v6/disodium-hydrogen-phosphate-dodecahydrate.webp",
+    "imageAlt": "Натрий фосфорнокислый двузамещенный: отдельный лабораторный образец",
+    "imageCaption": "Иллюстрация вещества, не фото поставляемого товара.",
     "imageCredit": {
-      "name": "Toffel (атрибуция Wikimedia Commons)",
-      "url": "https://commons.wikimedia.org/wiki/File:Natriumcitrat_Kristalle.JPG",
-      "license": "Public domain"
+      "name": "Leiem",
+      "url": "https://commons.wikimedia.org/wiki/File:Disodium_phosphate_dodecahydrate.JPG",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/"
     }
   },
   "sodium-thiosulfate-pentahydrate": {
-    "image": "/assets/products/sodium-chloride.webp",
-    "imageAlt": "Белые или бесцветные кристаллы, иллюстрация формы вещества",
-    "imageCaption": "Иллюстрация формы вещества. Не фотография выбранного продукта.",
+    "image": "/assets/products/unique-v6/sodium-thiosulfate-pentahydrate.webp",
+    "imageAlt": "Натрий тиосульфат: отдельный лабораторный образец",
+    "imageCaption": "Иллюстрация вещества, не фото поставляемого товара.",
     "imageCredit": {
-      "name": "Alessandro e Damiano",
-      "url": "https://commons.wikimedia.org/wiki/File:Crystals_of_NaCl.jpg",
-      "license": "CC BY 4.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by/4.0"
+      "name": "Walkerma (Martin Walker)",
+      "url": "https://commons.wikimedia.org/wiki/File:Sodium_thiosulfate_pentahydrate.jpg",
+      "license": "Public domain",
+      "licenseUrl": "https://commons.wikimedia.org/wiki/Commons:Licensing#Material_in_the_public_domain"
     }
   },
   "potassium-sodium-tartrate-tetrahydrate": {
-    "image": "/assets/products/boric-acid.webp",
-    "imageAlt": "Белые или бесцветные кристаллы, иллюстрация формы вещества",
-    "imageCaption": "Иллюстрация формы вещества. Не фотография выбранного продукта.",
+    "image": "/assets/products/unique-v6/potassium-sodium-tartrate-tetrahydrate.webp",
+    "imageAlt": "Калий-натрий виннокислый: отдельный лабораторный образец",
+    "imageCaption": "Иллюстрация вещества, не фото поставляемого товара.",
     "imageCredit": {
-      "name": "Walkerma",
-      "url": "https://commons.wikimedia.org/wiki/File:Boric_acid.jpg",
-      "license": "Public domain"
+      "name": "ERS ROHU",
+      "url": "https://commons.wikimedia.org/wiki/File:Potassium_Sodium_Tartrate_Tetrahydrate.jpg",
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0/"
     }
   },
   "aluminum-sulfate-octadecahydrate": {
-    "image": "/assets/products/trisodium-citrate-dihydrate.webp",
-    "imageAlt": "Белые или бесцветные кристаллы, иллюстрация формы вещества",
-    "imageCaption": "Иллюстрация формы вещества. Не фотография выбранного продукта.",
+    "image": "/assets/products/unique-v6/aluminum-sulfate-octadecahydrate.webp",
+    "imageAlt": "Алюминий сернокислый: отдельный лабораторный образец",
+    "imageCaption": "Иллюстрация образца соединения. Гидратная форма и фасовка по фото не подтверждаются.",
     "imageCredit": {
-      "name": "Toffel (атрибуция Wikimedia Commons)",
-      "url": "https://commons.wikimedia.org/wiki/File:Natriumcitrat_Kristalle.JPG",
-      "license": "Public domain"
+      "name": "Chemicalinterest",
+      "url": "https://commons.wikimedia.org/wiki/File:Aluminium_sulfate_crystals.JPG",
+      "license": "Public domain",
+      "licenseUrl": "https://commons.wikimedia.org/wiki/Commons:Licensing#Material_in_the_public_domain"
     }
   },
   "tris-base": {
-    "image": "/assets/products/sucrose.webp",
-    "imageAlt": "Белые или бесцветные кристаллы, иллюстрация формы вещества",
-    "imageCaption": "Иллюстрация формы вещества. Не фотография выбранного продукта.",
+    "image": "/assets/products/unique-v6/tris-base.webp",
+    "imageAlt": "Демонстрационная иллюстрация белого кристаллического порошка Трис-основания",
+    "imageCaption": "Демонстрационная иллюстрация физической формы Трис-основания. Не фотография образца или поставляемого товара.",
     "imageCredit": {
-      "name": "Nachovfranco",
-      "url": "https://commons.wikimedia.org/wiki/File:Sucrose_crystals.JPG",
-      "license": "CC BY-SA 4.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+      "name": "Описание физической формы: Thermo Fisher",
+      "url": "https://assets.thermofisher.com/chem-specs-pdf/retrievePdf?rootSku=A18494&sku=A18494.0E",
+      "license": "Оригинальная демонстрационная иллюстрация"
     }
   },
   "acetic-acid": {
-    "image": "/assets/products/isopropanol.webp",
-    "imageAlt": "Лабораторная колба с бесцветной жидкостью, иллюстрация формы вещества",
-    "imageCaption": "Иллюстрация формы вещества. Не фотография выбранного продукта.",
+    "image": "/assets/products/unique-v6/acetic-acid.webp",
+    "imageAlt": "Кислота уксусная: отдельный лабораторный образец",
+    "imageCaption": "Иллюстрация вещества, не фото поставляемого товара.",
     "imageCredit": {
-      "name": "Danny S.; переработка Jacek Halicki",
-      "url": "https://commons.wikimedia.org/wiki/File:Isopropanol_by_Danny_S.jpg",
+      "name": "W. Oelen",
+      "url": "https://commons.wikimedia.org/wiki/File:Acetic_acid.jpg",
       "license": "CC BY-SA 3.0",
       "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0"
     }
   },
   "succinic-acid": {
-    "image": "/assets/products/trisodium-citrate-dihydrate.webp",
-    "imageAlt": "Белые или бесцветные кристаллы, иллюстрация формы вещества",
-    "imageCaption": "Иллюстрация формы вещества. Не фотография выбранного продукта.",
+    "image": "/assets/products/unique-v6/succinic-acid.webp",
+    "imageAlt": "Кислота янтарная: отдельный лабораторный образец",
+    "imageCaption": "Иллюстрация вещества, не фото поставляемого товара.",
     "imageCredit": {
-      "name": "Toffel (атрибуция Wikimedia Commons)",
-      "url": "https://commons.wikimedia.org/wiki/File:Natriumcitrat_Kristalle.JPG",
-      "license": "Public domain"
+      "name": "LHcheM",
+      "url": "https://commons.wikimedia.org/wiki/File:Sample_of_succinic_acid.jpg",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/"
     }
   },
   "tartaric-acid": {
-    "image": "/assets/products/trisodium-citrate-dihydrate.webp",
-    "imageAlt": "Белые или бесцветные кристаллы, иллюстрация формы вещества",
-    "imageCaption": "Иллюстрация формы вещества. Не фотография выбранного продукта.",
+    "image": "/assets/products/unique-v6/tartaric-acid.webp",
+    "imageAlt": "Кислота L(+)-винная: отдельный лабораторный образец",
+    "imageCaption": "Иллюстрация вещества, не фото поставляемого товара.",
     "imageCredit": {
-      "name": "Toffel (атрибуция Wikimedia Commons)",
-      "url": "https://commons.wikimedia.org/wiki/File:Natriumcitrat_Kristalle.JPG",
-      "license": "Public domain"
+      "name": "Rei at English Wikipedia",
+      "url": "https://commons.wikimedia.org/wiki/File:CommercialTartaric.jpg",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/"
     }
   },
   "ascorbic-acid": {
-    "image": "/assets/products/boric-acid.webp",
-    "imageAlt": "Белые или бесцветные кристаллы, иллюстрация формы вещества",
-    "imageCaption": "Иллюстрация формы вещества. Не фотография выбранного продукта.",
+    "image": "/assets/products/unique-v6/ascorbic-acid.webp",
+    "imageAlt": "Кислота L-аскорбиновая: отдельный лабораторный образец",
+    "imageCaption": "Иллюстрация вещества, не фото поставляемого товара.",
     "imageCredit": {
-      "name": "Walkerma",
-      "url": "https://commons.wikimedia.org/wiki/File:Boric_acid.jpg",
-      "license": "Public domain"
+      "name": "LHcheM",
+      "url": "https://commons.wikimedia.org/wiki/File:Sample_of_ascorbic_acid.jpg",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0"
     }
   },
   "benzoic-acid": {
-    "image": "/assets/products/sucrose.webp",
-    "imageAlt": "Белые или бесцветные кристаллы, иллюстрация формы вещества",
-    "imageCaption": "Иллюстрация формы вещества. Не фотография выбранного продукта.",
+    "image": "/assets/products/unique-v6/benzoic-acid.webp",
+    "imageAlt": "Кислота бензойная: отдельный лабораторный образец",
+    "imageCaption": "Иллюстрация вещества, не фото поставляемого товара.",
     "imageCredit": {
-      "name": "Nachovfranco",
-      "url": "https://commons.wikimedia.org/wiki/File:Sucrose_crystals.JPG",
+      "name": "Devon Fyson",
+      "url": "https://commons.wikimedia.org/wiki/File:Pile_of_benzoic_acid_crystals.jpg",
       "license": "CC BY-SA 4.0",
       "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
     }
   },
   "d-glucose": {
-    "image": "/assets/products/sodium-chloride.webp",
-    "imageAlt": "Белые или бесцветные кристаллы, иллюстрация формы вещества",
-    "imageCaption": "Иллюстрация формы вещества. Не фотография выбранного продукта.",
+    "image": "/assets/products/unique-v6/d-glucose.webp",
+    "imageAlt": "Демонстрационная иллюстрация белого порошка безводной D-глюкозы",
+    "imageCaption": "Демонстрационная иллюстрация физической формы. Не фотография образца или поставляемого товара.",
     "imageCredit": {
-      "name": "Alessandro e Damiano",
-      "url": "https://commons.wikimedia.org/wiki/File:Crystals_of_NaCl.jpg",
-      "license": "CC BY 4.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by/4.0"
+      "name": "Описание физической формы: Thermo Fisher",
+      "url": "https://assets.thermofisher.com/chem-specs-pdf/retrievePdf?rootSku=A16828&sku=A16828.0E",
+      "license": "Оригинальная демонстрационная иллюстрация"
     }
   },
   "edta-disodium-dihydrate": {
-    "image": "/assets/products/boric-acid.webp",
-    "imageAlt": "Белые или бесцветные кристаллы, иллюстрация формы вещества",
-    "imageCaption": "Иллюстрация формы вещества. Не фотография выбранного продукта.",
+    "image": "/assets/products/unique-v6/edta-disodium-dihydrate.webp",
+    "imageAlt": "ЭДТА динатриевая соль: отдельный лабораторный образец",
+    "imageCaption": "Иллюстрация вещества, не фото поставляемого товара.",
     "imageCredit": {
-      "name": "Walkerma",
-      "url": "https://commons.wikimedia.org/wiki/File:Boric_acid.jpg",
-      "license": "Public domain"
+      "name": "Leiem",
+      "url": "https://commons.wikimedia.org/wiki/File:EDTA-2Na-dihydrate.jpg",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
     }
   },
   "propylene-glycol": {
-    "image": "/assets/products/isopropanol.webp",
-    "imageAlt": "Лабораторная колба с бесцветной жидкостью, иллюстрация формы вещества",
-    "imageCaption": "Иллюстрация формы вещества. Не фотография выбранного продукта.",
+    "image": "/assets/products/unique-v6/propylene-glycol.webp",
+    "imageAlt": "Демонстрационная иллюстрация бесцветного пропиленгликоля в лабораторной емкости",
+    "imageCaption": "Демонстрационная иллюстрация физической формы. Не фотография образца или поставляемого товара.",
     "imageCredit": {
-      "name": "Danny S.; переработка Jacek Halicki",
-      "url": "https://commons.wikimedia.org/wiki/File:Isopropanol_by_Danny_S.jpg",
-      "license": "CC BY-SA 3.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0"
+      "name": "Описание физической формы: TCI",
+      "url": "https://www.tcichemicals.com/CA/en/p/P0485",
+      "license": "Оригинальная демонстрационная иллюстрация"
     }
   },
   "ethyl-acetate": {
-    "image": "/assets/products/isopropanol.webp",
-    "imageAlt": "Лабораторная колба с бесцветной жидкостью, иллюстрация формы вещества",
-    "imageCaption": "Иллюстрация формы вещества. Не фотография выбранного продукта.",
+    "image": "/assets/products/unique-v6/ethyl-acetate.webp",
+    "imageAlt": "Этилацетат: отдельный лабораторный образец",
+    "imageCaption": "Иллюстрация вещества, не фото поставляемого товара.",
     "imageCredit": {
-      "name": "Danny S.; переработка Jacek Halicki",
-      "url": "https://commons.wikimedia.org/wiki/File:Isopropanol_by_Danny_S.jpg",
+      "name": "Danny S.",
+      "url": "https://commons.wikimedia.org/wiki/File:Essigs%C3%A4ureethylester_by_Danny_S._-_001.JPG",
       "license": "CC BY-SA 3.0",
       "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0"
     }
   },
   "dimethyl-sulfoxide": {
-    "image": "/assets/products/isopropanol.webp",
-    "imageAlt": "Лабораторная колба с бесцветной жидкостью, иллюстрация формы вещества",
-    "imageCaption": "Иллюстрация формы вещества. Не фотография выбранного продукта.",
+    "image": "/assets/products/unique-v6/dimethyl-sulfoxide.webp",
+    "imageAlt": "Диметилсульфоксид: отдельный лабораторный образец",
+    "imageCaption": "Иллюстрация вещества, не фото поставляемого товара.",
     "imageCredit": {
-      "name": "Danny S.; переработка Jacek Halicki",
-      "url": "https://commons.wikimedia.org/wiki/File:Isopropanol_by_Danny_S.jpg",
-      "license": "CC BY-SA 3.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0"
+      "name": "Σ64",
+      "url": "https://commons.wikimedia.org/wiki/File:Sample_of_Dimethyl_sulfoxide_01.jpg",
+      "license": "CC BY 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/3.0"
     }
   },
   "n-butanol": {
-    "image": "/assets/products/isopropanol.webp",
-    "imageAlt": "Лабораторная колба с бесцветной жидкостью, иллюстрация формы вещества",
-    "imageCaption": "Иллюстрация формы вещества. Не фотография выбранного продукта.",
+    "image": "/assets/products/unique-v6/n-butanol.webp",
+    "imageAlt": "н-Бутанол: отдельный лабораторный образец",
+    "imageCaption": "Иллюстрация вещества, не фото поставляемого товара.",
     "imageCredit": {
-      "name": "Danny S.; переработка Jacek Halicki",
-      "url": "https://commons.wikimedia.org/wiki/File:Isopropanol_by_Danny_S.jpg",
-      "license": "CC BY-SA 3.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0"
+      "name": "Daemon Canchig",
+      "url": "https://commons.wikimedia.org/wiki/File:Butanol._Etiqueta_de_seguridad.jpg",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
     }
   },
   "deionized-water": {
-    "image": "/assets/products/isopropanol.webp",
-    "imageAlt": "Лабораторная колба с бесцветной жидкостью, иллюстрация формы вещества",
-    "imageCaption": "Иллюстрация формы вещества. Не фотография выбранного продукта.",
+    "image": "/assets/products/unique-v6/deionized-water.webp",
+    "imageAlt": "Вода деионизованная: отдельный лабораторный образец",
+    "imageCaption": "Лабораторная вода. Способ очистки и характеристики по фотографии не подтверждаются.",
     "imageCredit": {
-      "name": "Danny S.; переработка Jacek Halicki",
-      "url": "https://commons.wikimedia.org/wiki/File:Isopropanol_by_Danny_S.jpg",
-      "license": "CC BY-SA 3.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0"
+      "name": "أمين",
+      "url": "https://commons.wikimedia.org/wiki/File:Distilled_water_001.jpg",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
     }
   }
 };
