@@ -25,10 +25,7 @@ const worker = {
     }
     const url = new URL(request.url);
     const hashedAsset = /^(?:\/assets\/|\/_next\/static\/(?:chunks|css)\/)(?:[^/]+[.-])?[A-Za-z0-9_-]{8}\.(?:js|css)$/.test(url.pathname);
-    const assets = (env as Cloudflare.Env & { ASSETS?: Fetcher }).ASSETS;
-    const response = hashedAsset && assets && (request.method === "GET" || request.method === "HEAD")
-      ? await assets.fetch(request)
-      : await runWithConnectorBinding(binding,()=>handler.fetch(request,env,ctx));
+    const response = await runWithConnectorBinding(binding,()=>handler.fetch(request,env,ctx));
     const secured=new Response(response.body,response);
     secured.headers.set("X-Content-Type-Options","nosniff");
     secured.headers.set("Referrer-Policy","strict-origin-when-cross-origin");

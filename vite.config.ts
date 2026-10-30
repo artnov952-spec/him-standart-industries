@@ -18,12 +18,6 @@ const managedLinux = readExecutionProfile() === "managed-linux";
 const localBindingConfig = {
   main: "./worker/index.ts",
   compatibility_flags: ["nodejs_compat"],
-  // Let the Worker set cache policy on content-addressed build files only.
-  // Page navigation and APIs retain their existing routing and cache behavior.
-  assets: {
-    binding: "ASSETS",
-    run_worker_first: ["/_next/static/*"],
-  },
   d1_databases: d1
     ? [
         {
