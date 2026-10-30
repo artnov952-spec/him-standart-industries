@@ -5,16 +5,15 @@ import { categories, products } from "@/lib/catalog";
 import { parseSearchQuery, searchProducts } from "@/lib/search";
 import { tagDefinitions } from "@/lib/product-tags";
 import ProductCard from "./ProductCard";
+import Breadcrumbs from "./Breadcrumbs";
+import { catalogGrades, catalogHref, catalogPageSize, catalogSearchParams, catalogSeo, readCatalogFilters, type CatalogFilters } from "@/lib/catalog-routing";
+import { IS_DEMO, SITE_URL } from "@/lib/site";
 
-type Filters = { query: string; category: string; grade: string; tag: string; sort: string; view: string; page: number };
+type Filters = CatalogFilters;
 type Props = { initialQuery?: string; initialCategory?: string; initialGrade?: string; initialTag?: string; initialSort?: string; initialView?: string; initialPage?: number };
-const pageSize = 12;
-const grades = Array.from(new Set(products.map(product => product.grade)));
-function readFilters(params: URLSearchParams, fallback: Partial<Filters> = {}): Filters {
-  const pick = (key: string, value = "") => params.get(key) ?? value;
-  const category = pick("category", fallback.category), grade = pick("grade", fallback.grade), tag = pick("tag", fallback.tag);
-  return { query: pick("q", fallback.query), category: categories.some(item => item.id === category) ? category : "", grade: grades.includes(grade) ? grade : "", tag: tagDefinitions.some(item => item.id === tag) ? tag : "", sort: ["relevance", "name", "name-desc"].includes(pick("sort", fallback.sort)) ? pick("sort", fallback.sort) : "relevance", view: pick("view", fallback.view) === "list" ? "list" : "grid", page: Math.max(1, Math.min(1000, Number.parseInt(pick("page", String(fallback.page || 1)), 10) || 1)) };
-}
+const pageSize = catalogPageSize;
+const grades = catalogGrades;
+const readFilters = readCatalogFilters;
 export default function CatalogClient({ initialQuery = "", initialCategory = "", initialGrade = "", initialTag = "", initialSort = "relevance", initialView = "grid", initialPage = 1 }: Props) {
   const [filters, setFilters] = useState<Filters>(() => readFilters(new URLSearchParams(), { query: initialQuery, category: initialCategory, grade: initialGrade, tag: initialTag, sort: initialSort, view: initialView, page: initialPage }));
   const { query, category, grade, tag, sort, view } = filters;
@@ -54,7 +53,9 @@ export default function CatalogClient({ initialQuery = "", initialCategory = "",
     if (!ready) return;
     if (historyMode.current === "pop") { historyMode.current = "replace"; return; }
     const url = new URL(window.location.href);
-    for (const [key, value] of [["q", query.trim()], ["category", category], ["grade", grade], ["tag", tag], ["sort", sort === "relevance" ? "" : sort], ["view", view === "grid" ? "" : view], ["page", currentPage > 1 ? String(currentPage) : ""]]) {
+    const normalized = catalogSearchParams(filters, currentPage);
+    for (const key of ["q", "category", "grade", "tag", "sort", "view", "page"]) {
+      const value = normalized.get(key);
       if (value) url.searchParams.set(key, value); else url.searchParams.delete(key);
     }
     if (url.href !== window.location.href) window.history[historyMode.current === "push" ? "pushState" : "replaceState"](null, "", url);
@@ -84,14 +85,32 @@ export default function CatalogClient({ initialQuery = "", initialCategory = "",
     return () => { window.removeEventListener("keydown", keydown); window.removeEventListener("resize", resize); document.body.style.overflow = previousOverflow; };
   }, [open, close]);
   const reset = () => update({ query: "", category: "", grade: "", tag: "" });
-  const changePage = (value: number) => { update({ page: Math.max(1, Math.min(pageCount, value)) }); results.current?.scrollIntoView({ block: "start", behavior: "auto" }); results.current?.focus({ preventScroll: true }); };
   const selectedCategory = categories.find(item => item.id === category);
   const selectedTag = tagDefinitions.find(item => item.id === tag);
   const hasFilters = Boolean(category || grade || query || tag);
+  const seo = catalogSeo(filters, currentPage);
+  useEffect(() => {
+    if (!ready) return;
+    const current = catalogSeo(filters, currentPage);
+    document.title = current.title;
+    document.querySelector<HTMLLinkElement>('link[rel="canonical"]')?.setAttribute("href", SITE_URL + current.canonicalPath);
+    for (const [selector, content] of [
+      ['meta[name="description"]', current.description],
+      ['meta[name="robots"]', `${IS_DEMO || current.selectionOnly ? "noindex" : "index"}, follow`],
+      ['meta[property="og:title"]', current.title],
+      ['meta[property="og:description"]', current.description],
+      ['meta[property="og:url"]', SITE_URL + current.canonicalPath],
+      ['meta[name="twitter:title"]', current.title],
+      ['meta[name="twitter:description"]', current.description],
+    ]) document.querySelector<HTMLMetaElement>(selector)?.setAttribute("content", content);
+  }, [query, category, grade, tag, sort, view, currentPage, ready]);
   return <div className="catalog" data-ready={ready} aria-busy={!ready}>
+    <Breadcrumbs items={selectedCategory ? [{ label: "Каталог", href: "/catalog" }, { label: selectedCategory.label }] : [{ label: "Каталог" }]} />
+    <div className="page-heading"><p className="eyebrow">Подбор по вашей спецификации</p><h1>{seo.heading}</h1><p>{selectedCategory ? selectedCategory.description : "Выберите позиции, квалификацию и фасовку. Соберите один запрос для вашей организации."}</p></div>
     <div className="catalog-search-area"><div className="catalog-search"><Search aria-hidden="true" /><label className="sr-only" htmlFor="catalog-search">Название, CAS, формула или задача</label><input disabled={!ready} id="catalog-search" type="search" autoComplete="off" placeholder="Название, CAS, формула или задача" aria-describedby="catalog-search-hint" value={query} onChange={event => update({ query: event.target.value }, false)} />{query ? <button disabled={!ready} className="icon-button" type="button" aria-label="Очистить поиск" onClick={() => update({ query: "" }, false)}><X /></button> : null}</div><p id="catalog-search-hint" className="catalog-search-hint">Можно искать по нескольким словам, синониму или назначению. Например: <button disabled={!ready} type="button" onClick={() => update({ query: "анализ воды", category: "", grade: "", tag: "" })}>анализ воды</button>, <button disabled={!ready} type="button" onClick={() => update({ query: "этиловый спирт", category: "", grade: "", tag: "" })}>этиловый спирт</button> или <button disabled={!ready} type="button" onClick={() => update({ query: "NaCl", category: "", grade: "", tag: "" })}>NaCl</button></p></div>
     {interpretation.notice ? <p className="catalog-application-note" role="note">{interpretation.notice}</p> : null}
     <div className="catalog-quick-tags" aria-label="Быстрый подбор по задаче"><span>По задаче</span>{tagDefinitions.slice(0, 6).map(item => <button disabled={!ready} key={item.id} type="button" aria-pressed={tag === item.id} onClick={() => update({ tag: tag === item.id ? "" : item.id })}>{item.label}</button>)}</div>
+    <p className="catalog-application-note">Теги помогают сузить поиск по лабораторной задаче. Они не подтверждают пригодность конкретного продукта для медицинской диагностики или вашей методики: требуется проверить квалификацию и документы.</p>
     <div className="catalog-layout">{open ? <button disabled={!ready} className={`catalog-backdrop${closing ? " is-closing" : ""}`} type="button" aria-label="Закрыть панель фильтров" tabIndex={-1} onClick={close} /> : null}
       <aside ref={sidebar} id="catalog-filters" role={open ? "dialog" : undefined} aria-modal={open ? true : undefined} className={`catalog-sidebar${open ? " is-open" : ""}${closing ? " is-closing" : ""}`} onAnimationEnd={event => { if (closing && event.target === event.currentTarget) finishClose(); }} aria-label="Категории и фильтры"><div className="catalog-sidebar-title"><span>Подбор реактивов</span><button disabled={!ready} className="catalog-mobile-close icon-button" type="button" aria-label="Закрыть фильтры" onClick={close}><X /></button></div>
         <div className="catalog-sidebar-content"><div className="catalog-categories"><button disabled={!ready} className={!category ? "is-active" : ""} type="button" aria-pressed={!category} onClick={() => update({ category: "" })}><span>Все реактивы</span><span className="catalog-count">{ranked.filter(product => !grade || product.grade === grade).length}</span></button>{categories.map(item => <button disabled={!ready} key={item.id} className={category === item.id ? "is-active" : ""} type="button" aria-pressed={category === item.id} onClick={() => update({ category: item.id })}><span>{item.label}</span><span className="catalog-count">{categoryCounts[item.id]}</span></button>)}</div>
@@ -103,7 +122,7 @@ export default function CatalogClient({ initialQuery = "", initialCategory = "",
         {hasFilters ? <div className="catalog-active-filters" aria-label="Выбранные фильтры">{query ? <button disabled={!ready} type="button" onClick={() => update({ query: "" })}>Поиск: {query}<X /></button> : null}{selectedCategory ? <button disabled={!ready} type="button" onClick={() => update({ category: "" })}>{selectedCategory.label}<X /></button> : null}{selectedTag ? <button disabled={!ready} type="button" onClick={() => update({ tag: "" })}>{selectedTag.label}<X /></button> : null}{grade ? <button disabled={!ready} type="button" onClick={() => update({ grade: "" })}>{grade}<X /></button> : null}<button disabled={!ready} className="catalog-clear-all" type="button" onClick={reset}>Сбросить все</button></div> : null}
         {selectedTag ? <p className="catalog-application-note">{selectedTag.description} Квалификацию реактива для вашей методики уточняем по спецификации.</p> : null}
         {shown.length ? <div className={`catalog-grid${view === "list" ? " is-list" : ""}`}>{pageProducts.map(product => <ProductCard key={product.id} product={product} />)}</div> : <div className="catalog-empty"><Search /><h2>По этому сочетанию ничего не найдено</h2><p>Попробуйте другое название, синоним или задачу. Можно снять один из выбранных фильтров или передать список на подбор.</p><button disabled={!ready} type="button" className="button button-dark" onClick={reset}>Показать все 50 реактивов</button><a href="/contacts#request">Отправить спецификацию</a></div>}
-        {shown.length ? <nav className="catalog-pagination" aria-label="Страницы каталога"><p>Показано {firstIndex + 1}-{Math.min(firstIndex + pageSize, shown.length)} из {shown.length}</p><div><button type="button" className="button button-secondary" disabled={!ready || currentPage <= 1} onClick={() => changePage(currentPage - 1)}>Назад</button><span>Страница {currentPage} из {pageCount}</span><button type="button" className="button button-secondary" disabled={!ready || currentPage >= pageCount} onClick={() => changePage(currentPage + 1)}>Далее</button></div></nav> : null}
+        {shown.length ? <nav className="catalog-pagination" aria-label="Страницы каталога"><p>Показано {firstIndex + 1}-{Math.min(firstIndex + pageSize, shown.length)} из {shown.length}</p><div>{currentPage > 1 ? <a className="button button-secondary" href={catalogHref(filters, currentPage - 1, true)} rel="prev">Назад</a> : <span className="button button-secondary" aria-disabled="true">Назад</span>}<span>Страница {currentPage} из {pageCount}</span>{currentPage < pageCount ? <a className="button button-secondary" href={catalogHref(filters, currentPage + 1, true)} rel="next">Далее</a> : <span className="button button-secondary" aria-disabled="true">Далее</span>}</div></nav> : null}
         <div className="catalog-bottom-note"><span>Не нашли нужную позицию в демо-каталоге?</span><a href="/contacts#request">Запросить расчет по списку<ArrowRight /></a></div>
       </div>
     </div>

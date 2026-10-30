@@ -33,7 +33,7 @@ export default function HeaderActions() {
   const units = amount % 10 === 1 && amount % 100 !== 11 ? "упаковка" : amount % 10 >= 2 && amount % 10 <= 4 && (amount % 100 < 12 || amount % 100 > 14) ? "упаковки" : "упаковок";
   return <div ref={actions} className="header-actions">
     <a href="/cart" className="header-cart" aria-label={`Заявка, ${amount} ${units}`}><ShoppingBag size={20} strokeWidth={1.5} /><span>Заявка</span><span className="header-cart-count">{amount}</span></a>
-    <button ref={toggle} type="button" className="mobile-menu-toggle icon-button" aria-expanded={open} aria-controls="mobile-navigation" aria-label={open ? "Закрыть меню" : "Открыть меню"} onClick={() => setOpen(previous => !previous)}>{open ? <X size={20} strokeWidth={1.5} /> : <Menu size={20} strokeWidth={1.5} />}</button>
+    <button ref={toggle} type="button" className="mobile-menu-toggle icon-button" disabled={!hydrated} aria-expanded={open} aria-controls="mobile-navigation" aria-label={open ? "Закрыть меню" : "Открыть меню"} onClick={() => setOpen(previous => !previous)}>{open ? <X size={20} strokeWidth={1.5} /> : <Menu size={20} strokeWidth={1.5} />}</button>
     {open ? <nav id="mobile-navigation" className="mobile-navigation" aria-label="Мобильное меню"><a href="/catalog">Каталог</a><a href="/about">О компании</a><a href="/documents">Документы</a><a href="/articles">Статьи</a><a href="/reviews">Отзывы о компании</a><a href="/contacts">Контакты</a></nav> : null}
   </div>;
 }

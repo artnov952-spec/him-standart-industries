@@ -66,3 +66,20 @@ test('review persistence, pending privacy and company/product separation through
   const unknown = await fetch(new URL('/api/reviews?subject=unknown-product', base));
   assert.equal(unknown.status, 404);
 });
+
+test('catalog ratings are aggregated without exposing review text', { skip: !enabled }, async () => {
+  const response = await fetch(new URL('/api/reviews?subjects=ethanol-96,sodium-chloride,company', base));
+  assert.equal(response.status, 200);
+  const data = await response.json();
+  assert.deepEqual(Object.keys(data.summaries).sort(), ['company', 'ethanol-96', 'sodium-chloride']);
+  for (const summary of Object.values(data.summaries)) {
+    assert.deepEqual(Object.keys(summary).sort(), ['average', 'count']);
+    assert.equal(Number.isInteger(summary.count), true);
+    assert.equal(summary.count >= 0, true);
+    assert.equal(summary.average === null || (summary.average >= 1 && summary.average <= 5), true);
+  }
+  const excessive = Array.from({ length: 31 }, () => 'ethanol-96').join(',');
+  assert.equal((await fetch(new URL(`/api/reviews?subjects=${excessive}`, base))).status, 400);
+  assert.equal((await fetch(new URL('/api/reviews?subjects=ethanol-96,unknown-product', base))).status, 404);
+  assert.equal((await fetch(new URL('/api/reviews?subjects=', base))).status, 400);
+});

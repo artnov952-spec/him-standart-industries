@@ -1,19 +1,19 @@
-export type PhotoPresentation = { src: string; alt?: string; caption?: string; credit?: { name: string; url: string; license: string; licenseUrl?: string } };
+export type PhotoPresentation = { src: string; width?: number; height?: number; alt?: string; caption?: string; credit?: { name: string; url: string; license: string; licenseUrl?: string } };
 
-// 16 source-derived background edits plus 4 unchanged neutral photographs.
-// Editing and attribution: IMAGE-SOURCES.md and docs/photo-art-direction.md.
+// 18 source-derived background edits plus 2 unchanged neutral photographs.
+// Editing and attribution: IMAGE-SOURCES.md and public/assets/products/ATTRIBUTION-studio-v3.txt.
 // Product-level generic illustration alt/captions must take precedence.
 export const productPhotoPresentation: Record<string, PhotoPresentation> = {
   "/assets/products/ethanol-96.webp": {
-    "src": "/assets/products/ethanol-96-studio-v2.webp",
+    "src": "/assets/products/ethanol-form-studio-v3.webp",
     "credit": {
-      "name": "VanHelsing.16",
-      "url": "https://commons.wikimedia.org/wiki/File:Ethanol_antiseptic.jpg",
-      "license": "CC BY-SA 2.5",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.5"
+      "name": "LHcheM; цветокоррекция Jacek Halicki",
+      "url": "https://commons.wikimedia.org/wiki/File:Sample_of_Absolute_Ethanol.jpg",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0"
     },
-    "alt": "Реальная бутылка этилового спирта с исходной маркировкой 95%",
-    "caption": "Пример упаковки этанола. На фото 95%; концентрацию и фасовку выбранной позиции согласуем отдельно."
+    "alt": "Бесцветная жидкость в прозрачной стеклянной бутылке без товарной этикетки, иллюстрация формы вещества",
+    "caption": "Иллюстрация жидкой формы этанола, не фото поставляемого товара. В исходнике абсолютный этанол; концентрация 96% и фасовка выбранной позиции по фото не подтверждаются. Фон обработан."
   },
   "/assets/products/sodium-chloride.webp": {
     "src": "/assets/products/sodium-chloride-studio-v2.webp",
@@ -35,6 +35,8 @@ export const productPhotoPresentation: Record<string, PhotoPresentation> = {
   },
   "/assets/products/acetone.webp": {
     "src": "/assets/products/acetone.webp",
+    "width": 768,
+    "height": 1000,
     "credit": {
       "name": "Antonkneeyo",
       "url": "https://commons.wikimedia.org/wiki/File:Acetone_Bottle.png",
@@ -43,13 +45,15 @@ export const productPhotoPresentation: Record<string, PhotoPresentation> = {
     }
   },
   "/assets/products/glycerol.webp": {
-    "src": "/assets/products/glycerol-studio-v2.webp",
+    "src": "/assets/products/glycerol-sample-studio-v3.webp",
     "credit": {
-      "name": "Anupam",
-      "url": "https://commons.wikimedia.org/wiki/File:Glycerin_bottle.jpg",
-      "license": "CC BY-SA 4.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
-    }
+      "name": "LHcheM",
+      "url": "https://commons.wikimedia.org/wiki/File:Sample_of_Glycerine.jpg",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0"
+    },
+    "alt": "Бесцветная жидкость в лабораторной колбе, иллюстрация глицерина без товарной этикетки",
+    "caption": "Глицерин в лабораторной колбе. Иллюстрация вещества, не фото поставляемого товара. Маркировка стеклянной посуды не обозначает фасовку позиции. Фон обработан."
   },
   "/assets/products/sodium-hydroxide.webp": {
     "src": "/assets/products/sodium-hydroxide-studio-v2.webp",
@@ -102,7 +106,7 @@ export const productPhotoPresentation: Record<string, PhotoPresentation> = {
     }
   },
   "/assets/products/iron-sulfate-heptahydrate.webp": {
-    "src": "/assets/products/iron-sulfate-heptahydrate.webp",
+    "src": "/assets/products/iron-sulfate-heptahydrate-studio-v3.webp",
     "credit": {
       "name": "Benjah-bmm27",
       "url": "https://commons.wikimedia.org/wiki/File:Iron(II)-sulfate-heptahydrate-sample.jpg",
@@ -111,6 +115,8 @@ export const productPhotoPresentation: Record<string, PhotoPresentation> = {
   },
   "/assets/products/iron-chloride-hexahydrate.webp": {
     "src": "/assets/products/iron-chloride-hexahydrate.webp",
+    "width": 1000,
+    "height": 702,
     "credit": {
       "name": "Benjah-bmm27",
       "url": "https://commons.wikimedia.org/wiki/File:Iron(III)-chloride-hexahydrate-sample.jpg",
@@ -126,7 +132,7 @@ export const productPhotoPresentation: Record<string, PhotoPresentation> = {
     }
   },
   "/assets/products/magnesium-oxide.webp": {
-    "src": "/assets/products/magnesium-oxide.webp",
+    "src": "/assets/products/magnesium-oxide-studio-v3.webp",
     "credit": {
       "name": "Adam Rędzikowski",
       "url": "https://commons.wikimedia.org/wiki/File:Magnesium_oxide_sample.jpg",

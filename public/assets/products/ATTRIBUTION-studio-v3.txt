@@ -1,0 +1,44 @@
+HIM STANDART INDUSTRIES: product illustration attribution, current display version studio-v3
+Updated: 2026-10-30
+
+These are public-source illustrations of substances or physical forms, not photographs of products or batches supplied by HIM STANDART INDUSTRIES. The 29 physical-form fallbacks remain labeled as generic illustrations in the catalogue.
+
+Four newly displayed images were processed with the built-in ImageGen tool: background replacement and reframing on a warm near-white square canvas, using the cited real photograph as the edit target. They are source-derived, generatively processed illustrations. Pixel identity to the original is not claimed. No commercial labels, percentages, manufacturing dates or supplier branding were added. Source author and license are retained; CC BY-SA derivatives are offered under the same respective CC BY-SA license.
+
+New sources:
+* ethanol-form-studio-v3.webp: LHcheM, Sample of Absolute Ethanol.jpg (2012-12-18); color balance by Jacek Halicki (2021-03-21). Source https://commons.wikimedia.org/wiki/File:Sample_of_Absolute_Ethanol.jpg ; CC BY-SA 3.0 https://creativecommons.org/licenses/by-sa/3.0 . Downloaded 2026-10-30 from https://upload.wikimedia.org/wikipedia/commons/8/83/Sample_of_Absolute_Ethanol.jpg . Depicts an absolute ethanol sample. Display is only a physical-form illustration; it does not establish 96% concentration, packaging volume or the supplier's actual product.
+* glycerol-sample-studio-v3.webp: LHcheM, Sample of Glycerine.jpg (2012-12-18). Source https://commons.wikimedia.org/wiki/File:Sample_of_Glycerine.jpg ; CC BY-SA 3.0 https://creativecommons.org/licenses/by-sa/3.0 . Downloaded 2026-10-30 from https://upload.wikimedia.org/wikipedia/commons/e/e0/Sample_of_Glycerine.jpg . Glassware markings are retained as laboratory vessel markings, not product package declarations.
+* magnesium-oxide-studio-v3.webp: Adam Rędzikowski. Source https://commons.wikimedia.org/wiki/File:Magnesium_oxide_sample.jpg ; CC BY-SA 4.0 https://creativecommons.org/licenses/by-sa/4.0 . The existing blue-grey background was replaced, preserving a complete glass dish and powder as a source-derived illustration.
+* iron-sulfate-heptahydrate-studio-v3.webp: Benjah-bmm27. Source https://commons.wikimedia.org/wiki/File:Iron(II)-sulfate-heptahydrate-sample.jpg ; Public domain. The existing grey background was replaced and the crystal mound reframed.
+
+Technical export: generated PNG to WebP quality 85 using Sharp, without resize, crop or image filters. All four WebP files are 1254 x 1254 pixels. Source JPEGs and PNG masters are kept in outputs/photo-art-direction-masters-v3 (excluded from Git); source files in public are preserved.
+
+Other currently displayed illustrations retain the authors and licenses below. Their earlier background processing is documented in ATTRIBUTION-studio-v2.txt and IMAGE-SOURCES.md. Acetone and iron-chloride-hexahydrate retain their original neutral photographs without a raster background edit. No endorsement by any source author is implied.
+
+Current displayed files, authors, source pages and licenses:
+* ethanol-form-studio-v3.webp | LHcheM; цветокоррекция Jacek Halicki | https://commons.wikimedia.org/wiki/File:Sample_of_Absolute_Ethanol.jpg | CC BY-SA 3.0 | https://creativecommons.org/licenses/by-sa/3.0 | 1254 x 1254
+* sodium-chloride-studio-v2.webp | Alessandro e Damiano | https://commons.wikimedia.org/wiki/File:Crystals_of_NaCl.jpg | CC BY 4.0 | https://creativecommons.org/licenses/by/4.0 | 1254 x 1254
+* isopropanol-studio-v2.webp | Danny S.; переработка Jacek Halicki | https://commons.wikimedia.org/wiki/File:Isopropanol_by_Danny_S.jpg | CC BY-SA 3.0 | https://creativecommons.org/licenses/by-sa/3.0 | 1254 x 1254
+* acetone.webp | Antonkneeyo | https://commons.wikimedia.org/wiki/File:Acetone_Bottle.png | CC BY-SA 4.0 | https://creativecommons.org/licenses/by-sa/4.0 | 768 x 1000
+* glycerol-sample-studio-v3.webp | LHcheM | https://commons.wikimedia.org/wiki/File:Sample_of_Glycerine.jpg | CC BY-SA 3.0 | https://creativecommons.org/licenses/by-sa/3.0 | 1254 x 1254
+* sodium-hydroxide-studio-v2.webp | Walkerma | https://commons.wikimedia.org/wiki/File:SodiumHydroxide.jpg | Public domain | 1254 x 1254
+* potassium-hydroxide-studio-v2.webp | Pań w żółtym kapeluszu | https://commons.wikimedia.org/wiki/File:Potassium_hydrooxide_flakes.jpg | CC0 | https://creativecommons.org/publicdomain/zero/1.0/deed.en | 1254 x 1254
+* copper-sulfate-pentahydrate-studio-v2.webp | W. Oelen | https://commons.wikimedia.org/wiki/File:Copper_sulfate_pentahydrate_crystals.jpg | CC BY-SA 3.0 | https://creativecommons.org/licenses/by-sa/3.0 | 1254 x 1254
+* trisodium-citrate-dihydrate-studio-v2.webp | Toffel (атрибуция Wikimedia Commons) | https://commons.wikimedia.org/wiki/File:Natriumcitrat_Kristalle.JPG | Public domain | 1254 x 1254
+* boric-acid-studio-v2.webp | Walkerma | https://commons.wikimedia.org/wiki/File:Boric_acid.jpg | Public domain | 1254 x 1254
+* calcium-carbonate-studio-v2.webp | Walkerma | https://commons.wikimedia.org/wiki/File:Calcium_carbonate.jpg | Public domain | 1254 x 1254
+* iron-sulfate-heptahydrate-studio-v3.webp | Benjah-bmm27 | https://commons.wikimedia.org/wiki/File:Iron(II)-sulfate-heptahydrate-sample.jpg | Public domain | 1254 x 1254
+* iron-chloride-hexahydrate.webp | Benjah-bmm27 | https://commons.wikimedia.org/wiki/File:Iron(III)-chloride-hexahydrate-sample.jpg | Public domain | 1000 x 702
+* zinc-oxide-studio-v2.webp | Walkerma | https://commons.wikimedia.org/wiki/File:Zinc_oxide.jpg | Public domain | 1254 x 1254
+* magnesium-oxide-studio-v3.webp | Adam Rędzikowski | https://commons.wikimedia.org/wiki/File:Magnesium_oxide_sample.jpg | CC BY-SA 4.0 | https://creativecommons.org/licenses/by-sa/4.0 | 1254 x 1254
+* urea-studio-v2.webp | LHcheM | https://commons.wikimedia.org/wiki/File:Sample_of_Urea.jpg | CC BY-SA 3.0 | https://creativecommons.org/licenses/by-sa/3.0 | 1254 x 1254
+* glycine-studio-v2.webp | SPOTzillah | https://commons.wikimedia.org/wiki/File:Glycin.jpg | CC BY-SA 4.0 | https://creativecommons.org/licenses/by-sa/4.0 | 1254 x 1254
+* sucrose-studio-v2.webp | Nachovfranco | https://commons.wikimedia.org/wiki/File:Sucrose_crystals.JPG | CC BY-SA 4.0 | https://creativecommons.org/licenses/by-sa/4.0 | 1254 x 1254
+* citric-acid-anhydrous-studio-v2.webp | Renate90 | https://commons.wikimedia.org/wiki/File:Citronens%C3%A4ure.JPG | CC BY-SA 3.0 | https://creativecommons.org/licenses/by-sa/3.0 | 1254 x 1254
+* sodium-bicarbonate-studio-v2.webp | Thavox | https://commons.wikimedia.org/wiki/File:Sodium_bicarbonate.jpg | Public domain | 1254 x 1254
+
+SHA-256 of new displayed files:
+91cff16fcf2b19f8e0019639206651f94f26333bd958b3dff05ece46bdda4ff6  ethanol-form-studio-v3.webp
+b03435c2085e05dee92896ccddc92fbd36cd39dc61818377dd61fee528aa8291  glycerol-sample-studio-v3.webp
+35efcfba99af2fd9cf996719cc74c39003fa51f122abb9a7b4e75935a5ded16c  iron-sulfate-heptahydrate-studio-v3.webp
+4e6d39c6ba6769949103922e98203ed113f3677d885fc74c4b62bfbe48fef26c  magnesium-oxide-studio-v3.webp

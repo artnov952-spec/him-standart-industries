@@ -1,5 +1,6 @@
 import { sql } from "drizzle-orm";
 import { check, index, integer, sqliteTable, text, uniqueIndex } from "drizzle-orm/sqlite-core";
+import type { RequestLine } from "../lib/server-validation";
 
 export const requests = sqliteTable("quote_requests", {
   id: text("id").primaryKey(),
@@ -11,7 +12,9 @@ export const requests = sqliteTable("quote_requests", {
   email: text("email"),
   city: text("city").notNull(),
   comment: text("comment").notNull().default(""),
-  items: text("items", { mode: "json" }).$type<{ productId: string; packaging: string; quantity: number }[]>().notNull(),
+  items: text("items", { mode: "json" }).$type<RequestLine[]>().notNull(),
+  intent: text("intent", { enum: ["quote", "documents"] }).notNull().default("quote"),
+  productId: text("product_id"),
   createdAt: text("created_at").notNull(),
 }, (table) => [uniqueIndex("quote_requests_request_id_unique").on(table.requestId)]);
 

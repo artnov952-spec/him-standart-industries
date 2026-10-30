@@ -1,4 +1,4 @@
-import { and, avg, count, desc, eq } from "drizzle-orm";
+import { and, avg, count, desc, eq, inArray } from "drizzle-orm";
 import { getDb } from "../../../db";
 import { reviews } from "../../../db/schema";
 import { products } from "../../../lib/catalog";
@@ -7,7 +7,19 @@ import { assertSameOrigin, errorResponse, normalizeReview, normalizeSubject, pay
 export const dynamic = "force-dynamic";
 export async function GET(request: Request) {
   try {
-    const subject = normalizeSubject(new URL(request.url).searchParams.get("subject"), products);
+    const params = new URL(request.url).searchParams;
+    const requestedSubjects = params.get("subjects");
+    if (requestedSubjects !== null) {
+      const raw = requestedSubjects.split(",");
+      if (raw.length < 1 || raw.length > 30 || raw.some(value => !value)) return publicJson({ error: "Можно запросить оценки не более 30 позиций." }, 400);
+      const subjects = [...new Set(raw.map(value => normalizeSubject(value, products)))];
+      const db = getDb();
+      const rows = await db.select({ subject: reviews.subject, count: count(), average: avg(reviews.rating) }).from(reviews).where(and(inArray(reviews.subject, subjects), eq(reviews.status, "approved"))).groupBy(reviews.subject);
+      const summaries: Record<string, { count: number; average: number | null }> = Object.fromEntries(subjects.map(subject => [subject, { count: 0, average: null }]));
+      for (const row of rows) summaries[row.subject] = { count: Number(row.count), average: Math.round(Number(row.average) * 10) / 10 };
+      return publicJson({ summaries });
+    }
+    const subject = normalizeSubject(params.get("subject"), products);
     const db = getDb();
     const where = and(eq(reviews.subject, subject), eq(reviews.status, "approved"));
     const [rows, summary, grouped] = await Promise.all([
